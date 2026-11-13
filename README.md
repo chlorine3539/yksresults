@@ -44,7 +44,7 @@ Runtime data is stored outside the repository at
 `${XDG_DATA_HOME:-~/.local/share}/yks-tracker/`:
 
 - `tyt-topic-tracker/` — TYT topics, results, and analyses
-- `ayt-topic-tracker/` — AYT topics, results, and analyses (migrated automatically from legacy `ayt-quantitative-topic-tracker/` if present)
+- `ayt-topic-tracker/` — AYT topics, results, and analyses
 
 Back up this directory to preserve your study history.
 
