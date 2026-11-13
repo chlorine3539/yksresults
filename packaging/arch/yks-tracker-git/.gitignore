@@ -1,0 +1,5 @@
+# makepkg work directories, source cache, and artifacts
+/src/
+/pkg/
+/yks-tracker-git/
+/*.pkg.tar.*

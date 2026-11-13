@@ -1,0 +1,47 @@
+# Maintainer: chlorine3539 <undecided2448@proton.me>
+pkgname=yks-tracker-git
+pkgver=0.1.0.r2.gafff0f2
+pkgrel=1
+pkgdesc="Native Unix (Linux/macOS) TUI for tracking YKS TYT and AYT study topics"
+arch=(x86_64 aarch64)
+url="https://github.com/chlorine3539/yks-tracker"
+license=(MIT)
+depends=(gcc-libs)
+makedepends=(cargo)
+provides=("yks-tracker=$pkgver")
+conflicts=(yks-tracker)
+source=("$pkgname::git+$url.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$pkgname"
+  if git describe --long --tags --abbrev=7 >/dev/null 2>&1; then
+    git describe --long --tags --abbrev=7 \
+      | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  else
+    printf '0.1.0.r%s.g%s' \
+      "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+  fi
+}
+
+prepare() {
+  cd "$pkgname"
+  cargo fetch --locked --target "$CARCH-unknown-linux-gnu"
+}
+
+build() {
+  cd "$pkgname"
+  cargo build --release --locked --frozen --offline
+}
+
+check() {
+  cd "$pkgname"
+  cargo test --locked --frozen --offline
+}
+
+package() {
+  cd "$pkgname"
+  install -Dm755 "target/release/yks-tracker" "$pkgdir/usr/bin/yks-tracker"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+}
