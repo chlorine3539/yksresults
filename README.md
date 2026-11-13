@@ -66,9 +66,9 @@ the following sources:
 | superprof.com.tr — TYT Fen & Sosyal konu listeleri | superprof.com.tr |
 | miletakademi.net — AYT Matematik konu listesi | miletakademi.net |
 
-- **TYT** covers 9 subjects: Turkish (40q), Basic Mathematics & Geometry (40q),
-  Physics (7q), Chemistry (7q), Biology (6q), History (5q), Geography (5q),
-  Philosophy (5q), and Religious Culture (5q).
+- **TYT** covers 9 subjects: Türkçe (40q), Temel Matematik & Geometri (40q),
+  Fizik (7q), Kimya (7q), Biyoloji (6q), Tarih (5q), Coğrafya (5q),
+  Felsefe (5q), and Din Kültürü ve Ahlak Bilgisi (5q).
 - **AYT** covers all 11 subjects across all tracks:
   - *Türk Dili ve Edebiyatı - Sosyal Bilimler-1 (40q):* Türk Dili ve Edebiyatı (24q), Tarih-1 (10q), Coğrafya-1 (6q)
   - *Matematik (40q):* Matematik & Geometri (40q)

@@ -4,13 +4,13 @@
   "subjects": [
     {
       "id": "turkce",
-      "name": "Turkish",
+      "name": "Türkçe",
       "group": "turkce",
       "question_count": 40,
       "topics": [
         {
           "id": "turkce-sozcuk-anlam",
-          "name": "Word Meaning (Real / Figurative / Connotative / Technical; Synonyms, Antonyms, Homonyms; Idioms & Proverbs)",
+          "name": "Sözcükte Anlam (Gerçek / Mecaz / Yan / Terim Anlam; Eş, Zıt, Eş Sesli Sözcükler; Deyimler ve Atasözleri)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -20,7 +20,7 @@
         },
         {
           "id": "turkce-cumlede-anlam",
-          "name": "Sentence Meaning (Subjective / Objective; Cause–Result; Comparison; Completing Blanks; Equivalent Sentences)",
+          "name": "Cümlede Anlam (Öznel / Nesnel Anlatım; Neden-Sonuç; Karşılaştırma; Boşluk Doldurma; Anlamca En Yakın Cümleler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -30,7 +30,7 @@
         },
         {
           "id": "turkce-paragraf-anlatim",
-          "name": "Paragraph — Narration Techniques & Development of Thought (Description, Narration, Explanation, Argumentation; Exemplification, Definition, Comparison)",
+          "name": "Paragraf — Anlatım Biçimleri ve Düşünceyi Geliştirme Yolları (Betimleme, Öyküleme, Açıklama, Tartışma; Örneklendirme, Tanımlama, Karşılaştırma)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -40,7 +40,7 @@
         },
         {
           "id": "turkce-paragraf-yapi",
-          "name": "Paragraph — Structure, Topic & Main Idea (Subject, Main Idea, Supporting Ideas; Sentence that Breaks Flow; Splitting / Placing Sentences)",
+          "name": "Paragraf — Yapı, Konu ve Ana Düşünce (Konu, Ana Düşünce, Yardımcı Düşünceler; Akışı Bozan Cümle; Paragrafı İkiye Ayırma / Cümle Yerleştirme)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -50,7 +50,7 @@
         },
         {
           "id": "turkce-paragraf-yorum",
-          "name": "Paragraph — Interpretation & Inference (Multi-question Texts, Drawing Conclusions, Completing Paragraphs)",
+          "name": "Paragraf — Yorum ve Çıkarım (Çoklu Sorular, Çıkarım Yapma, Paragraf Tamamlama)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -60,7 +60,7 @@
         },
         {
           "id": "turkce-ses-bilgisi",
-          "name": "Phonetics (Vowel Harmony; Vowel & Consonant Reduction / Insertion; Consonant Mutation; Liaison)",
+          "name": "Ses Bilgisi (Büyük/Küçük Ünlü Uyumu; Ünlü ve Ünsüz Düşmesi / Türemesi; Ünsüz Yumuşaması ve Benzeşmesi; Ulama)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -70,7 +70,7 @@
         },
         {
           "id": "turkce-sozcuk-turleri",
-          "name": "Word Classes — Nouns, Adjectives, Pronouns, Adverbs (Cases, Noun Phrases, Adjective Phrases)",
+          "name": "Sözcük Türleri — İsim, Sıfat, Zamir, Zarf (İsim Çekim Ekleri, İsim Tamlamaları, Sıfat Tamlamaları)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -80,7 +80,7 @@
         },
         {
           "id": "turkce-edat-baglac-unlem",
-          "name": "Word Classes — Postpositions, Conjunctions & Interjections",
+          "name": "Sözcük Türleri — Edat, Bağlaç ve Ünlem",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -90,7 +90,7 @@
         },
         {
           "id": "turkce-fiiller",
-          "name": "Verbs — Tense, Mood, Person Suffixes; Auxiliary Verb (Ek Fiil); Verb Voice (Active, Passive, Reflexive, Reciprocal, Causative)",
+          "name": "Fiiller — Zaman, Kip, Şahıs Ekleri; Ek Fiil; Fiilde Çatı (Etken, Edilgen, Dönüşlü, İşteş, Geçişli, Geçişsiz)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -100,7 +100,7 @@
         },
         {
           "id": "turkce-fiilimsiler",
-          "name": "Verbals — Infinitives (Mastar), Participles (Sıfat-Fiil), Converbs (Zarf-Fiil / Ulaç)",
+          "name": "Fiilimsiler — İsim-Fiil (Mastar), Sıfat-Fiil (Ortaç), Zarf-Fiil (Bağ-Fiil / Ulaç)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -110,7 +110,7 @@
         },
         {
           "id": "turkce-cumle-ogeleri",
-          "name": "Sentence Elements — Predicate, Subject, Object (Definite / Indefinite), Adverbial, Indirect Object",
+          "name": "Cümlenin Ögeleri — Yüklem, Özne, Nesne (Belirtili / Belirtisiz), Zarf Tümleci, Yer Tamlayıcısı (Dolaylı Tümleç)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -120,7 +120,7 @@
         },
         {
           "id": "turkce-cumle-turleri",
-          "name": "Sentence Types — by Predicate, Word Order, Meaning & Structure (Simple, Compound, Coordinate, Subordinate)",
+          "name": "Cümle Türleri — Yüklemine, Öge Dizilişine, Anlamına ve Yapısına Göre (Basit, Birleşik, Sıralı, Bağlı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -130,7 +130,7 @@
         },
         {
           "id": "turkce-yazim",
-          "name": "Spelling Rules (Capital Letters; Numbers; Abbreviations; Conjunctions da/de, ki; Question Particle mı/mi; Compound Words)",
+          "name": "Yazım Kuralları (Büyük Harflerin Yazımı; Sayılar; Kısaltmalar; da/de, ki Yazımı; mı/mi Soru Eki; Birleşik Sözcükler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -140,7 +140,7 @@
         },
         {
           "id": "turkce-noktalama",
-          "name": "Punctuation Marks (Period, Comma, Colon, Ellipsis, Question Mark, Exclamation Mark, Semicolon, Dash, Quotation Marks, Apostrophe)",
+          "name": "Noktalama İşaretleri (Nokta, Virgül, İki Nokta, Üç Nokta, Soru İşareti, Ünlem, Noktalı Virgül, Çizgi, Tırnak İşareti, Kesme İşareti)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -150,7 +150,7 @@
         },
         {
           "id": "turkce-anlatim-bozukluklari",
-          "name": "Expression Errors — Meaning-Based (Redundancy, Contradiction, Wrong Word) & Grammar-Based (Subject–Predicate Mismatch, Missing Element, Wrong Suffix)",
+          "name": "Anlatım Bozuklukları — Anlama Dayalı (Gereksiz Sözcük, Çelişen Sözcükler, Yanlış Sözcük Kullanımı) ve Dil Bilgisine Dayalı (Özne-Yüklem Uyuşmazlığı, Öge Eksikliği, Ek Yanlışlıkları)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -162,13 +162,13 @@
     },
     {
       "id": "matematik",
-      "name": "Basic Mathematics",
+      "name": "Temel Matematik",
       "group": "matematik",
       "question_count": 40,
       "topics": [
         {
           "id": "matematik-temel-kavramlar",
-          "name": "Fundamental Concepts — Number Sets, Consecutive / Odd / Even Numbers, Factorials, Prime Numbers",
+          "name": "Temel Kavramlar — Sayı Kümeleri, Ardışık / Tek / Çift Sayılar, Faktöriyel, Asal Sayılar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -178,7 +178,7 @@
         },
         {
           "id": "matematik-sayi-basamaklari",
-          "name": "Digit Values & Numeral Systems",
+          "name": "Sayı Basamakları ve Basamak Değeri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -188,7 +188,7 @@
         },
         {
           "id": "matematik-bolme-bolunebilme",
-          "name": "Divisibility Rules & Division",
+          "name": "Bölme ve Bölünebilme Kuralları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -198,7 +198,7 @@
         },
         {
           "id": "matematik-ebob-ekok",
-          "name": "GCD (EBOB) & LCM (EKOK)",
+          "name": "EBOB ve EKOK",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -208,7 +208,7 @@
         },
         {
           "id": "matematik-rasyonel-sayilar",
-          "name": "Rational Numbers & Fractions",
+          "name": "Rasyonel Sayılar ve Kesirler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -218,7 +218,7 @@
         },
         {
           "id": "matematik-ondalik-sayilar",
-          "name": "Decimal Numbers",
+          "name": "Ondalık Sayılar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -228,7 +228,7 @@
         },
         {
           "id": "matematik-uslu-sayilar",
-          "name": "Exponents & Powers",
+          "name": "Üslü Sayılar ve Özellikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -238,7 +238,7 @@
         },
         {
           "id": "matematik-koklu-sayilar",
-          "name": "Radicals & Square / Cube Roots",
+          "name": "Köklü Sayılar ve Karekök / Küpkök",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -248,7 +248,7 @@
         },
         {
           "id": "matematik-carpanlara-ayirma",
-          "name": "Factoring & Algebraic Identities",
+          "name": "Çarpanlara Ayırma ve Özdeşlikler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -258,7 +258,7 @@
         },
         {
           "id": "matematik-oran-oranti",
-          "name": "Ratio & Proportion",
+          "name": "Oran ve Orantı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -268,7 +268,7 @@
         },
         {
           "id": "matematik-basit-esitsizlikler",
-          "name": "Inequalities & Intervals (First-Degree)",
+          "name": "Basit Eşitsizlikler ve Aralıklar (Birinci Dereceden)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -278,7 +278,7 @@
         },
         {
           "id": "matematik-mutlak-deger",
-          "name": "Absolute Value",
+          "name": "Mutlak Değer",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -288,7 +288,7 @@
         },
         {
           "id": "matematik-birinci-derece-denklemler",
-          "name": "First-Degree Equations & Systems",
+          "name": "Birinci Dereceden Denklemler ve Denklem Sistemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -298,7 +298,7 @@
         },
         {
           "id": "matematik-sayisal-mantik",
-          "name": "Logic & Propositions",
+          "name": "Mantık ve Önermeler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -308,7 +308,7 @@
         },
         {
           "id": "matematik-kumeler",
-          "name": "Sets & Venn Diagrams",
+          "name": "Kümeler ve Venn Şeması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -318,7 +318,7 @@
         },
         {
           "id": "matematik-fonksiyonlar",
-          "name": "Functions (Domain, Range, Composite, Inverse)",
+          "name": "Fonksiyonlar (Tanım, Değer Kümesi, Bileşke, Ters Fonksiyon)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -328,7 +328,7 @@
         },
         {
           "id": "matematik-permutasyon-kombinasyon",
-          "name": "Permutation & Combination (Counting Principles)",
+          "name": "Permütasyon ve Kombinasyon (Sayma İlkeleri)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -338,7 +338,7 @@
         },
         {
           "id": "matematik-olasilik",
-          "name": "Probability",
+          "name": "Olasılık",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -348,7 +348,7 @@
         },
         {
           "id": "matematik-veri-grafik-tablo",
-          "name": "Data Analysis — Mean, Median, Mode, Range, Standard Deviation; Graphs & Tables",
+          "name": "Veri Analizi ve İstatistik — Ortalama, Medyan, Mod, Açıklık, Standart Sapma; Grafik ve Tablolar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -358,7 +358,7 @@
         },
         {
           "id": "matematik-problem-yas",
-          "name": "Word Problems — Age",
+          "name": "Problemler — Yaş Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -368,7 +368,7 @@
         },
         {
           "id": "matematik-problem-isci-havuz",
-          "name": "Word Problems — Work & Pool (Rate Problems)",
+          "name": "Problemler — İşçi ve Havuz Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -378,7 +378,7 @@
         },
         {
           "id": "matematik-problem-hareket",
-          "name": "Word Problems — Speed & Distance",
+          "name": "Problemler — Hız ve Hareket Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -388,7 +388,7 @@
         },
         {
           "id": "matematik-problem-karisim",
-          "name": "Word Problems — Mixtures & Alloys",
+          "name": "Problemler — Karışım Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -398,7 +398,7 @@
         },
         {
           "id": "matematik-problem-yuzde-kar-zarar",
-          "name": "Word Problems — Percentages, Profit & Loss, Simple Interest",
+          "name": "Problemler — Yüzde, Kâr-Zarar ve Faiz Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -408,7 +408,7 @@
         },
         {
           "id": "matematik-problem-sayi-kesir",
-          "name": "Word Problems — Numbers, Fractions & Non-Routine",
+          "name": "Problemler — Sayı, Kesir ve Rutin Olmayan Problemler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -418,7 +418,7 @@
         },
         {
           "id": "geometri-temel-kavramlar-acilar",
-          "name": "Geometry — Angles on Lines & in Triangles",
+          "name": "Geometri — Doğruda ve Üçgende Açılar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -428,7 +428,7 @@
         },
         {
           "id": "geometri-dik-ucgen-oklid",
-          "name": "Geometry — Right Triangle, Pythagorean & Euclid Theorems",
+          "name": "Geometri — Dik Üçgen, Pisagor ve Öklid Bağıntıları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -438,7 +438,7 @@
         },
         {
           "id": "geometri-eskenar-ikizkenar",
-          "name": "Geometry — Equilateral & Isosceles Triangles",
+          "name": "Geometri — Eşkenar ve İkizkenar Üçgen",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -448,7 +448,7 @@
         },
         {
           "id": "geometri-ucgende-aci-uzunluk",
-          "name": "Geometry — Auxiliary Elements: Angle Bisector, Median, Altitude; Quadrilaterals (Trapezoid, Parallelogram, Rhombus, Rectangle, Square, Deltoid)",
+          "name": "Geometri — Üçgende Yardımcı Elemanlar: Açıortay, Kenarortay, Yükseklik; Dörtgenler (Yamuk, Paralelkenar, Eşkenar Dörtgen, Dikdörtgen, Kare, Deltoid)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -458,7 +458,7 @@
         },
         {
           "id": "geometri-benzerlik-eslik",
-          "name": "Geometry — Similarity & Congruence of Triangles",
+          "name": "Geometri — Üçgenlerde Benzerlik ve Eşlik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -468,7 +468,7 @@
         },
         {
           "id": "geometri-ucgende-alan",
-          "name": "Geometry — Area of Triangle & Polygons",
+          "name": "Geometri — Üçgende ve Çokgenlerde Alan",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -478,7 +478,7 @@
         },
         {
           "id": "geometri-cember-daire",
-          "name": "Geometry — Circle & Disk (Angles, Tangents, Arc Length, Area)",
+          "name": "Geometri — Çember ve Daire (Açılar, Teğet, Yay Uzunluğu, Dairenin Alanı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -488,7 +488,7 @@
         },
         {
           "id": "geometri-analitik",
-          "name": "Geometry — Analytic Geometry (Coordinate Plane, Slope, Line Equations)",
+          "name": "Geometri — Noktanın ve Doğrunun Analitiği (Koordinat Düzlemi, Eğim, Doğru Denklemleri)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -498,7 +498,7 @@
         },
         {
           "id": "geometri-kati-cisimler",
-          "name": "Geometry — Solid Geometry (Prism, Pyramid, Cylinder, Cone, Sphere — Surface Area & Volume)",
+          "name": "Geometri — Katı Cisimler (Prizma, Piramit, Silindir, Koni, Küre — Alan ve Hacim)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -508,7 +508,7 @@
         },
         {
           "id": "geometri-donusum",
-          "name": "Geometry — Transformations (Translation, Reflection, Rotation)",
+          "name": "Geometri — Dönüşüm Geometrisi (Öteleme, Yansıma, Dönme)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -520,13 +520,13 @@
     },
     {
       "id": "fizik",
-      "name": "Physics",
+      "name": "Fizik",
       "group": "fen",
       "question_count": 7,
       "topics": [
         {
           "id": "fizik-bilimine-giris",
-          "name": "Introduction to Physics — Physical Quantities, Units, Measurement, Scientific Method",
+          "name": "Fizik Bilimine Giriş — Fiziksel Nicelikler, Birimler, Ölçme ve Bilimsel Yöntem",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -536,7 +536,7 @@
         },
         {
           "id": "fizik-madde-ozellikleri",
-          "name": "Properties of Matter — Density, Elasticity, Tensile Strength",
+          "name": "Madde ve Özellikleri — Özkütle, Dayanıklılık, Adezyon ve Kohezyon",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -546,7 +546,7 @@
         },
         {
           "id": "fizik-hareket",
-          "name": "Motion — Position, Velocity, Acceleration, Uniform & Uniformly Accelerated Linear Motion",
+          "name": "Kuvvet ve Hareket — Konum, Hız, İvme, Düzgün Doğrusal Hareket",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -556,7 +556,7 @@
         },
         {
           "id": "fizik-is-guc-enerji",
-          "name": "Work, Power & Energy (Kinetic, Potential, Conservation of Energy)",
+          "name": "İş, Güç ve Enerji (Kinetik, Potansiyel, Mekanik Enerjinin Korunumu)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -566,7 +566,7 @@
         },
         {
           "id": "fizik-basinc",
-          "name": "Pressure — Solid, Liquid (Pascal's Principle, Hydraulic Press) & Gas Pressure",
+          "name": "Basınç — Katı, Sıvı (Pascal Prensibi, Sıvı Cenderesi) ve Gaz Basıncı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -576,7 +576,7 @@
         },
         {
           "id": "fizik-kaldirma-kuvveti",
-          "name": "Buoyancy — Archimedes' Principle, Floating & Sinking",
+          "name": "Kaldırma Kuvveti — Arşimet Prensibi, Yüzme, Askıda Kalma ve Batma",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -586,7 +586,7 @@
         },
         {
           "id": "fizik-isi-sicaklik-genlesme",
-          "name": "Heat, Temperature & Thermal Expansion",
+          "name": "Isı, Sıcaklık ve Genleşme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -596,7 +596,7 @@
         },
         {
           "id": "fizik-elektrostatik",
-          "name": "Electrostatics — Electric Charge, Coulomb's Law, Electric Field",
+          "name": "Elektrostatik — Elektrik Yükleri, Coulomb Yasası, Elektrik Alan",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -606,7 +606,7 @@
         },
         {
           "id": "fizik-dalgalar",
-          "name": "Waves — Wave Properties, Sound Waves, Resonance, Doppler Effect",
+          "name": "Dalgalar — Dalga Mekaniği, Ses Dalgaları, Rezonans, Doppler Olayı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -616,7 +616,7 @@
         },
         {
           "id": "fizik-kuvvet-newton",
-          "name": "Forces & Newton's Laws — Types of Forces, Free-Body Diagrams, Newton's 1st–3rd Laws",
+          "name": "Kuvvet ve Newton'ın Hareket Yasaları — Kuvvet Türleri, Serbest Cisim Diyagramı, Newton Yasaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -626,7 +626,7 @@
         },
         {
           "id": "fizik-elektrik-akimi-devreler",
-          "name": "Electric Current & Circuits — Ohm's Law, Resistors in Series/Parallel, Power, Kirchhoff's Laws",
+          "name": "Elektrik Akımı ve Devreler — Ohm Yasası, Seri/Paralel Bağlama, Elektriksel Güç, Kirchhoff Kuralları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -636,7 +636,7 @@
         },
         {
           "id": "fizik-isik-optik",
-          "name": "Light & Optics — Reflection, Refraction, Mirrors, Lenses, Colour",
+          "name": "Optik — Yansıma, Kırılma, Düzlem ve Küresel Aynalar, Mercekler, Renk",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -646,7 +646,7 @@
         },
         {
           "id": "fizik-manyetizma",
-          "name": "Magnetism — Magnetic Fields, Forces on Conductors, Electromagnetic Induction (Intro)",
+          "name": "Manyetizma — Manyetik Alan, Akım Geçen Tele Etki Eden Kuvvet, Elektromanyetik İndüksiyona Giriş",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -658,13 +658,13 @@
     },
     {
       "id": "kimya",
-      "name": "Chemistry",
+      "name": "Kimya",
       "group": "fen",
       "question_count": 7,
       "topics": [
         {
           "id": "kimya-atom-periyodik-sistem",
-          "name": "Atom & Periodic Table — Atomic Structure, Isotopes, Periodic Properties",
+          "name": "Atom ve Periyodik Sistem — Atom Modelleri, Atomun Yapısı, İzo- Kavramlar, Periyodik Özellikler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -674,7 +674,7 @@
         },
         {
           "id": "kimya-maddenin-halleri",
-          "name": "States of Matter — Solids, Liquids, Gases, Plasma; Viscosity & Surface Tension",
+          "name": "Maddenin Halleri — Katılar, Sıvılar, Gazlar, Plazma; Viskozite ve Yüzey Gerilimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -684,7 +684,7 @@
         },
         {
           "id": "kimya-karisimlar",
-          "name": "Mixtures — Types of Mixtures, Solutions, Concentration, Separation Methods",
+          "name": "Karışımlar — Karışım Türleri, Çözeltiler, Derişim Birimleri, Ayırma ve Saflaştırma Teknikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -694,7 +694,7 @@
         },
         {
           "id": "kimya-her-yerde",
-          "name": "Chemistry Everywhere — Polymers, Cosmetics, Pharmaceuticals, Cleaning Products",
+          "name": "Kimya Her Yerde — Polimerler, Kozmetikler, İlaçlar, Temizlik Maddeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -704,7 +704,7 @@
         },
         {
           "id": "kimya-bilimi-laboratuvar",
-          "name": "Chemistry as a Science — Laboratory Safety, Measurement, Separation Techniques",
+          "name": "Kimya Bilimi — Laboratuvarda Güvenlik, Kimya Disiplinleri, Madde ve Ayırma Teknikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -714,7 +714,7 @@
         },
         {
           "id": "kimya-kimyasal-etkilesimler",
-          "name": "Chemical Bonding & Interactions — Ionic, Covalent, Metallic; Intermolecular Forces",
+          "name": "Kimyasal Türler Arası Etkileşimler — İyonik, Kovalent, Metalik Bağ; Zayıf Etkileşimler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -724,7 +724,7 @@
         },
         {
           "id": "kimya-kimyasal-tepkimeler",
-          "name": "Chemical Reactions — Types (Synthesis, Decomposition, Displacement, Combustion), Balancing",
+          "name": "Kimyasal Tepkimeler ve Denklemler — Tepkime Türleri (Sentez, Analiz, Yer Değiştirme, Yanma), Denkleştirme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -734,7 +734,7 @@
         },
         {
           "id": "kimya-asit-baz-tuz",
-          "name": "Acids, Bases & Salts — Arrhenius & Brønsted–Lowry Definitions, pH, Neutralisation",
+          "name": "Asitler, Bazlar ve Tuzlar — Arrhenius ve Brønsted–Lowry Tanımları, pH Kavramı, Nötralleşme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -746,13 +746,13 @@
     },
     {
       "id": "biyoloji",
-      "name": "Biology",
+      "name": "Biyoloji",
       "group": "fen",
       "question_count": 6,
       "topics": [
         {
           "id": "biyoloji-hucre-bolunmeleri",
-          "name": "Cell Division — Mitosis, Meiosis; Asexual & Sexual Reproduction",
+          "name": "Hücre Bölünmeleri — Mitoz, Mayoz; Eşeysiz ve Eşeyli Üreme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -762,7 +762,7 @@
         },
         {
           "id": "biyoloji-kalitim",
-          "name": "Heredity — Mendelian Genetics, Pedigree Analysis, Sex-Linked Traits",
+          "name": "Kalıtım — Mendel Genetiği, Soyağaçları, Eşeye Bağlı Kalıtım",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -772,7 +772,7 @@
         },
         {
           "id": "biyoloji-ekosistem-ekolojisi",
-          "name": "Ecosystem Ecology — Food Chains, Matter Cycles, Biodiversity, Environmental Issues",
+          "name": "Ekosistem Ekolojisi — Besin Zinciri, Madde Döngüleri, Biyoçeşitlilik, Güncel Çevre Sorunları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -782,7 +782,7 @@
         },
         {
           "id": "biyoloji-hucre-organeller",
-          "name": "Cell Organelles — Detailed Structure & Function of Each Organelle",
+          "name": "Hücre ve Organelleri — Organellerin Yapısı ve Görevleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -792,7 +792,7 @@
         },
         {
           "id": "biyoloji-temel-bilesikler",
-          "name": "Chemical Compounds of Life — Water, Mineral Salts, Carbohydrates, Lipids, Proteins, Nucleic Acids",
+          "name": "Canlıların Temel Bileşikleri — Su, Mineraller, Karbonhidratlar, Lipitler, Proteinler, Nükleik Asitler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -802,7 +802,7 @@
         },
         {
           "id": "biyoloji-siniflandirma",
-          "name": "Classification of Living Things — Taxonomy, Five Kingdoms, Bacteria, Protists, Fungi, Plants, Animals",
+          "name": "Canlıların Sınıflandırılması — Taksonomi, Canlılar Âlemi (Bakteriler, Arkeler, Protistler, Mantarlar, Bitkiler, Hayvanlar)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -812,7 +812,7 @@
         },
         {
           "id": "biyoloji-hucre-zari-madde-gecisi",
-          "name": "Cell Membrane & Substance Transport — Osmosis, Diffusion, Active/Passive Transport, Endocytosis, Exocytosis",
+          "name": "Hücre Zarı ve Madde Geçişleri — Osmoz, Difüzyon, Aktif/Pasif Taşıma, Endositoz, Ekzositoz",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -824,13 +824,13 @@
     },
     {
       "id": "tarih",
-      "name": "History",
+      "name": "Tarih",
       "group": "sosyal",
       "question_count": 5,
       "topics": [
         {
           "id": "tarih-bilimi",
-          "name": "Introduction to History — Historical Method, Time, Calendar, Sources",
+          "name": "Tarih Bilimine Giriş — Tarihsel Yöntem, Zaman, Takvim, Tarihsel Kaynaklar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -840,7 +840,7 @@
         },
         {
           "id": "tarih-ilk-cag-uygarliklari",
-          "name": "Ancient Civilisations — Mesopotamia, Egypt, Aegean, Anatolia, Greco-Roman World",
+          "name": "İlk Çağ Uygarlıkları — Mezopotamya, Mısır, Ege, Anadolu, Greko-Romen Dünyası",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -850,7 +850,7 @@
         },
         {
           "id": "tarih-islamiyet-oncesi-turk-tarihi",
-          "name": "Pre-Islamic Turkic History — Central Asian Tribes, First Turkic Khaganates, Hun Empire",
+          "name": "İslamiyet Öncesi Türk Tarihi — Orta Asya Türk Toplulukları, İlk Türk Devletleri, Hun İmparatorluğu",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -860,7 +860,7 @@
         },
         {
           "id": "tarih-islam-tarihi-ilk-turk-islam-devletleri",
-          "name": "Rise of Islam & Early Turco-Islamic States — Islamic Civilisation, Great Seljuks, Anatolian Seljuks",
+          "name": "İslam Medeniyetinin Doğuşu ve İlk Türk-İslam Devletleri — İslam Medeniyeti, Büyük Selçuklular, Anadolu Selçukluları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -870,7 +870,7 @@
         },
         {
           "id": "tarih-osmanli-kurulus",
-          "name": "Ottoman Foundation Period (13th–14th c.) — Osman Bey to Murad I",
+          "name": "Osmanlı Devleti Kuruluş Dönemi (13.–14. yy.) — Osman Bey'den I. Murad'a",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -880,7 +880,7 @@
         },
         {
           "id": "tarih-osmanli-yukselme",
-          "name": "Ottoman Classical Rise (14th–15th c.) — Yıldırım Bayezid, Fatih Sultan Mehmed, Conquest of Constantinople",
+          "name": "Osmanlı Devleti Klasik/Yükselme Dönemi (14.–15. yy.) — Yıldırım Bayezid, Fatih Sultan Mehmed, İstanbul'un Fethi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -890,7 +890,7 @@
         },
         {
           "id": "tarih-osmanli-duraklama-gerileme",
-          "name": "Ottoman Stagnation & Decline (17th–18th c.) — Internal Crises, Military Setbacks, Reforms",
+          "name": "Osmanlı Devleti Duraklama ve Gerileme Dönemi (17.–18. yy.) — İç İsyanlar, Askeri Islahatlar, Antlaşmalar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -900,7 +900,7 @@
         },
         {
           "id": "tarih-osmanli-dagilma",
-          "name": "Ottoman Disintegration (19th–early 20th c.) — Balkan Wars, Nationalist Movements, Tanzimat",
+          "name": "Osmanlı Devleti Dağılma Dönemi (19.–20. yy. Başı) — Balkan Savaşları, Milliyetçilik Hareketleri, Tanzimat",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -910,7 +910,7 @@
         },
         {
           "id": "tarih-turkiye-selcuklulari-beylikler",
-          "name": "Anatolian Seljuks & Beyliks — Post-Manzikert, Sultanate of Rum, Decline",
+          "name": "Türkiye Selçukluları ve Beylikler Dönemi — Malazgirt Sonrası, Anadolu Selçuklu Devleti, Dağılma",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -920,7 +920,7 @@
         },
         {
           "id": "tarih-kurtulus-savasi",
-          "name": "Turkish War of Independence — National Struggle, Battles, Treaties",
+          "name": "Kurtuluş Savaşı — Millî Mücadele, Cepheler, Antlaşmalar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -932,13 +932,13 @@
     },
     {
       "id": "cografya",
-      "name": "Geography",
+      "name": "Coğrafya",
       "group": "sosyal",
       "question_count": 5,
       "topics": [
         {
           "id": "cografya-harita-bilgisi",
-          "name": "Map Literacy — Coordinates, Scale, Projections, Geographic Location",
+          "name": "Harita Bilgisi — Koordinatlar, Ölçek, Projeksiyonlar, Coğrafi Konum",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -948,7 +948,7 @@
         },
         {
           "id": "cografya-ic-kuvvetler",
-          "name": "Endogenic Forces — Tectonics, Volcanoes, Earthquakes, Folding & Faulting",
+          "name": "İç Kuvvetler — Tektonizma, Volkanizma, Depremler, Dağ Oluşumu (Orojenez) ve Kıta Oluşumu (Epirojenez)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -958,7 +958,7 @@
         },
         {
           "id": "cografya-dis-kuvvetler",
-          "name": "Exogenic Forces — Weathering, Erosion, Rivers, Glaciers, Wind, Karst, Coasts",
+          "name": "Dış Kuvvetler — Çözünme, Erozyon, Akarsular, Buzullar, Rüzgârlar, Karstik Şekiller, Kıyı Şekilleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -968,7 +968,7 @@
         },
         {
           "id": "cografya-nufus",
-          "name": "Population — Distribution, Density, Growth, Pyramids, Migration",
+          "name": "Nüfus — Nüfusun Dağılışı, Yoğunluğu, Artışı, Nüfus Piramitleri, Göçler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -978,7 +978,7 @@
         },
         {
           "id": "cografya-yerlesme",
-          "name": "Settlement — Urban / Rural Settlement, Land Use",
+          "name": "Yerleşme — Kır ve Kent Yerleşmeleri, Arazi Kullanımı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -988,7 +988,7 @@
         },
         {
           "id": "cografya-turkiye-cografi-ozellikleri",
-          "name": "Turkey's Physical & Human Geography — Regions, Climate, Rivers, Soils, Land Use",
+          "name": "Türkiye'nin Fiziki ve Beşerî Coğrafyası — Bölgeler, İklim, Akarsular, Toprak Türleri, Arazi Kullanımı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -998,7 +998,7 @@
         },
         {
           "id": "cografya-dogal-afetler-cevre",
-          "name": "Natural Disasters & Environment — Earthquakes, Floods, Drought; Environmental Problems",
+          "name": "Doğal Afetler ve Çevre — Depremler, Taşkınlar, Kuraklık; Çevre Sorunları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1008,7 +1008,7 @@
         },
         {
           "id": "cografya-doga-insan",
-          "name": "Geography: Nature & Humans — Field, Sub-disciplines, Research Methods",
+          "name": "Doğa ve İnsan — Coğrafyanın Konusu, Alt Dalları, Araştırma Yöntemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1018,7 +1018,7 @@
         },
         {
           "id": "cografya-dunya-sekli-hareketleri",
-          "name": "Earth's Shape, Movements & Consequences (Seasons, Day/Night, Time Zones)",
+          "name": "Dünya'nın Şekli, Hareketleri ve Sonuçları (Mevsimler, Gece-Gündüz, Saat Dilimleri)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1028,7 +1028,7 @@
         },
         {
           "id": "cografya-koordinat-sistemi",
-          "name": "Coordinate System & Geographic Location — Latitude, Longitude, Absolute/Relative Location",
+          "name": "Koordinat Sistemi ve Coğrafi Konum — Enlem, Boylam, Mutlak ve Göreceli Konum",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1038,7 +1038,7 @@
         },
         {
           "id": "cografya-iklim-hava-durumu",
-          "name": "Weather vs. Climate — Atmospheric Factors, Climate Elements, Climate Zones of Turkey",
+          "name": "Hava Durumu ve İklim — Atmosferin Özellikleri, İklim Elemanları, Türkiye'nin İklim Tipleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1050,13 +1050,13 @@
     },
     {
       "id": "felsefe",
-      "name": "Philosophy",
+      "name": "Felsefe",
       "group": "sosyal",
       "question_count": 5,
       "topics": [
         {
           "id": "felsefe-felsefenin-konusu",
-          "name": "Introduction to Philosophy — Meaning, Scope, Relationship to Science & Religion",
+          "name": "Felsefenin Konusu ve Anlamı — Felsefenin Tanımı, Kapsamı, Bilim ve Din ile İlişkisi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1066,7 +1066,7 @@
         },
         {
           "id": "felsefe-bilgi-felsefesi",
-          "name": "Epistemology — Knowledge, Belief, Truth; Rationalism, Empiricism, Scepticism",
+          "name": "Bilgi Felsefesi (Epistemoloji) — Bilgi, İnanç, Doğruluk; Rasyonalizm, Empirizm, Kritisizm, Septisizm",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1076,7 +1076,7 @@
         },
         {
           "id": "felsefe-varlik-felsefesi",
-          "name": "Ontology — Being, Existence; Idealism, Materialism, Dualism",
+          "name": "Varlık Felsefesi (Ontoloji) — Varlık ve Oluş; İdealizm, Materyalizm, Düalizm, Fenomenoloji",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1086,7 +1086,7 @@
         },
         {
           "id": "felsefe-ahlak-felsefesi",
-          "name": "Ethics — Moral Philosophy; Virtue Ethics, Deontology, Utilitarianism",
+          "name": "Ahlak Felsefesi (Etik) — Ahlakın Yapısı; Erdem Etiği, Deontoloji, Faydacılık, Ahlaki Eylemin Amacı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1096,7 +1096,7 @@
         },
         {
           "id": "felsefe-sanat-felsefesi",
-          "name": "Aesthetics — Art Philosophy, Beauty, Artistic Expression",
+          "name": "Sanat Felsefesi (Estetik) — Sanat Kuramları, Güzellik, Sanatsal İfade ve Yaratıcılık",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1106,7 +1106,7 @@
         },
         {
           "id": "felsefe-din-felsefesi",
-          "name": "Philosophy of Religion — Existence of God, Faith and Reason",
+          "name": "Din Felsefesi — Tanrı'nın Varlığına İlişkin Görüşler, Akıl ve İnanç İlişkisi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1116,7 +1116,7 @@
         },
         {
           "id": "felsefe-siyaset-felsefesi",
-          "name": "Political Philosophy — State, Justice, Democracy, Liberty",
+          "name": "Siyaset Felsefesi — Devlet, Adalet, Demokrasi, Özgürlük, İktidar ve Meşruiyet",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1126,7 +1126,7 @@
         },
         {
           "id": "felsefe-bilim-felsefesi",
-          "name": "Philosophy of Science — Scientific Method, Verification, Falsificationism",
+          "name": "Bilim Felsefesi — Bilimsel Yöntem, Doğrulanabilirlik, Yanlışlanabilirlik, Bilimsel Paradigmalar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1136,7 +1136,7 @@
         },
         {
           "id": "felsefe-ilk-cag",
-          "name": "Ancient Philosophy — Pre-Socratics, Socrates, Plato, Aristotle",
+          "name": "İlk Çağ Doğa ve İnsan Felsefesi — Sokrates Öncesi Filozoflar, Sokrates, Platon, Aristoteles",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1146,7 +1146,7 @@
         },
         {
           "id": "felsefe-orta-cag-ronesans",
-          "name": "Medieval & Renaissance Philosophy — Scholasticism, Humanism",
+          "name": "Orta Çağ ve Rönesans Felsefesi — Skolastik Düşünce, İslam Felsefesi, Hümanizm",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1156,7 +1156,7 @@
         },
         {
           "id": "felsefe-17-19-yuzyil",
-          "name": "17th–19th Century Philosophy — Descartes, Locke, Hume, Kant, Hegel",
+          "name": "17.–19. Yüzyıl Felsefesi — Akıl Çağı ve Aydınlanma; Descartes, Locke, Hume, Kant, Hegel",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1166,7 +1166,7 @@
         },
         {
           "id": "felsefe-20-yuzyil",
-          "name": "20th Century Philosophy — Existentialism, Positivism, Analytic Philosophy",
+          "name": "20. Yüzyıl Felsefesi — Varoluşçuluk, Pozitivizm, Analitik Felsefe, Hermeneutik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1178,13 +1178,13 @@
     },
     {
       "id": "din",
-      "name": "Religious Culture & Moral Knowledge",
+      "name": "Din Kültürü ve Ahlak Bilgisi",
       "group": "sosyal",
       "question_count": 5,
       "topics": [
         {
           "id": "din-islam-inanc-esaslari",
-          "name": "Principles of Faith in Islam — Pillars of Belief (Allah, Angels, Books, Prophets, Afterlife, Divine Decree)",
+          "name": "İslam'da İnanç Esasları — İmanın Şartları (Allah, Melekler, Kitaplar, Peygamberler, Ahiret, Kaza ve Kader)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1194,7 +1194,7 @@
         },
         {
           "id": "din-islam-ibadetler",
-          "name": "Worship in Islam — Pillars of Islam; Prayer, Fasting, Zakat, Hajj",
+          "name": "İslam'da İbadetler — İslam'ın Şartları; Namaz, Oruç, Zekât, Hac",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1204,7 +1204,7 @@
         },
         {
           "id": "din-islam-ahlak",
-          "name": "Islamic Morality & Values",
+          "name": "İslam ve Ahlak — Ahlaki Tutum ve Davranışlar, Değerler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1214,7 +1214,7 @@
         },
         {
           "id": "din-hz-muhammed-hayati",
-          "name": "Life of Prophet Muhammad (PBUH) — Mecca, Medina, Legacy",
+          "name": "Hz. Muhammed'in (s.a.v.) Hayatı ve Örnekliği — Mekke, Medine Dönemleri ve Peygamberlik Mirası",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1224,7 +1224,7 @@
         },
         {
           "id": "din-ve-islam",
-          "name": "Religion & World Religions — Concept of Religion; Judaism, Christianity, Hinduism, Buddhism",
+          "name": "Din ve Hayat / Yaşayan Dinler — Din Kavramı; Yahudilik, Hristiyanlık, Hinduizm, Budizm",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,

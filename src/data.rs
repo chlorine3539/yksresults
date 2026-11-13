@@ -89,8 +89,9 @@ impl Tracker {
     }
 }
 
-/// Adds subjects and topics that exist in `defaults` but not in `data` (matched by `id`).
-/// Existing entries and their statistics are never modified. Returns whether anything was added.
+/// Adds subjects and topics that exist in `defaults` but not in `data` (matched by `id`),
+/// and syncs subject and topic display names. Existing statistics are never modified.
+/// Returns whether anything was modified.
 fn merge_defaults(data: &mut Value, defaults: &Value) -> bool {
     let (Some(subjects), Some(default_subjects)) = (
         data.get_mut("subjects").and_then(Value::as_array_mut),
@@ -111,6 +112,12 @@ fn merge_defaults(data: &mut Value, defaults: &Value) -> bool {
             modified = true;
             continue;
         };
+        if let Some(def_name) = default_subject.get("name").and_then(Value::as_str)
+            && subject.get("name").and_then(Value::as_str) != Some(def_name)
+        {
+            subject["name"] = Value::String(def_name.to_string());
+            modified = true;
+        }
         let Some(default_topics) = default_subject.get("topics").and_then(Value::as_array) else {
             continue;
         };
@@ -121,10 +128,17 @@ fn merge_defaults(data: &mut Value, defaults: &Value) -> bool {
             let Some(topic_id) = default_topic.get("id").and_then(Value::as_str) else {
                 continue;
             };
-            if !topics
-                .iter()
-                .any(|topic| topic.get("id").and_then(Value::as_str) == Some(topic_id))
+            if let Some(existing_topic) = topics
+                .iter_mut()
+                .find(|topic| topic.get("id").and_then(Value::as_str) == Some(topic_id))
             {
+                if let Some(def_name) = default_topic.get("name").and_then(Value::as_str)
+                    && existing_topic.get("name").and_then(Value::as_str) != Some(def_name)
+                {
+                    existing_topic["name"] = Value::String(def_name.to_string());
+                    modified = true;
+                }
+            } else {
                 topics.push(default_topic.clone());
                 modified = true;
             }
@@ -255,6 +269,29 @@ mod tests {
         assert_eq!(data["subjects"][0]["topics"][0]["correct_total"], 5);
         assert_eq!(data["subjects"][0]["topics"][1]["id"], "a2");
         assert_eq!(data["subjects"][1]["id"], "b");
+        assert!(!merge_defaults(&mut data, &defaults));
+    }
+
+    #[test]
+    fn merge_syncs_updated_names_without_touching_stats() {
+        let mut data = json!({"subjects": [
+            {
+                "id": "turkce",
+                "name": "Turkish",
+                "topics": [{"id": "t1", "name": "Word Meaning", "correct_total": 42}]
+            }
+        ]});
+        let defaults = json!({"subjects": [
+            {
+                "id": "turkce",
+                "name": "Türkçe",
+                "topics": [{"id": "t1", "name": "Sözcükte Anlam", "correct_total": 0}]
+            }
+        ]});
+        assert!(merge_defaults(&mut data, &defaults));
+        assert_eq!(data["subjects"][0]["name"], "Türkçe");
+        assert_eq!(data["subjects"][0]["topics"][0]["name"], "Sözcükte Anlam");
+        assert_eq!(data["subjects"][0]["topics"][0]["correct_total"], 42);
         assert!(!merge_defaults(&mut data, &defaults));
     }
 

@@ -4,13 +4,13 @@
   "subjects": [
     {
       "id": "matematik",
-      "name": "Mathematics",
+      "name": "Matematik",
       "group": "sayisal",
       "question_count": 40,
       "topics": [
         {
           "id": "ayt-mat-temel-kavramlar",
-          "name": "Fundamental Concepts — Number Sets, Divisibility, GCD/LCM, Primes",
+          "name": "Temel Kavramlar — Sayı Kümeleri, Bölünebilme, EBOB/EKOK, Asal Sayılar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -20,7 +20,7 @@
         },
         {
           "id": "ayt-mat-mantik",
-          "name": "Logic & Propositions — Connectives, Truth Tables, Quantifiers",
+          "name": "Mantık ve Önermeler — Bağlaçlar, Doğruluk Tabloları, Niceleyiciler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -30,7 +30,7 @@
         },
         {
           "id": "ayt-mat-kumeler",
-          "name": "Sets & Cartesian Product — Set Operations, Venn Diagrams",
+          "name": "Kümeler ve Kartezyen Çarpım — Küme İşlemleri, Venn Şeması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -40,7 +40,7 @@
         },
         {
           "id": "ayt-mat-fonksiyonlar",
-          "name": "Functions — Domain & Range, Composite, Inverse, Piecewise, Graphing",
+          "name": "Fonksiyonlar — Tanım ve Değer Kümesi, Bileşke, Ters, Parçalı Fonksiyon, Grafik Çizimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -50,7 +50,7 @@
         },
         {
           "id": "ayt-mat-polinomlar",
-          "name": "Polynomials — Operations, Division, Remainder Theorem, Roots",
+          "name": "Polinomlar — İşlemler, Bölme, Kalan Teoremi, Kökler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -60,7 +60,7 @@
         },
         {
           "id": "ayt-mat-ikinci-derece-denklemler",
-          "name": "Quadratic Equations — Discriminant, Vieta's Formulas, Roots",
+          "name": "İkinci Dereceden Denklemler — Diskriminant, Kök-Katsayı Bağıntıları (Vieta), Kökler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -70,7 +70,7 @@
         },
         {
           "id": "ayt-mat-karmasik-sayilar",
-          "name": "Complex Numbers — Operations, Modulus, Conjugate, Powers of i",
+          "name": "Karmaşık Sayılar — Dört İşlem, Eşlenik, Modül, i'nin Kuvvetleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -80,7 +80,7 @@
         },
         {
           "id": "ayt-mat-ikinci-derece-esitsizlikler",
-          "name": "Quadratic Inequalities & Systems of Inequalities",
+          "name": "İkinci Dereceden Eşitsizlikler ve Eşitsizlik Sistemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -90,7 +90,7 @@
         },
         {
           "id": "ayt-mat-parabol",
-          "name": "Parabola — Vertex, Axis of Symmetry, Graphing Quadratic Functions",
+          "name": "Parabol — Tepe Noktası, Simetri Ekseni, İkinci Dereceden Fonksiyon Grafikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -100,7 +100,7 @@
         },
         {
           "id": "ayt-mat-permutasyon-kombinasyon",
-          "name": "Permutation, Combination & Counting Principles",
+          "name": "Permütasyon, Kombinasyon ve Sayma İlkeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -110,7 +110,7 @@
         },
         {
           "id": "ayt-mat-binom",
-          "name": "Binomial Theorem & Pascal's Triangle",
+          "name": "Binom Açılımı ve Pascal Üçgeni",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -120,7 +120,7 @@
         },
         {
           "id": "ayt-mat-olasilik",
-          "name": "Probability — Classical, Conditional, Independent Events",
+          "name": "Olasılık — Klasik Olasılık, Koşullu Olasılık, Bağımsız Olaylar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -130,7 +130,7 @@
         },
         {
           "id": "ayt-mat-istatistik",
-          "name": "Statistics & Data Analysis — Mean, Median, Mode, Variance, Standard Deviation",
+          "name": "İstatistik ve Veri Analizi — Ortalama, Medyan, Mod, Varyans, Standart Sapma",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -140,7 +140,7 @@
         },
         {
           "id": "ayt-mat-trigonometri",
-          "name": "Trigonometry — Unit Circle, Trig Functions, Sum/Difference Formulas, Half-Angle, Equations",
+          "name": "Trigonometri — Birim Çember, Trigonometrik Fonksiyonlar, Toplam-Fark Formülleri, Yarım Açı, Denklemler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -150,7 +150,7 @@
         },
         {
           "id": "ayt-mat-logaritma",
-          "name": "Logarithms & Exponential Functions — Laws of Logarithms, Exponential/Logarithmic Equations & Inequalities",
+          "name": "Logaritma ve Üstel Fonksiyonlar — Logaritma Özellikleri, Üstel/Logaritmik Denklem ve Eşitsizlikler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -160,7 +160,7 @@
         },
         {
           "id": "ayt-mat-diziler",
-          "name": "Sequences & Series — Arithmetic, Geometric; Partial Sums",
+          "name": "Diziler ve Seriler — Aritmetik ve Geometrik Diziler, Kısmi Toplamlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -170,7 +170,7 @@
         },
         {
           "id": "ayt-mat-limit",
-          "name": "Limits & Continuity — Limit Laws, Indeterminate Forms, Continuity of Functions",
+          "name": "Limit ve Süreklilik — Limit Kuralları, Belirsizlik Durumları, Süreklilik Kavramı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -180,7 +180,7 @@
         },
         {
           "id": "ayt-mat-turev",
-          "name": "Derivatives & Applications — Rules, Chain Rule; Tangent/Normal Lines, Monotonicity, Extrema, Curve Sketching",
+          "name": "Türev ve Uygulamaları — Türev Alma Kuralları, Zincir Kuralı; Teğet/Normal, Artan-Azalanlık, Ekstremum Noktalar, Grafik Çizimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -190,7 +190,7 @@
         },
         {
           "id": "ayt-mat-integral",
-          "name": "Integration & Applications — Indefinite/Definite Integrals, Techniques, Area between Curves",
+          "name": "İntegral ve Uygulamaları — Belirsiz/Belirli İntegral, İntegral Alma Teknikleri, Eğriler Arasında Kalan Alan",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -200,7 +200,7 @@
         },
         {
           "id": "ayt-geo-temel-kavramlar",
-          "name": "Geometry — Angles on Lines & in Triangles",
+          "name": "Geometri — Doğruda ve Üçgende Açılar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -210,7 +210,7 @@
         },
         {
           "id": "ayt-geo-ucgen-aci-uzunluk",
-          "name": "Geometry — Triangle Angle & Side Relations; Angle Bisector, Median, Altitude",
+          "name": "Geometri — Üçgende Açı-Kenar Bağıntıları; Açıortay, Kenarortay, Yükseklik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -220,7 +220,7 @@
         },
         {
           "id": "ayt-geo-benzerlik-eslik",
-          "name": "Geometry — Similarity & Congruence (Similarity Theorems, Scale Factor)",
+          "name": "Geometri — Üçgenlerde Benzerlik ve Eşlik (Benzerlik Teoremleri, Benzerlik Oranı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -230,7 +230,7 @@
         },
         {
           "id": "ayt-geo-ucgende-alan",
-          "name": "Geometry — Area of Triangle & Polygons",
+          "name": "Geometri — Üçgende ve Çokgenlerde Alan",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -240,7 +240,7 @@
         },
         {
           "id": "ayt-geo-cokgen-dortgen",
-          "name": "Geometry — Quadrilaterals & Polygons (Trapezoid, Parallelogram, Rhombus, Rectangle, Square, Deltoid)",
+          "name": "Geometri — Çokgenler ve Dörtgenler (Yamuk, Paralelkenar, Eşkenar Dörtgen, Dikdörtgen, Kare, Deltoid)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -250,7 +250,7 @@
         },
         {
           "id": "ayt-geo-cember-daire",
-          "name": "Geometry — Circle & Disk (Inscribed Angles, Tangents, Arc Length, Sector Area)",
+          "name": "Geometri — Çember ve Daire (Açılar, Teğet, Yay Uzunluğu, Daire Diliminin Alanı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -260,7 +260,7 @@
         },
         {
           "id": "ayt-geo-analitik",
-          "name": "Geometry — Analytic Geometry (Points, Lines, Distance, Circle Equations)",
+          "name": "Geometri — Analitik Geometri (Noktanın ve Doğrunun Analitiği, Uzaklık, Çemberin Analitiği)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -270,7 +270,7 @@
         },
         {
           "id": "ayt-geo-donusum-vektor",
-          "name": "Geometry — Transformations (Translation, Reflection, Rotation) & Vectors",
+          "name": "Geometri — Dönüşüm Geometrisi (Öteleme, Yansıma, Dönme) ve Vektörler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -280,7 +280,7 @@
         },
         {
           "id": "ayt-geo-kati-cisimler",
-          "name": "Geometry — Solid Geometry (Prism, Pyramid, Cylinder, Cone, Sphere — Surface Area & Volume)",
+          "name": "Geometri — Katı Cisimler (Prizma, Piramit, Silindir, Koni, Küre — Alan ve Hacim)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -290,7 +290,7 @@
         },
         {
           "id": "ayt-mat-carpanlara-ayirma",
-          "name": "Factoring & Algebraic Identities — Higher-degree Polynomials, Special Products, Partial Fractions",
+          "name": "Çarpanlara Ayırma ve Özdeşlikler — Yüksek Dereceli Polinomlar, Özel Açılımlar, Basit Kesirlere Ayırma",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -300,7 +300,7 @@
         },
         {
           "id": "ayt-mat-sayi-basamaklari",
-          "name": "Digit Values & Numeral Systems (AYT review)",
+          "name": "Sayı Basamakları ve Basamak Değeri (AYT Tekrarı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -310,7 +310,7 @@
         },
         {
           "id": "ayt-mat-bolme-bolunebilme",
-          "name": "Divisibility Rules & Division (AYT review)",
+          "name": "Bölme ve Bölünebilme Kuralları (AYT Tekrarı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -320,7 +320,7 @@
         },
         {
           "id": "ayt-mat-ebob-ekok",
-          "name": "GCD (EBOB) & LCM (EKOK) (AYT review)",
+          "name": "EBOB ve EKOK (AYT Tekrarı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -330,7 +330,7 @@
         },
         {
           "id": "ayt-mat-rasyonel-ondalik",
-          "name": "Rational & Decimal Numbers (AYT review)",
+          "name": "Rasyonel ve Ondalık Sayılar (AYT Tekrarı)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -340,7 +340,7 @@
         },
         {
           "id": "ayt-mat-uslu-koklu",
-          "name": "Exponents & Radicals (AYT level)",
+          "name": "Üslü ve Köklü Sayılar (AYT Düzeyi)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -350,7 +350,7 @@
         },
         {
           "id": "ayt-mat-esitsizlik-mutlak",
-          "name": "Absolute Value & Inequalities",
+          "name": "Mutlak Değer ve Eşitsizlikler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -360,7 +360,7 @@
         },
         {
           "id": "ayt-mat-oran-oranti",
-          "name": "Ratio & Proportion (AYT applications)",
+          "name": "Oran ve Orantı (AYT Uygulamaları)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -370,7 +370,7 @@
         },
         {
           "id": "ayt-mat-toplam-carpim",
-          "name": "Sum & Product Formulas; Telescoping Products",
+          "name": "Toplam ve Çarpım Sembolleri; Teleskopik Çarpımlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -380,7 +380,7 @@
         },
         {
           "id": "ayt-mat-sureklilik",
-          "name": "Continuity of Functions — Definition, Discontinuities, IVT",
+          "name": "Fonksiyonlarda Süreklilik — Tanım, Süreksizlik Türleri, Ara Değer Teoremi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -390,7 +390,7 @@
         },
         {
           "id": "ayt-mat-problemler",
-          "name": "Advanced Word Problems — Combinatorics, Number Theory, Inequalities",
+          "name": "İleri Düzey Problemler — Sayma, Sayılar Teorisi, Eşitsizlik Problemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -402,13 +402,13 @@
     },
     {
       "id": "fizik",
-      "name": "Physics",
+      "name": "Fizik",
       "group": "sayisal",
       "question_count": 14,
       "topics": [
         {
           "id": "ayt-fizik-vektorler",
-          "name": "Vectors — Representation, Addition, Subtraction, Components, Dot & Cross Product",
+          "name": "Vektörler — Gösterim, Toplama, Çıkarma, Bileşenlerine Ayırma, Skaler ve Vektörel Çarpım",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -418,7 +418,7 @@
         },
         {
           "id": "ayt-fizik-hareket",
-          "name": "Kinematics — 1D Constant Acceleration, Relative Motion, Free Fall, Projectile Motion",
+          "name": "Bağıl Hareket ve Bir Boyutta Sabit İvmeli Hareket — Bağıl Hız, Serbest Düşme, Atış Hareketleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -428,7 +428,7 @@
         },
         {
           "id": "ayt-fizik-newton",
-          "name": "Newton's Laws of Motion — Inertia, Net Force, Action–Reaction; Applications",
+          "name": "Newton'ın Hareket Yasaları — Eylemsizlik, Net Kuvvet, Etki-Tepki; Uygulamalar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -438,7 +438,7 @@
         },
         {
           "id": "ayt-fizik-kuvvet-denge",
-          "name": "Force & Equilibrium — Friction, Inclined Plane, Pulley Systems",
+          "name": "Kuvvet ve Denge — Sürtünme Kuvveti, Eğik Düzlem, Makaralar ve Sistemler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -448,7 +448,7 @@
         },
         {
           "id": "ayt-fizik-is-guc-enerji",
-          "name": "Work, Power & Energy — Work–Energy Theorem, Kinetic & Potential Energy, Conservation",
+          "name": "İş, Güç ve Enerji — İş-Enerji Teoremi, Kinetik ve Potansiyel Enerji, Mekanik Enerjinin Korunumu",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -458,7 +458,7 @@
         },
         {
           "id": "ayt-fizik-itme-momentum",
-          "name": "Impulse & Momentum — Conservation of Momentum, Collisions (Elastic / Inelastic)",
+          "name": "İtme ve Çizgisel Momentum — Momentumun Korunumu, Çarpışmalar (Esnek / Esnek Olmayan)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -468,7 +468,7 @@
         },
         {
           "id": "ayt-fizik-tork-kutle-merkezi",
-          "name": "Torque, Equilibrium & Centre of Mass — Rotational Equilibrium, Static Balance",
+          "name": "Tork, Denge ve Kütle Merkezi — Dönme Dengesi, Statik Denge Şartları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -478,7 +478,7 @@
         },
         {
           "id": "ayt-fizik-basit-makineler",
-          "name": "Simple Machines — Lever, Pulley, Inclined Plane, Wedge, Screw; Mechanical Advantage",
+          "name": "Basit Makineler — Kaldıraç, Makara, Eğik Düzlem, Kama, Vida; Verim ve Mekanik Avantaj",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -488,7 +488,7 @@
         },
         {
           "id": "ayt-fizik-cembersel-hareket",
-          "name": "Circular Motion — Centripetal Acceleration & Force, Angular Velocity, Gravity & Satellites",
+          "name": "Düzgün Çembersel Hareket — Merkezcil İvme ve Kuvvet, Açısal Hız, Kütle Çekim ve Gezegenler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -498,7 +498,7 @@
         },
         {
           "id": "ayt-fizik-basit-harmonik-hareket",
-          "name": "Simple Harmonic Motion — Spring-Mass System, Pendulum, Energy in SHM",
+          "name": "Basit Harmonik Hareket — Yaylı Sarkaç, Basit Sarkaç, BHH'de Enerji",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -508,7 +508,7 @@
         },
         {
           "id": "ayt-fizik-elektrostatik",
-          "name": "Electrostatics — Coulomb's Law, Electric Field, Electric Potential, Capacitors",
+          "name": "Elektrostatik — Coulomb Yasası, Elektrik Alan, Elektriksel Potansiyel, Sığaçlar (Kondansatörler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -518,7 +518,7 @@
         },
         {
           "id": "ayt-fizik-elektrik-akimi-devreler",
-          "name": "Electric Current & Circuits — Ohm's Law, Kirchhoff's Laws, Series/Parallel Circuits, RC Circuits",
+          "name": "Elektrik Akımı ve Devreler — Ohm Yasası, Kirchhoff Kuralları, Seri/Paralel Devreler, RC Devreleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -528,7 +528,7 @@
         },
         {
           "id": "ayt-fizik-manyetizma",
-          "name": "Magnetism — Magnetic Force on Charges & Currents, Magnetic Field, Solenoid",
+          "name": "Manyetizma — Yüklere ve Akımlara Etki Eden Manyetik Kuvvet, Manyetik Alan, Akım Makarası (Bobin)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -538,7 +538,7 @@
         },
         {
           "id": "ayt-fizik-elektromanyetik-induksiyon",
-          "name": "Electromagnetic Induction — Faraday's Law, Lenz's Law, Transformers, AC Current",
+          "name": "Elektromanyetik İndüksiyon — Faraday Yasası, Lenz Yasası, Transformatörler, AC Akım",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -548,7 +548,7 @@
         },
         {
           "id": "ayt-fizik-dalgalar",
-          "name": "Waves — Wave Properties, Interference, Diffraction, Sound Waves, Doppler Effect",
+          "name": "Dalgalar — Dalga Mekaniği, Girişim, Kırınım, Ses Dalgaları, Doppler Olayı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -558,7 +558,7 @@
         },
         {
           "id": "ayt-fizik-isik-optik",
-          "name": "Light & Optics — Reflection, Refraction, Mirrors, Lenses, Double-Slit Interference",
+          "name": "Optik — Yansıma, Kırılma, Aynalar, Mercekler, Çift Yarıkta Girişim",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -568,7 +568,7 @@
         },
         {
           "id": "ayt-fizik-modern-fizik",
-          "name": "Modern Physics — Photoelectric Effect, Compton Scattering, Bohr Model, Wave-Particle Duality, Special Relativity",
+          "name": "Modern Fizik — Fotoelektrik Olay, Compton Saçılması, Bohr Atom Modeli, Dalga-Parçacık İkiliği, Özel Görelilik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -578,7 +578,7 @@
         },
         {
           "id": "ayt-fizik-modern-teknoloji",
-          "name": "Nuclear Physics & Modern Technology — Radioactivity, Fission/Fusion, Semiconductors, Lasers, Nanotechnology",
+          "name": "Modern Fiziğin Teknolojideki Uygulamaları — Radyoaktivite, Fisyon/Füzyon, Yarı İletkenler, Lazerler, Nanoteknoloji",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -588,7 +588,7 @@
         },
         {
           "id": "ayt-fizik-alternatif-akim",
-          "name": "Alternating Current — AC Generators, RMS Values, LC Circuits, Transformers",
+          "name": "Alternatif Akım — AC Jeneratörleri, Etkin Değer, LC Devreleri, Transformatörler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -598,7 +598,7 @@
         },
         {
           "id": "ayt-fizik-ozel-gorelilik",
-          "name": "Special Relativity — Time Dilation, Length Contraction, Mass-Energy Equivalence",
+          "name": "Özel Görelilik — Zaman Genişlemesi, Uzunluk Kısalması, Kütle-Enerji Eşdeğerliği",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -610,13 +610,13 @@
     },
     {
       "id": "kimya",
-      "name": "Chemistry",
+      "name": "Kimya",
       "group": "sayisal",
       "question_count": 13,
       "topics": [
         {
           "id": "ayt-kimya-kuantum-modeli",
-          "name": "Modern Atomic Theory — Quantum Model, Electron Configuration, Periodic Properties",
+          "name": "Modern Atom Teorisi — Kuantum Modeli, Elektron Dizilimleri, Periyodik Özellikler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -626,7 +626,7 @@
         },
         {
           "id": "ayt-kimya-gazlar",
-          "name": "Gases — Gas Laws (Boyle, Charles, Gay-Lussac), Ideal Gas Law, Kinetic Theory, Partial Pressures, Real Gases",
+          "name": "Gazlar — Gaz Yasaları (Boyle, Charles, Gay-Lussac), İdeal Gaz Yasası, Kinetik Teori, Kısmi Basınçlar, Gerçek Gazlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -636,7 +636,7 @@
         },
         {
           "id": "ayt-kimya-cozeltiler",
-          "name": "Liquid Solutions — Concentration Units, Colligative Properties (Boiling Point Elevation, Freezing Point Depression, Osmosis), Solubility Factors",
+          "name": "Sıvı Çözeltiler ve Çözünürlük — Derişim Birimleri, Koligatif Özellikler (Kaynama Noktası Yükselmesi, Donma Noktası Alçalması, Osmoz), Çözünürlüğe Etki Eden Faktörler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -646,7 +646,7 @@
         },
         {
           "id": "ayt-kimya-termokimya",
-          "name": "Thermochemistry — Enthalpy, Bond Energies, Hess's Law, Calorimetry",
+          "name": "Kimyasal Tepkimelerde Enerji (Termokimya) — Entalpi, Bağ Enerjileri, Hess Yasası, Kalorimetri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -656,7 +656,7 @@
         },
         {
           "id": "ayt-kimya-hiz",
-          "name": "Chemical Kinetics — Reaction Rate, Rate Law, Activation Energy, Factors Affecting Rate, Catalysis",
+          "name": "Kimyasal Tepkimelerde Hız — Tepkime Hızı, Hız Bağıntısı, Aktivasyon Enerjisi, Hıza Etki Eden Faktörler, Katalizör",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -666,7 +666,7 @@
         },
         {
           "id": "ayt-kimya-denge",
-          "name": "Chemical Equilibrium — Equilibrium Constants (Kc, Kp), Le Chatelier's Principle, Factors Affecting Equilibrium",
+          "name": "Kimyasal Denge — Denge Bağıntıları (Kc, Kp), Le Chatelier İlkesi, Dengeye Etki Eden Faktörler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -676,7 +676,7 @@
         },
         {
           "id": "ayt-kimya-asit-baz-denge",
-          "name": "Acid–Base Equilibrium — Water Autoionisation, pH/pOH, Weak Acids & Bases (Ka, Kb), Buffer Solutions, Hydrolysis, Titration",
+          "name": "Asit-Baz Dengesi — Suyun Otoiyonizasyonu, pH/pOH, Zayıf Asit ve Bazlar (Ka, Kb), Tampon Çözeltiler, Hidroliz, Titrasyon",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -686,7 +686,7 @@
         },
         {
           "id": "ayt-kimya-cozunurluk-dengesi",
-          "name": "Solubility Equilibrium — Solubility Product Constant (Ksp), Common Ion Effect",
+          "name": "Çözünürlük Dengesi — Çözünürlük Çarpımı (Kçç), Ortak İyon Etkisi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -696,7 +696,7 @@
         },
         {
           "id": "ayt-kimya-elektrokimya",
-          "name": "Electrochemistry — Redox Reactions, Galvanic Cells, Standard Electrode Potentials, Electrolysis, Corrosion",
+          "name": "Kimya ve Elektrik (Elektrokimya) — Redoks Tepkimeleri, Galvanik Hücreler (Piller), Standart Yarı Hücre Potansiyelleri, Elektroliz, Korozyon",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -706,7 +706,7 @@
         },
         {
           "id": "ayt-kimya-karbon-kimyasi",
-          "name": "Introduction to Carbon Chemistry — Hybridisation (sp, sp², sp³), Molecular Geometry, Structural Isomerism",
+          "name": "Karbon Kimyasına Giriş — Hibritleşme (sp, sp², sp³), Molekül Geometrisi, Yapı İzomerliği",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -716,7 +716,7 @@
         },
         {
           "id": "ayt-kimya-hidrokarbonlar",
-          "name": "Hydrocarbons — Alkanes, Alkenes, Alkynes, Aromatic Compounds (Benzene); Nomenclature & Reactions",
+          "name": "Organik Kimya — Hidrokarbonlar (Alkanlar, Alkenler, Alkinler, Aromatik Bileşikler / Benzen); Adlandırma ve Tepkimeler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -726,7 +726,7 @@
         },
         {
           "id": "ayt-kimya-fonksiyonel-gruplar",
-          "name": "Functional Groups — Alcohols, Ethers, Aldehydes, Ketones, Carboxylic Acids, Esters, Amines; Reactions & Properties",
+          "name": "Organik Kimya — Fonksiyonel Gruplar (Alkoller, Eterler, Aldehitler, Ketonlar, Karboksilik Asitler, Esterler, Aminler); Özellikler ve Tepkimeler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -736,7 +736,7 @@
         },
         {
           "id": "ayt-kimya-yasam-kimyasi",
-          "name": "Life Chemistry & Energy Sources — Polymers, Biomolecules, Fossil Fuels, Renewable Energy, Nanotechnology",
+          "name": "Enerji Kaynakları ve Bilimsel Gelişmeler — Polimerler, Biyomoleküller, Fosil Yakıtlar, Yenilenebilir Enerji, Nanoteknoloji",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -746,7 +746,7 @@
         },
         {
           "id": "ayt-kimya-periyodik-sistem",
-          "name": "Periodic Table & Periodic Properties — Atomic Radius, Ionisation Energy, Electronegativity",
+          "name": "Periyodik Sistem ve Periyodik Özellikler — Atom Yarıçapı, İyonlaşma Enerjisi, Elektronegatiflik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -756,7 +756,7 @@
         },
         {
           "id": "ayt-kimya-etkilesimler",
-          "name": "Chemical Bonding & Molecular Geometry — VSEPR, Hybridisation, Intermolecular Forces",
+          "name": "Kimyasal Türler Arası Etkileşimler ve Molekül Geometrisi — VSEPR Modeli, Hibritleşme, Moleküller Arası Kuvvetler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -766,7 +766,7 @@
         },
         {
           "id": "ayt-kimya-hesaplamalar",
-          "name": "Stoichiometry & Chemical Calculations — Mole, Limiting Reagent, Yield",
+          "name": "Kimyasal Hesaplamalar ve Stokiyometri — Mol Kavramı, Sınırlayıcı Bileşen, Tepkime Verimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -776,7 +776,7 @@
         },
         {
           "id": "ayt-kimya-tepkimeler",
-          "name": "Chemical Reactions — Reaction Types, Balancing, Reaction Enthalpy",
+          "name": "Kimyasal Tepkime Türleri, Denkleştirme ve Tepkime Entalpisi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -786,7 +786,7 @@
         },
         {
           "id": "ayt-kimya-aromatik",
-          "name": "Aromatic Compounds — Benzene, Nomenclature, Substitution Reactions",
+          "name": "Aromatik Bileşikler — Benzen Halkası, Adlandırma, Aromatik Sübstitüsyon Tepkimeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -796,7 +796,7 @@
         },
         {
           "id": "ayt-kimya-organik-tepkimeler",
-          "name": "Organic Reactions — Addition, Substitution, Elimination, Condensation",
+          "name": "Organik Tepkimeler — Katılma, Yer Değiştirme, Ayrılma, Kondenzasyon",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -806,7 +806,7 @@
         },
         {
           "id": "ayt-kimya-polimerler",
-          "name": "Polymers & Biomolecules — Natural & Synthetic Polymers, Proteins, Carbohydrates, Lipids",
+          "name": "Polimerler ve Biyomoleküller — Doğal ve Sentetik Polimerler, Proteinler, Karbonhidratlar, Lipitler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -818,13 +818,13 @@
     },
     {
       "id": "biyoloji",
-      "name": "Biology",
+      "name": "Biyoloji",
       "group": "sayisal",
       "question_count": 13,
       "topics": [
         {
           "id": "ayt-biyo-sinir",
-          "name": "Nervous System — Neuron Structure, CNS & PNS, Spinal Cord, Reflex Arc, Brain Regions",
+          "name": "Sinir Sistemi — Nöronun Yapısı, Merkezi ve Çevresel Sinir Sistemi, Omurilik, Refleks Yayı, Beyin Bölgeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -834,7 +834,7 @@
         },
         {
           "id": "ayt-biyo-endokrin",
-          "name": "Endocrine System — Hormones, Glands (Hypothalamus, Pituitary, Thyroid, Adrenal, Pancreas), Feedback Mechanisms",
+          "name": "Endokrin Sistem — Hormonlar, İç Salgı Bezleri (Hipotalamus, Hipofiz, Tiroit, Böbrek Üstü, Pankreas), Geri Bildirim (Feedback)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -844,7 +844,7 @@
         },
         {
           "id": "ayt-biyo-duyu-organlari",
-          "name": "Sense Organs — Eye (Vision), Ear (Hearing & Balance), Nose, Tongue, Skin",
+          "name": "Duyu Organları — Göz (Görme), Kulak (İşitme ve Denge), Burun, Dil, Deri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -854,7 +854,7 @@
         },
         {
           "id": "ayt-biyo-destek-hareket",
-          "name": "Support & Locomotion System — Skeletal Structure, Bone Types, Joints; Muscle Types (Smooth, Cardiac, Skeletal), Muscle Contraction",
+          "name": "Destek ve Hareket Sistemi — İskelet Yapısı, Kemik Türleri, Eklemler; Kas Türleri (Düz, Kalp, Çizgili Kas), Kas Kasılması Mekanizması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -864,7 +864,7 @@
         },
         {
           "id": "ayt-biyo-sindirim",
-          "name": "Digestive System — Organs, Mechanical & Chemical Digestion, Absorption, Liver & Pancreas Functions",
+          "name": "Sindirim Sistemi — Sindirim Organları, Mekanik ve Kimyasal Sindirim, Emilim, Karaciğer ve Pankreasın Görevleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -874,7 +874,7 @@
         },
         {
           "id": "ayt-biyo-dolasim",
-          "name": "Circulatory System — Heart Structure, Blood Vessels, Blood Types, Lymphatic System; Blood Clotting",
+          "name": "Dolaşım Sistemi — Kalbin Yapısı ve Çalışması, Kan Damarları, Kan Grupları, Lenf Dolaşımı; Kanın Pıhtılaşması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -884,7 +884,7 @@
         },
         {
           "id": "ayt-biyo-bagisiklik",
-          "name": "Immune System — Innate & Adaptive Immunity, Antibodies, Vaccines, Active/Passive Immunity",
+          "name": "Bağışıklık Sistemi — Özgül Olmayan ve Özgül Bağışıklık, Antikorlar, Aşı ve Serum, Aktif/Pasif Bağışıklık",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -894,7 +894,7 @@
         },
         {
           "id": "ayt-biyo-solunum",
-          "name": "Respiratory System — Breathing Mechanics, Gas Exchange, External & Internal Respiration",
+          "name": "Solunum Sistemi — Solunum Mekaniği, Gaz Alışverişi, Dış ve İç Solunum, Solunum Gazlarının Taşınması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -904,7 +904,7 @@
         },
         {
           "id": "ayt-biyo-bosaltim",
-          "name": "Excretory System — Kidney Structure, Nephron, Urine Formation; Kidney's Non-Excretory Roles",
+          "name": "Boşaltım Sistemi (Üriner Sistem) — Böbreğin Yapısı, Nefron, İdrar Oluşumu; Homeostaz",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -914,7 +914,7 @@
         },
         {
           "id": "ayt-biyo-ureme",
-          "name": "Reproductive System & Embryology — Human Reproductive Organs, Menstrual Cycle, Fertilisation, Embryonic Development",
+          "name": "Üreme Sistemi ve Embriyonik Gelişim — İnsanda Üreme Organları, Menstrüal Döngü, Döllenme, Embriyonun Gelişimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -924,7 +924,7 @@
         },
         {
           "id": "ayt-biyo-ekosistem",
-          "name": "Community & Population Ecology — Interspecies Relations (Predation, Competition, Symbiosis), Population Dynamics & Growth Curves",
+          "name": "Komünite ve Popülasyon Ekolojisi — Tür İçi ve Türler Arası İlişkiler (Av-Avcı, Rekabet, Simbiyoz), Popülasyon Dinamiği ve Büyüme Eğrileri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -934,7 +934,7 @@
         },
         {
           "id": "ayt-biyo-molekuler-kalitim",
-          "name": "Nucleic Acids & Molecular Genetics — DNA/RNA Structure, Replication, Transcription, Translation, Genetic Code",
+          "name": "Nükleik Asitler ve Protein Sentezi — DNA/RNA Yapısı, Replikasyon, Transkripsiyon, Translasyon, Genetik Kod",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -944,7 +944,7 @@
         },
         {
           "id": "ayt-biyo-fotosentez-solunum",
-          "name": "Cellular Energy Transformations — Photosynthesis (Light & Dark Reactions), Cellular Respiration (Glycolysis, Krebs, ETC), Fermentation",
+          "name": "Hücresel Enerji Dönüşümleri — Fotosentez (Işığa Bağımlı ve Bağımsız Reaksiyonlar), Kemosentez, Hücresel Solunum (Glikoliz, Krebs, ETS), Fermantasyon",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -954,7 +954,7 @@
         },
         {
           "id": "ayt-biyo-bitki-tasima-ureme",
-          "name": "Plant Biology — Tissues, Root/Stem/Leaf Structure, Water & Mineral Transport, Growth Hormones, Photoperiodism, Tropisms",
+          "name": "Bitki Biyolojisi — Bitkisel Dokular, Kök/Gövde/Yaprak Yapısı, Su ve Madde Taşınması, Bitkisel Hormonlar, Fotoperiyodizm, Tropizma ve Nasti",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -964,7 +964,7 @@
         },
         {
           "id": "ayt-biyo-biyoteknoloji",
-          "name": "Biotechnology & Genetics — Genetic Engineering, GMOs, Cloning, DNA Fingerprinting, Gene Therapy; Evolution",
+          "name": "Genden Proteine ve Biyoteknoloji — Genetik Mühendisliği, GDO, Klonlama, DNA Parmak İzi, Gen Terapisi; Canlılar ve Çevre",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -974,7 +974,7 @@
         },
         {
           "id": "ayt-biyo-temel-bilesenler",
-          "name": "Fundamental Components of Life — Inorganic & Organic Molecules (Water, Carbohydrates, Lipids, Proteins, Nucleic Acids)",
+          "name": "Canlıların Temel Bileşenleri — İnorganik ve Organik Moleküller (Su, Karbonhidratlar, Lipitler, Proteinler, Nükleik Asitler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -984,7 +984,7 @@
         },
         {
           "id": "ayt-biyo-hucre-organeller",
-          "name": "Cell Organelles — Detailed Structure & Function",
+          "name": "Hücre ve Organelleri — Organellerin Ayrıntılı Yapısı ve Görevleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -994,7 +994,7 @@
         },
         {
           "id": "ayt-biyo-hucre-zari",
-          "name": "Cell Membrane & Substance Transport — Osmosis, Diffusion, Active/Passive Transport",
+          "name": "Hücre Zarı ve Madde Geçişleri — Osmoz, Difüzyon, Aktif ve Pasif Taşıma",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1004,7 +1004,7 @@
         },
         {
           "id": "ayt-biyo-hucre-bolunmeleri",
-          "name": "Cell Division — Mitosis, Meiosis, Cell Cycle; Asexual & Sexual Reproduction",
+          "name": "Hücre Bölünmeleri — Mitoz, Mayoz, Hücre Döngüsü; Eşeysiz ve Eşeyli Üreme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1014,7 +1014,7 @@
         },
         {
           "id": "ayt-biyo-kalitim",
-          "name": "Heredity & Genetics — Mendelian Laws, Pedigrees, Non-Mendelian Inheritance, Sex Determination",
+          "name": "Kalıtım ve Genetik — Mendel İlkeleri, Eşbaskınlık, Çok Alellilik, Kan Grupları, Cinsiyete Bağlı Kalıtım",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1024,7 +1024,7 @@
         },
         {
           "id": "ayt-biyo-protein-sentezi",
-          "name": "Gene Expression — Transcription, Translation, Codon Table, Mutations",
+          "name": "Gen İfadesi ve Protein Sentezi — Transkripsiyon, Translasyon, Kodon Tablosu, Mutasyonlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1034,7 +1034,7 @@
         },
         {
           "id": "ayt-biyo-siniflandirma",
-          "name": "Classification of Living Things — Taxonomy, Phylogeny, Five/Six Kingdoms",
+          "name": "Canlıların Çeşitliliği ve Sınıflandırılması — İkili Adlandırma, Canlılar Âleminin Özellikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1044,7 +1044,7 @@
         },
         {
           "id": "ayt-biyo-bitki-dokular",
-          "name": "Plant Tissues — Meristem, Dermal, Vascular, Ground Tissues; Root, Stem, Leaf Structure",
+          "name": "Bitkisel Dokular ve Organlar — Meristem, Temel, İletim, Örtü Doku; Kök, Gövde, Yaprak Yapısı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1054,7 +1054,7 @@
         },
         {
           "id": "ayt-biyo-cevre",
-          "name": "Environment & Conservation — Pollution, Habitat Loss, Biodiversity, Sustainability",
+          "name": "Çevre ve Biyoçeşitliliğin Korunması — Çevre Kirliliği, Habitat Kaybı, Biyoçeşitlilik, Sürdürülebilirlik",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1066,13 +1066,13 @@
     },
     {
       "id": "edebiyat",
-      "name": "Turkish Language & Literature",
+      "name": "Türk Dili ve Edebiyatı",
       "group": "edebiyat_sosyal1",
       "question_count": 24,
       "topics": [
         {
           "id": "ayt-edebiyat-anlam-bilgisi",
-          "name": "Meaning in Context — Words, Idioms, Proverbs, Sentence & Paragraph Interpretation",
+          "name": "Anlam Bilgisi — Sözcükte, Cümlede Anlam, Deyim ve Atasözleri, Paragrafta Anlam ve Yorum",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1082,7 +1082,7 @@
         },
         {
           "id": "ayt-edebiyat-siir-bilgisi",
-          "name": "Poetry Analysis — Meter (Aruz & Hece), Rhyme, Redif, Stanza Structure & Verse Types",
+          "name": "Şiir Bilgisi — Şiirde Ölçü (Aruz ve Hece), Kafiye, Redif, Nazım Birimi ve Nazım Biçimleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1092,7 +1092,7 @@
         },
         {
           "id": "ayt-edebiyat-edebi-sanatlar",
-          "name": "Figures of Speech & Literary Devices — Teşbih, İstiare, Mecaz-ı Mürsel, Tezat, Tenasüp, Hüsn-i Talil, Tecahül-i Arif, Kinaye, Tariz, Tevriye",
+          "name": "Edebî Sanatlar — Teşbih, İstiare, Mecaz-ı Mürsel, Tezat, Tenasüp, Hüsn-i Talil, Tecahül-i Arif, Kinaye, Tariz, Tevriye",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1102,7 +1102,7 @@
         },
         {
           "id": "ayt-edebiyat-metin-turleri",
-          "name": "Literary Genres & Forms — Poetry, Epic, Folk Story, Drama, Novel, Short Story, Essay, Memoir, Criticism",
+          "name": "Metin Türleri — Şiir, Destan, Masal, Halk Hikâyesi, Tiyatro, Roman, Hikâye, Deneme, Makale, Anı, Eleştiri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1112,7 +1112,7 @@
         },
         {
           "id": "ayt-edebiyat-islamiyet-oncesi-ve-gecis",
-          "name": "Pre-Islamic Turkish Literature & Transition Period — Sagu, Koşuk, Sav, Destan; Kutadgu Bilig, Atabetü'l-Hakayık, Divanü Lugati't-Türk, Divan-ı Hikmet, Dede Korkut",
+          "name": "İslamiyet Öncesi Türk Edebiyatı ve Geçiş Dönemi — Sagu, Koşuk, Sav, Destan; Kutadgu Bilig, Atabetü'l-Hakayık, Divanü Lugâti't-Türk, Divan-ı Hikmet, Dede Korkut",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1122,7 +1122,7 @@
         },
         {
           "id": "ayt-edebiyat-halk-edebiyati",
-          "name": "Turkish Folk Literature — Anonymous, Âşık (Minstrel), and Sufi/Tekke Traditions & Poets (Yunus Emre, Karacaoğlan, Dadaloğlu, Köroğlu, Pir Sultan Abdal, Âşık Veysel)",
+          "name": "Halk Edebiyatı — Anonim, Âşık ve Tekke/Tasavvuf Edebiyatı ve Temsilcileri (Yunus Emre, Karacaoğlan, Dadaloğlu, Köroğlu, Pir Sultan Abdal, Âşık Veysel)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1132,7 +1132,7 @@
         },
         {
           "id": "ayt-edebiyat-divan-nazim",
-          "name": "Divan Literature — Poetics, Verse Forms (Gazel, Kaside, Mesnevi, Rubai, Şarkı, Murabba, Tuyuğ) & Mazmunlar",
+          "name": "Divan Edebiyatı Nazım Şekilleri ve Mazmunlar — Gazel, Kaside, Mesnevi, Rubai, Şarkı, Murabba, Tuyuğ",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1142,7 +1142,7 @@
         },
         {
           "id": "ayt-edebiyat-divan-nesir-ve-sairler",
-          "name": "Divan Literature — Prose, Chronology & Key Authors (Fuzûlî, Bâkî, Nâbî, Nedim, Şeyh Gâlib, Nef'î, Kâtip Çelebi, Evliyâ Çelebi)",
+          "name": "Divan Edebiyatı Nesri ve Şairleri — Fuzûlî, Bâkî, Nâbî, Nedim, Şeyh Gâlib, Nef'î, Kâtip Çelebi, Evliyâ Çelebi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1152,7 +1152,7 @@
         },
         {
           "id": "ayt-edebiyat-tanzimat-donemi",
-          "name": "Tanzimat Literature — 1st & 2nd Periods, Westernization, Genres & Figures (Şinasi, Namık Kemal, Ziya Paşa, Recaizade Mahmut Ekrem, Abdülhak Hâmit, Samipaşazade Sezai, Nabizade Nâzım)",
+          "name": "Tanzimat Edebiyatı — I. ve II. Dönem Özellikleri, Batılılaşma, Türler ve Temsilcileri (Şinasi, Namık Kemal, Ziya Paşa, Recaizade Mahmut Ekrem, Abdülhak Hâmit, Samipaşazade Sezai, Nabizade Nâzım)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1162,7 +1162,7 @@
         },
         {
           "id": "ayt-edebiyat-servetifunun-ve-fecriati",
-          "name": "Servet-i Fünun (Edebiyat-ı Cedide) & Fecr-i Âti — Themes, Symbolism/Parnassianism & Authors (Tevfik Fikret, Cenap Şahabettin, Halit Ziya, Mehmet Rauf, Ahmet Hâşim)",
+          "name": "Servet-i Fünun (Edebiyat-ı Cedide) ve Fecr-i Âti Edebiyatı — Temalar, Edebi Akımlar ve Temsilcileri (Tevfik Fikret, Cenap Şahabettin, Halit Ziya, Mehmet Rauf, Ahmet Hâşim)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1172,7 +1172,7 @@
         },
         {
           "id": "ayt-edebiyat-milli-edebiyat",
-          "name": "National Literature (Millî Edebiyat) — Genç Kalemler, Plain Turkish, National Consciousness & Authors (Ömer Seyfettin, Ziya Gökalp, Mehmet Âkif, Yahya Kemal, Halide Edib, Yakup Kadri, Reşat Nuri, Refik Halit)",
+          "name": "Millî Edebiyat Dönemi — Genç Kalemler, Sade Türkçe, Millî Bilinç ve Temsilcileri (Ömer Seyfettin, Ziya Gökalp, Mehmet Âkif, Yahya Kemal, Halide Edib, Yakup Kadri, Reşat Nuri, Refik Halit)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1182,7 +1182,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-saf",
-          "name": "Republic Period Poetry — Pure Poetry (Saf / Öz Şiir: Ahmet Hamdi Tanpınar, Cahit Sıtkı, Necip Fazıl, Asaf Hâlet Çelebi, Ahmet Muhip Dıranas, Yedi Meşaleciler)",
+          "name": "Cumhuriyet Dönemi Şiiri — Saf / Öz Şiir Anlayışı (Ahmet Hamdi Tanpınar, Cahit Sıtkı, Necip Fazıl, Asaf Hâlet Çelebi, Ahmet Muhip Dıranas, Yedi Meşaleciler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1192,7 +1192,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-toplumcu",
-          "name": "Republic Period Poetry — Socialist Realist Poetry (Nâzım Hikmet, Rıfat Ilgaz, Ahmed Arif, Hasan Hüseyin, Ceyhun Atuf Kansu)",
+          "name": "Cumhuriyet Dönemi Şiiri — Toplumcu Gerçekçi Şiir (Nâzım Hikmet, Rıfat Ilgaz, Ahmed Arif, Hasan Hüseyin, Ceyhun Atuf Kansu)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1202,7 +1202,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-milli",
-          "name": "Republic Period Poetry — National-Romantic & Folk Tradition (Arif Nihat Asya, Kemalettin Kamu, Orhan Şaik Gökyay, Zeki Ömer Defne, Behçet Kemal)",
+          "name": "Cumhuriyet Dönemi Şiiri — Millî Edebiyat Zevk ve Anlayışını Sürdüren Şiir (Arif Nihat Asya, Kemalettin Kamu, Orhan Şaik Gökyay, Zeki Ömer Defne, Behçet Kemal)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1212,7 +1212,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-garip",
-          "name": "Republic Period Poetry — Garip Movement (First New: Orhan Veli, Oktay Rifat, Melih Cevdet) & Garip Outside Poets",
+          "name": "Cumhuriyet Dönemi Şiiri — Garip Akımı (I. Yeni: Orhan Veli, Oktay Rifat, Melih Cevdet) ve Garip Dışında Yeniliği Sürdürenler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1222,7 +1222,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-ikinci-yeni",
-          "name": "Republic Period Poetry — Second New (İkinci Yeni: Cemal Süreya, İlhan Berk, Edip Cansever, Turgut Uyar, Ece Ayhan, Ülkü Tamer, Sezai Karakoç)",
+          "name": "Cumhuriyet Dönemi Şiiri — İkinci Yeni Şiiri (Cemal Süreya, İlhan Berk, Edip Cansever, Turgut Uyar, Ece Ayhan, Ülkü Tamer, Sezai Karakoç)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1232,7 +1232,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-1960-sonrasi",
-          "name": "Republic Period Poetry — 1960-1980 Social Realist Poetry, Religious-Mystical Poets (İsmet Özel, Ataol Behramoğlu, Hilmi Yavuz, Erdem Bayazıt, Cahit Zarifoğlu)",
+          "name": "Cumhuriyet Dönemi Şiiri — 1960 Sonrası Toplumcu Gerçekçi ve Dini-Mistik Şiir (İsmet Özel, Ataol Behramoğlu, Hilmi Yavuz, Erdem Bayazıt, Cahit Zarifoğlu)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1242,7 +1242,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-siir-1980-sonrasi",
-          "name": "Republic Period Poetry — Post-1980 Poetry & Contemporary Trends (Haydar Ergülen, Hüseyin Atlansoy, Metin Celal, Tuğrul Tanyol)",
+          "name": "Cumhuriyet Dönemi Şiiri — 1980 Sonrası Türk Şiiri ve Çağdaş Eğilimler (Haydar Ergülen, Hüseyin Atlansoy, Metin Celal, Tuğrul Tanyol)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1252,7 +1252,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-roman-milli-gercekci",
-          "name": "Republic Period Prose — National-Romantic & Traditional Realist Novels (Yakup Kadri, Halide Edib, Reşat Nuri, Mithat Cemal Kuntay, Refik Halit Karay)",
+          "name": "Cumhuriyet Dönemi Romanı — Millî Edebiyat Zevk ve Anlayışını Sürdürenler (Yakup Kadri, Halide Edib, Reşat Nuri, Mithat Cemal Kuntay, Refik Halit Karay)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1262,7 +1262,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-roman-toplumcu",
-          "name": "Republic Period Prose — Socialist Realist & Village Literature (Yaşar Kemal, Orhan Kemal, Kemal Tahir, Fakir Baykurt, Sabahattin Ali, Mahmut Makal, Sadri Ertem)",
+          "name": "Cumhuriyet Dönemi Romanı — Toplumcu Gerçekçi ve Köy Romanı (Yaşar Kemal, Orhan Kemal, Kemal Tahir, Fakir Baykurt, Sabahattin Ali, Mahmut Makal, Sadri Ertem)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1272,7 +1272,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-roman-bireyin-ic-dunyasi",
-          "name": "Republic Period Prose — Psychological Novels & Inner World of Individual (Peyami Safa, Ahmet Hamdi Tanpınar, Tarık Buğra, Samiha Ayverdi, Mustafa Kutlu)",
+          "name": "Cumhuriyet Dönemi Romanı — Bireyin İç Dünyasını Esas Alan Eserler (Peyami Safa, Ahmet Hamdi Tanpınar, Tarık Buğra, Samiha Ayverdi, Mustafa Kutlu)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1282,7 +1282,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-roman-modernist",
-          "name": "Republic Period Prose — Modernist & Postmodernist Literature (Oğuz Atay, Yusuf Atılgan, Adalet Ağaoğlu, Ferit Edgü, Bilge Karasu, Latife Tekin, Orhan Pamuk, İhsan Oktay Anar)",
+          "name": "Cumhuriyet Dönemi Romanı — Modernist ve Postmodernist Edebiyat (Oğuz Atay, Yusuf Atılgan, Adalet Ağaoğlu, Ferit Edgü, Bilge Karasu, Latife Tekin, Orhan Pamuk, İhsan Oktay Anar)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1292,7 +1292,7 @@
         },
         {
           "id": "ayt-edebiyat-cumhuriyet-tiyatro",
-          "name": "Republic Period Drama & Theater — Haldun Taner, Turgut Özakman, Güngör Dilmen, Recep Bilginer, Refik Erduran, Turan Oflazoğlu, Necati Cumalı",
+          "name": "Cumhuriyet Dönemi Tiyatrosu — Haldun Taner, Turgut Özakman, Güngör Dilmen, Recep Bilginer, Refik Erduran, Turan Oflazoğlu, Necati Cumalı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1302,7 +1302,7 @@
         },
         {
           "id": "ayt-edebiyat-ogretici-metinler",
-          "name": "Instructive Texts & Non-Fiction — Essay, Memoir, Criticism, Travelogue (Nurullah Ataç, Suut Kemal Yetkin, Cemil Meriç, Falih Rıfkı Atay, Şevket Süreyya Aydemir)",
+          "name": "Öğretici Metinler — Deneme, Anı, Eleştiri, Gezi Yazısı (Nurullah Ataç, Suut Kemal Yetkin, Cemil Meriç, Falih Rıfkı Atay, Şevket Süreyya Aydemir)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1312,7 +1312,7 @@
         },
         {
           "id": "ayt-edebiyat-edebiyat-akimlari-dunya",
-          "name": "Literary Movements & World Literature — Classicism, Romanticism, Realism, Naturalism, Parnassianism, Symbolism, Surrealism, Existentialism; Major World Authors",
+          "name": "Edebî Akımlar ve Dünya Edebiyatı — Klasisizm, Romantizm, Realizm, Natüralizm, Parnasizm, Sembolizm, Sürrealizm, Egzistansiyalizm; Dünya Edebiyatı Başyapıtları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1324,13 +1324,13 @@
     },
     {
       "id": "tarih1",
-      "name": "History-1",
+      "name": "Tarih-1",
       "group": "edebiyat_sosyal1",
       "question_count": 10,
       "topics": [
         {
           "id": "ayt-tar1-tarih-ve-zaman",
-          "name": "History & Time — Historical Methodology, Chronology, Sources & Historiography",
+          "name": "Tarih ve Zaman — Tarihsel Yöntem, Kronoloji, Kaynaklar ve Tarih Yazıcılığı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1340,7 +1340,7 @@
         },
         {
           "id": "ayt-tar1-insanligin-ilk-donemleri",
-          "name": "First Ages of Humanity — Paleolithic to Iron Age, Mesopotamia, Anatolia, Egypt, Greece, Rome, Iran & Central Asian Civilizations",
+          "name": "İnsanlığın İlk Dönemleri — Taş Çağından Demir Çağına; Mezopotamya, Anadolu, Mısır, Yunan, Roma, İran ve Orta Asya Medeniyetleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1350,7 +1350,7 @@
         },
         {
           "id": "ayt-tar1-orta-cagda-dunya",
-          "name": "Medieval World — Feudalism, Crusades, Byzantine Empire, Sassanids, Mongol Empire, Law Systems (Justinian, 12 Tables)",
+          "name": "Orta Çağ'da Dünya — Feodalizm, Haçlı Seferleri, Bizans İmparatorluğu, Sasani Devleti, Moğol İmparatorluğu, Orta Çağ Hukuku",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1360,7 +1360,7 @@
         },
         {
           "id": "ayt-tar1-ilk-ve-orta-cagda-turk-dunyasi",
-          "name": "Turks in Antiquity and Middle Ages — Central Asian Steppe States (Hun, Göktürk, Uygur), Culture, Religion, Military Tradition & Statecraft",
+          "name": "İlk ve Orta Çağlarda Türk Dünyası — Bozkır Kültürü, Hunlar, Göktürkler, Uygurlar; Kültür, Din, Askeri Teşkilat ve Devlet Yönetimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1370,7 +1370,7 @@
         },
         {
           "id": "ayt-tar1-islam-medeniyetinin-dogusu",
-          "name": "Birth and Expansion of Islamic Civilization — Life of Prophet Muhammad, Four Caliphs, Umayyad and Abbasid Caliphates, Islamic Golden Age & Institutions",
+          "name": "İslam Medeniyetinin Doğuşu — Hz. Muhammed Dönemi, Dört Halife, Emeviler, Abbasiler, İslam'ın Altın Çağı ve Kurumları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1380,7 +1380,7 @@
         },
         {
           "id": "ayt-tar1-turklerin-islamiyeti-kabulu",
-          "name": "Turks' Acceptance of Islam & First Muslim Turkish States — Battle of Talas, Karahanids, Ghaznavids, Great Seljuk Empire",
+          "name": "Türklerin İslamiyet'i Kabulü ve İlk Türk-İslam Devletleri — Talas Savaşı, Karahanlılar, Gazneliler, Büyük Selçuklu Devleti",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1390,7 +1390,7 @@
         },
         {
           "id": "ayt-tar1-yerlesme-ve-devletlesme-turkiye-selcuklulari",
-          "name": "Settlement and Statehood in Anatolia — Anatolian Seljuks, Battle of Malazgirt, Miryokefalon, First and Second Anatolian Beyliks, Kösedağ War",
+          "name": "Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi — Malazgirt Savaşı, Miryokefalon, I. ve II. Dönem Anadolu Beylikleri, Kösedağ Savaşı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1400,7 +1400,7 @@
         },
         {
           "id": "ayt-tar1-beylikten-devlete-osmanli",
-          "name": "From Beylik to Statehood (Ottoman 1300–1453) — Establishment, Expansion in Balkans, Administrative Structures, Battle of Ankara & Interregnum",
+          "name": "Beylikten Devlete Osmanlı Siyaseti (1300–1453) — Kuruluş Dönemi, Balkanlar'da Fetihler, İdari Teşkilatlanma, Ankara Savaşı ve Fetret Devri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1410,7 +1410,7 @@
         },
         {
           "id": "ayt-tar1-dunya-gucu-osmanli",
-          "name": "World Power Ottoman Empire (1453–1595) — Conquest of Constantinople, Mehmed II, Bayezid II, Selim I, Suleiman the Magnificent, Centralized Bureaucracy & Naval Expansion",
+          "name": "Dünya Gücü Osmanlı (1453–1595) — İstanbul'un Fethi, II. Mehmed, II. Bayezid, I. Selim, Kanuni Sultan Süleyman, Merkezi Bürokrasi ve Deniz Hakimiyeti",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1420,7 +1420,7 @@
         },
         {
           "id": "ayt-tar1-degisen-dunya-dengeleri",
-          "name": "Shifting World Balances (1595–1700) — Celali & Janissary Revolts, Long Wars with Habsburgs & Safavids, Treaties of Zsitvatorok & Karlowitz",
+          "name": "Değişen Dünya Dengeleri Karşısında Osmanlı Siyaseti (1595–1700) — Celali ve Yeniçeri İsyanları, Habsburglar ve Safevilerle Savaşlar, Zitvatorok ve Karlofça Antlaşmaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1430,7 +1430,7 @@
         },
         {
           "id": "ayt-tar1-degisim-caginda-avrupa-ve-osmanli",
-          "name": "Europe & Ottoman in the Age of Change (1700–1774) — Renaissance, Scientific Revolution, Enlightenment, Tulip Era, Westernization Reforms, Treaty of Küçük Kaynarca",
+          "name": "Değişim Çağında Avrupa ve Osmanlı (1700–1774) — Rönesans, Bilim Devrimi, Aydınlanma, Lale Devri, Batılılaşma Islahatları, Küçük Kaynarca Antlaşması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1440,7 +1440,7 @@
         },
         {
           "id": "ayt-tar1-uluslararasi-iliskilerde-denge-stratejisi",
-          "name": "Balance Strategy in International Relations (1774–1914) — French Revolution & Industrial Revolution Impacts, Tanzimat, Islahat, 1st & 2nd Meşrutiyet, Balkan Wars",
+          "name": "Uluslararası İlişkilerde Denge Stratejisi (1774–1914) — Fransız İhtilali ve Sanayi Devrimi Etkileri, Tanzimat, Islahat, I. ve II. Meşrutiyet, Balkan Savaşları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1450,7 +1450,7 @@
         },
         {
           "id": "ayt-tar1-20-yy-baslarinda-osmanli-ve-dunya",
-          "name": "Ottoman Empire & World in the Early 20th Century — Trablusgarp & Balkan Wars, World War I Causes & Fronts, Mudros Armistice, Secret Agreements",
+          "name": "XX. Yüzyıl Başlarında Osmanlı Devleti ve Dünya — Trablusgarp ve Balkan Savaşları, I. Dünya Savaşı Nedenleri ve Cepheleri, Mondros Ateşkesi, Gizli Antlaşmalar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1460,7 +1460,7 @@
         },
         {
           "id": "ayt-tar1-milli-mucadele-hazirlik",
-          "name": "National Struggle: Preparation Period — Occupation, Societies (Yararlı/Zararlı), Amasya Circular, Erzurum & Sivas Congresses, Misak-ı Millî, Opening of Grand National Assembly (TBMM)",
+          "name": "Millî Mücadele: Hazırlık Dönemi — İşgaller, Cemiyetler (Yararlı/Zararlı), Havza ve Amasya Genelgeleri, Erzurum ve Sivas Kongreleri, Misak-ı Millî, TBMM'nin Açılışı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1470,7 +1470,7 @@
         },
         {
           "id": "ayt-tar1-milli-mucadele-muharebeler",
-          "name": "National Struggle: Military Fronts & Treaties — Eastern Front (Gümrü), Southern Front (Ankara Treaty), Western Front (İnönü, Sakarya, Great Offensive), Mudanya Armistice & Lausanne Peace Treaty",
+          "name": "Millî Mücadele: Cepheler ve Antlaşmalar — Doğu Cephesi (Gümrü), Güney Cephesi (Ankara), Batı Cephesi (İnönü, Sakarya, Büyük Taarruz), Mudanya Ateşkesi ve Lozan Barış Antlaşması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1480,7 +1480,7 @@
         },
         {
           "id": "ayt-tar1-ataturkculuk-ve-turk-inkilabi",
-          "name": "Kemalism & The Turkish Revolution — Six Principles (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık); Political, Legal, Educational, Social and Economic Reforms",
+          "name": "Atatürkçülük ve Türk İnkılabı — Atatürk İlkeleri (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık); Siyasi, Hukuki, Eğitim, Sosyal ve Ekonomik Alanda İnkılaplar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1490,7 +1490,7 @@
         },
         {
           "id": "ayt-tar1-ataturk-donemi-dis-politika",
-          "name": "Atatürk Era Foreign Policy (1923–1938) — Foreign Schools, Population Exchange, Mosul Question, Montreux Straits Convention, Balkan Entente, Sadabat Pact, Hatay Issue",
+          "name": "Atatürk Dönemi Türk Dış Politikası (1923–1938) — Yabancı Okullar, Nüfus Mübadelesi, Musul Meselesi, Montrö Boğazlar Sözleşmesi, Balkan Antantı, Sadabat Paktı, Hatay Meselesi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1502,13 +1502,13 @@
     },
     {
       "id": "cografya1",
-      "name": "Geography-1",
+      "name": "Coğrafya-1",
       "group": "edebiyat_sosyal1",
       "question_count": 6,
       "topics": [
         {
           "id": "ayt-cog1-biyo-ekosistem",
-          "name": "Ecosystems & Biodiversity — Factors Affecting Biodiversity, Aquatic and Terrestrial Biomes, Matter Cycles (Carbon, Nitrogen, Water) & Energy Flow",
+          "name": "Biyoçeşitlilik ve Ekosistemler — Biyoçeşitliliği Etkileyen Faktörler, Su ve Kara Biyomları, Madde Döngüleri (Karbon, Azot, Su) ve Enerji Akışı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1518,7 +1518,7 @@
         },
         {
           "id": "ayt-cog1-nufus-politikasi-sehirler",
-          "name": "Population Policies & Urban Development — World Population Policies, Functional Types and Influence Areas of Cities, Rural & Urban Settlement Types",
+          "name": "Nüfus Politikaları ve Şehirler — Dünya'da Nüfus Politikaları, Şehirlerin Fonksiyonel Özellikleri ve Etki Alanları, Kır ve Kent Yerleşmeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1528,7 +1528,7 @@
         },
         {
           "id": "ayt-cog1-turkiye-dogal-kaynaklar-ekonomi",
-          "name": "Turkey's Natural Resources & Economic Foundations — Land Use, Water Assets, Agricultural & Pastoral Economy",
+          "name": "Türkiye'nin Doğal Kaynakları ve Ekonomisi — Arazi Kullanımı, Su Kaynakları, Tarım ve Hayvancılık Ekonomisi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1538,7 +1538,7 @@
         },
         {
           "id": "ayt-cog1-turkiye-maden-enerji-sanayi",
-          "name": "Turkey's Mineral Wealth, Energy Generation & Industrial Geography — Sectoral Breakdown & Distribution",
+          "name": "Türkiye'de Madenler, Enerji Kaynakları ve Sanayi Coğrafyası — Sektörel Dağılım ve Sanayi Tesisleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1548,7 +1548,7 @@
         },
         {
           "id": "ayt-cog1-turkiye-bolgesel-projeler",
-          "name": "Regional Development Projects in Turkey — GAP, DAP, DOKAP, KOP, ZBK, Yeşilırmak Basin Project",
+          "name": "Türkiye'de Bölgesel Kalkınma Projeleri — GAP, DAP, DOKAP, KOP, ZBK, Yeşilırmak Havzası Gelişim Projesi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1558,7 +1558,7 @@
         },
         {
           "id": "ayt-cog1-kuresel-ticaret-ve-ulasim",
-          "name": "Global Trade, Transport Routes & Tourism — Sea Straits, Canals, Railway/Highway Networks & Economic Impact of Tourism",
+          "name": "Küresel Ticaret, Ulaşım Ağları ve Turizm — Boğazlar, Kanallar, Demiryolu/Karayolu Ağları ve Turizmin Ekonomik Etkileri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1568,7 +1568,7 @@
         },
         {
           "id": "ayt-cog1-cevre-afetler-surdurulebilirlik",
-          "name": "Environment, Natural Disasters & Environmental Protection — Human Footprint, Pollution, Global Climate Change & Sustainable Resource Management",
+          "name": "Çevre, Doğal Afetler ve Sürdürülebilirlik — İnsan Etkisi, Çevre Kirliliği, Küresel İklim Değişikliği ve Doğal Kaynakların Sürdürülebilir Yönetimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1580,13 +1580,13 @@
     },
     {
       "id": "tarih2",
-      "name": "History-2",
+      "name": "Tarih-2",
       "group": "sosyal2",
       "question_count": 11,
       "topics": [
         {
           "id": "ayt-tar2-tarih-metodolojisi",
-          "name": "Historical Methodology, Philosophy of History, Epistemology & Primary Source Analysis",
+          "name": "Tarih Metodolojisi, Tarih Felsefesi, Epistemoloji ve Birincil Kaynak Analizi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1596,7 +1596,7 @@
         },
         {
           "id": "ayt-tar2-eski-cag-ve-turk-devlet-teskilati",
-          "name": "Antiquity Civilizations & Steppe State Traditions — Kut Belief, Töre, Boy Union, Kurultay, Military Dual System",
+          "name": "İlk Çağ Medeniyetleri ve Bozkır Devlet Geleneği — Kut İnancı, Töre, Boy Birliği, Kurultay, İkili Askeri-İdari Teşkilat",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1606,7 +1606,7 @@
         },
         {
           "id": "ayt-tar2-orta-cag-avrupa-ve-islam",
-          "name": "Medieval World & Islamic Civilization — Scholasticism, Feudal Hierarchy, Islamic Philosophy, Science and Legal Thought",
+          "name": "Orta Çağ'da Dünya ve İslam Medeniyeti — Skolastik Felsefe, Feodal Düzen, İslam Felsefesi, Bilim ve Hukuk Düşüncesi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1616,7 +1616,7 @@
         },
         {
           "id": "ayt-tar2-osmanli-siyaset-ve-teskilat",
-          "name": "Ottoman Political Organization & Statecraft — Central Administration (Divan-ı Hümayun, Bab-ı Âli), Provincial Administration (Eyalet, Sancak), Tımar & Iltizam Systems",
+          "name": "Osmanlı Siyasi Yapısı ve Devlet Teşkilatı — Merkez Teşkilatı (Divan-ı Hümayun, Bâb-ı Âlî), Taşra Teşkilatı (Eyalet, Sancak), Tımar ve İltizam Sistemleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1626,7 +1626,7 @@
         },
         {
           "id": "ayt-tar2-osmanli-toplum-hukuk-ekonomi",
-          "name": "Ottoman Society, Law & Economy — Millet System, Guilds (Ahilik/Lonca), Sharia and Customary Law, Foundation (Vakıf) System, Classic Monetary Policy",
+          "name": "Osmanlı Toplum Yapısı, Hukuku ve Ekonomisi — Millet Sistemi, Ahilik ve Loncalar, Şeri ve Örfi Hukuk, Vakıf Sistemi, Klasik Para Politikası",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1636,7 +1636,7 @@
         },
         {
           "id": "ayt-tar2-avrupada-donusum-ve-aydinlanma",
-          "name": "Transformations in Europe — Renaissance, Reformation, Scientific Revolution, Enlightenment Thinkers, French Revolution, Industrial Revolution & Rise of Capitalism",
+          "name": "Avrupa'da Yaşanan Dönüşümler — Rönesans, Reform, Bilim Devrimi, Aydınlanma Düşünürleri, Fransız İhtilali, Sanayi Devrimi ve Kapitalizmin Yükselişi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1646,7 +1646,7 @@
         },
         {
           "id": "ayt-tar2-osmanli-modernlesme-kurumlari",
-          "name": "Ottoman Institutional Modernization — Sened-i İttifak, Tanzimat and Islahat Charters, Military/Civilian Modern Schools, 1st & 2nd Meşrutiyet Constitutions",
+          "name": "Osmanlı Kurumsal Modernleşmesi — Sened-i İttifak, Tanzimat ve Islahat Fermanları, Modern Okullar, I. ve II. Meşrutiyet Anayasaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1656,7 +1656,7 @@
         },
         {
           "id": "ayt-tar2-milli-mucadele-diplomasi",
-          "name": "Turkish National Movement Diplomacy — London Conference, Moscow Treaty, Ankara Treaty, Lausanne Conference Negotiations",
+          "name": "Millî Mücadele Diplomasisi — Londra Konferansı, Moskova Antlaşması, Ankara Antlaşması, Lozan Barış Görüşmeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1666,7 +1666,7 @@
         },
         {
           "id": "ayt-tar2-iki-savas-arasi-dunya",
-          "name": "The World Between Two Wars (1918–1939) — League of Nations, Paris Peace Treaties, 1929 Great Depression, Totalitarian Regimes (Fascism, Nazism, Stalinism, Militarism), Middle East Mandates",
+          "name": "İki Savaş Arasındaki Dönemde Dünya (1918–1939) — Milletler Cemiyeti, Paris Barış Antlaşmaları, 1929 Dünya Ekonomik Buhranı, Totaliter Rejimler (Faşizm, Nazizm, Stalinizm, Militarizm), Orta Doğu Mandaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1676,7 +1676,7 @@
         },
         {
           "id": "ayt-tar2-ikinci-dunya-savasi",
-          "name": "World War II (1939–1945) — Causes, Axis vs. Allies, Major Fronts, Holocaust, Wartime Conferences (Tehran, Yalta, Potsdam), Turkey's Diplomatic Neutrality and Domestic Conditions",
+          "name": "İkinci Dünya Savaşı (1939–1945) — Savaşın Nedenleri, Mihver ve Müttefik Devletler, Cepheler, Holokost, Savaş Konferansları (Tahran, Yalta, Potsdam), Türkiye'nin Diplomatik Tarafsızlığı ve İç Politika",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1686,7 +1686,7 @@
         },
         {
           "id": "ayt-tar2-soguk-savas-donemi",
-          "name": "The Cold War Era (1945–1963) — Bipolar World, Truman Doctrine, Marshall Plan, NATO, Warsaw Pact, Berlin Crisis, Korean War, Turkey's Entrance to NATO, Non-Aligned Movement",
+          "name": "Soğuk Savaş Dönemi (1945–1963) — İki Kutuplu Dünya, Truman Doktrini, Marshall Planı, NATO, Varşova Paktı, Berlin Buhranı, Kore Savaşı, Türkiye'nin NATO'ya Girişi, Bağlantısızlar Hareketi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1696,7 +1696,7 @@
         },
         {
           "id": "ayt-tar2-yumusama-donemi-ve-krizler",
-          "name": "Détente Era (Yumuşama) & Global Crises (1963–1990) — SALT Accords, Cuban Missile Crisis, Vietnam War, Arab-Israeli Conflicts, 1973 Oil Crisis, Cyprus Peace Operation, Iran-Iraq War",
+          "name": "Yumuşama (Detant) Dönemi ve Çatışmalar (1963–1990) — SALT Görüşmeleri, Küba Füze Krizi, Vietnam Savaşı, Arap-İsrail Savaşları, 1973 Petrol Krizi, Kıbrıs Barış Harekâtı, İran-Irak Savaşı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1706,7 +1706,7 @@
         },
         {
           "id": "ayt-tar2-kuresellesen-dunya-ve-turkiye",
-          "name": "The Globalizing World & Modern Turkey (1990–Present) — Dissolution of the USSR, Gulf Wars, Balkan Wars (Bosnia, Kosovo), Turkic Republics, European Union Relations, Modern Middle East Dynamics",
+          "name": "Küreselleşen Dünya ve Modern Türkiye (1990–Günümüz) — SSCB'nin Dağılması, Körfez Savaşları, Balkan Savaşları (Bosna, Kosova), Türk Cumhuriyetleri, Avrupa Birliği İlişkileri, Orta Doğu Dinamikleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1718,13 +1718,13 @@
     },
     {
       "id": "cografya2",
-      "name": "Geography-2",
+      "name": "Coğrafya-2",
       "group": "sosyal2",
       "question_count": 11,
       "topics": [
         {
           "id": "ayt-cog2-ekosistem-ve-madde-dongusu",
-          "name": "Ecosystem Dynamics & Biogeochemical Cycles — Carbon, Nitrogen, Water, Oxygen Cycles; Energy Trophic Pyramids, Ecological Niches",
+          "name": "Ekosistem Dinamikleri ve Madde Döngüleri — Karbon, Azot, Su ve Oksijen Döngüleri; Enerji Besin Piramitleri, Ekolojik Niş",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1734,7 +1734,7 @@
         },
         {
           "id": "ayt-cog2-ilk-medeniyet-ve-sehirler",
-          "name": "First Civilizations & Early Urbanization — Cultural Hearths (Nile, Tigris-Euphrates, Indus, Ganges, Yellow River, Andes, Mesoamerica), Evolution of Urban Centers",
+          "name": "İlk Medeniyet Odakları ve Erken Kentleşme — Medeniyetlerin Doğuş Alanları (Nil, Dicle-Fırat, İndus, Ganj, Sarı Irmak, And Dağları, Mezoamerika), Şehirlerin Tarihsel Evrimi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1744,7 +1744,7 @@
         },
         {
           "id": "ayt-cog2-turkiye-tarim-ve-hayvancilik",
-          "name": "Agriculture, Livestock Breeding & Forestry in Turkey — Crop Distribution, Farming Techniques, Irrigation, Pastures & Modern Animal Husbandry",
+          "name": "Türkiye'de Tarım, Hayvancılık ve Ormancılık — Tarım Ürünlerinin Dağılımı, Tarım Yöntemleri, Sulama, Mera ve Modern Hayvancılık Faaliyetleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1754,7 +1754,7 @@
         },
         {
           "id": "ayt-cog2-turkiye-maden-ve-enerji",
-          "name": "Turkey's Minerals & Energy Assets — Boron, Coal, Lignite, Petroleum, Natural Gas, Hydroelectric, Geothermal, Solar, Wind Energy & Nuclear Programs",
+          "name": "Türkiye'nin Madenleri ve Enerji Kaynakları — Bor, Kömür, Linyit, Petrol, Doğal Gaz, Hidroelektrik, Jeotermal, Güneş, Rüzgâr Enerjisi ve Nükleer Santral Projeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1764,7 +1764,7 @@
         },
         {
           "id": "ayt-cog2-turkiye-sanayi-ve-ulasim",
-          "name": "Turkey's Industrial Zones, Domestic/Foreign Trade & Transportation Infrastructure (Highways, Railways, Maritime, Aviation)",
+          "name": "Türkiye'de Sanayi Bölgeleri, İç ve Dış Ticaret ile Ulaşım Ağı (Karayolu, Demiryolu, Denizyolu, Havayolu)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1774,7 +1774,7 @@
         },
         {
           "id": "ayt-cog2-bolgesel-kalkinma-projeleri",
-          "name": "Regional Development Strategies — GAP, DAP, DOKAP, KOP, ZBK, Regional Disparities, Social & Economic Objectives",
+          "name": "Bölgesel Kalkınma Stratejileri — GAP, DAP, DOKAP, KOP, ZBK Projeleri, Bölgesel Farklılıklar, Sosyoekonomik Hedefler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1784,7 +1784,7 @@
         },
         {
           "id": "ayt-cog2-jeopolitik-ve-turk-dunyasi",
-          "name": "Geopolitics & Turkey's Geostrategic Importance — Straits, Energy Hubs, Cultural Geography & Relations with Central Asian Turkic Republics",
+          "name": "Jeopolitik Konum ve Türkiye'nin Jeostratejik Önemi — Boğazlar, Enerji Koridorları, Kültür Coğrafyası ve Orta Asya Türk Cumhuriyetleri ile İlişkiler",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1794,7 +1794,7 @@
         },
         {
           "id": "ayt-cog2-kuresel-ve-bolgesel-orgutler",
-          "name": "International & Regional Organizations — UN, NATO, EU, OECD, OPEC, OIC, BSEC, D-8, Economic Cooperation Organization, Organization of Turkic States",
+          "name": "Uluslararası ve Bölgesel Kuruluşlar — BM, NATO, AB, OECD, OPEC, İİT, KEİ, D-8, EİT, Türk Devletleri Teşkilatı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1804,7 +1804,7 @@
         },
         {
           "id": "ayt-cog2-uluslararasi-catisma-alanlari",
-          "name": "Global Hotspots & Conflict Areas — Middle East, Caucasus, Eastern Mediterranean, South China Sea, Transboundary Water Resources",
+          "name": "Küresel Çatışma Alanları ve Sıcak Bölgeler — Orta Doğu, Kafkaslar, Doğu Akdeniz, Güney Çin Denizi, Sınır Aşan Sular Sorunu",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1814,7 +1814,7 @@
         },
         {
           "id": "ayt-cog2-cevre-sorunlari-ve-atiklar",
-          "name": "Environmental Degradation & Pollution Types — Soil, Water, Air, Noise and Radioactive Pollution; Waste Management, Recycling, Deforestation, Desertification",
+          "name": "Çevre Sorunları ve Kirlilik Türleri — Toprak, Su, Hava, Gürültü ve Radyoaktif Kirlilik; Atık Yönetimi, Geri Dönüşüm, Ormansızlaşma, Çölleşme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1824,7 +1824,7 @@
         },
         {
           "id": "ayt-cog2-iklim-ve-surdurulebilirlik",
-          "name": "Global Climate Action & Environmental Sustainability — Greenhouse Gases, Kyoto Protocol, Paris Agreement, Ecological Footprint, Renewable Future",
+          "name": "Küresel İklim Eylemi ve Çevresel Sürdürülebilirlik — Sera Gazları, Kyoto Protokolü, Paris İklim Anlaşması, Ekolojik Ayak İzi, Yenilenebilir Gelecek",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1836,13 +1836,13 @@
     },
     {
       "id": "felsefe_grubu",
-      "name": "Philosophy Group",
+      "name": "Felsefe Grubu",
       "group": "sosyal2",
       "question_count": 12,
       "topics": [
         {
           "id": "ayt-fel-felsefeye-giris-ve-temel-alanlar",
-          "name": "Philosophy: Nature of Philosophy & Major Disciplines — Ontology (Varlık), Epistemology (Bilgi), Ethics (Ahlak), Aesthetics (Sanat), Politics, Philosophy of Religion",
+          "name": "Felsefeye Giriş ve Temel Disiplinler — Varlık (Ontoloji), Bilgi (Epistemoloji), Ahlak (Etik), Sanat (Estetik), Siyaset, Din Felsefesi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1852,7 +1852,7 @@
         },
         {
           "id": "ayt-fel-ilk-cag-ve-orta-cag",
-          "name": "Philosophy: Ancient & Medieval Eras — Presocratics, Socrates, Plato, Aristotle; Hellenistic Schools; Patristic & Scholastic Christian Philosophy; Islamic Philosophy (Farabi, Ibn Sina, Gazali, Ibn Rüşd)",
+          "name": "İlk Çağ ve Orta Çağ Felsefesi — Doğa Filozofları, Sokrates, Platon, Aristoteles; Helenistik Ekoller; Hristiyan Patristik ve Skolastik Felsefesi; İslam Felsefesi (Fârâbî, İbn Sînâ, Gazzâlî, İbn Rüşd)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1862,7 +1862,7 @@
         },
         {
           "id": "ayt-fel-modern-ve-cagdas-felsefe",
-          "name": "Philosophy: Modern & Contemporary Eras — 17th Century Rationalism/Empiricism (Descartes, Spinoza, Locke), 18th Century Enlightenment (Kant, Rousseau), 19th-20th Century Currents (Hegel, Marx, Nietzsche, Positivism, Existentialism, Hermeneutics)",
+          "name": "Modern ve Çağdaş Felsefe — 17. Yüzyıl Rasyonalizm/Empirizm (Descartes, Spinoza, Locke), 18. Yüzyıl Aydınlanması (Kant, Rousseau), 19.–20. Yüzyıl Akımları (Hegel, Marx, Nietzsche, Pozitivizm, Egzistansiyalizm, Hermeneutik)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1872,7 +1872,7 @@
         },
         {
           "id": "ayt-psi-psikolojiye-giris-ve-yaklasimlar",
-          "name": "Psychology: Nature of Psychology, Subfields & Research Methods — Structuralism, Functionalism, Behaviorism, Psychoanalysis, Gestalt, Humanistic, Cognitive & Biological Approaches",
+          "name": "Psikolojiye Giriş, Alt Dallar ve Araştırma Yöntemleri — Yapısalcılık, İşlevselcilik, Davranışçılık, Psikanaliz, Gestalt, Hümanistik, Bilişsel ve Biyolojik Yaklaşımlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1882,7 +1882,7 @@
         },
         {
           "id": "ayt-psi-bilissel-surecler-ve-algilama",
-          "name": "Psychology: Cognitive Processes — Sensation, Thresholds, Perception, Perceptual Organization (Gestalt Laws), Attention, Memory, Consciousness & Altered States",
+          "name": "Bilişsel Süreçler ve Algı — Duyum, Eşikler, Algılama, Algısal Örgütleme (Gestalt Yasaları), Dikkat, Bellek, Bilinç ve Farklı Bilinç Durumları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1892,7 +1892,7 @@
         },
         {
           "id": "ayt-psi-ogrenme-bellek-dusunme",
-          "name": "Psychology: Learning, Memory & Thought — Classical & Operant Conditioning, Cognitive Learning, Social Learning, Memory Stages & Retrieval, Problem Solving",
+          "name": "Öğrenme, Bellek ve Düşünme — Klasik ve Edimsel Koşullanma, Bilişsel Öğrenme, Sosyal Öğrenme, Bellek Aşamaları ve Hatırlama, Problem Çözme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1902,7 +1902,7 @@
         },
         {
           "id": "ayt-psi-gelisim-ve-kisilik",
-          "name": "Psychology: Developmental Stages & Personality — Physical, Cognitive, Moral Development across Lifespan; Trait, Psychodynamic, Humanistic Personality Theories",
+          "name": "Gelişim Dönemleri ve Kişilik — Yaşam Boyu Fiziksel, Bilişsel, Ahlaki Gelişim; Özellik, Psikodinamik ve Hümanistik Kişilik Kuramları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1912,7 +1912,7 @@
         },
         {
           "id": "ayt-psi-sosyal-davranis-ve-ruh-sagligi",
-          "name": "Psychology: Social Behavior & Mental Health — Social Perception, Attitudes, Conformity; Stress, Defense Mechanisms, Psychological Disorders, Psychotherapy",
+          "name": "Sosyal Davranış ve Ruh Sağlığı — Sosyal Algı, Tutumlar, Uyma Davranışı; Stres, Savunma Mekanizmaları, Psikolojik Bozukluklar, Psikoterapi",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1922,7 +1922,7 @@
         },
         {
           "id": "ayt-sos-sosyolojiye-giris-ve-yontem",
-          "name": "Sociology: Nature of Sociology, Sociological Approaches & Research Methods (Survey, Fieldwork, Monography)",
+          "name": "Sosyolojiye Giriş ve Yöntem — Sosyolojinin Doğası, Sosyolojik Yaklaşımlar ve Araştırma Yöntemleri (Anket, Alan Araştırması, Monografi)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1932,7 +1932,7 @@
         },
         {
           "id": "ayt-sos-toplumsal-yapi-ve-etkilesim",
-          "name": "Sociology: Social Structure & Social Interaction — Status (Ascribed/Achieved), Roles, Role Conflict, Social Groups, Institutions, Values & Norms",
+          "name": "Toplumsal Yapı ve Toplumsal Etkileşim — Statü (Kazanılmış/Verilmiş), Roller, Rol Çatışması, Toplumsal Gruplar, Kurumlar, Değerler ve Normlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1942,7 +1942,7 @@
         },
         {
           "id": "ayt-sos-toplumsal-degisme-ve-kuresellesme",
-          "name": "Sociology: Social Change, Modernization, Urbanization, Social Movements & Globalization",
+          "name": "Toplumsal Değişme, Modernleşme, Kentleşme, Toplumsal Hareketler ve Küreselleşme",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1952,7 +1952,7 @@
         },
         {
           "id": "ayt-sos-toplumsal-kurumlar",
-          "name": "Sociology: Social Institutions — Family & Marriage, Education, Economy, Political Order, Religion, Mass Media",
+          "name": "Toplumsal Kurumlar — Aile ve Evlilik, Eğitim, Ekonomi, Siyasal Düzen, Din, Kitle İletişim Araçları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1962,7 +1962,7 @@
         },
         {
           "id": "ayt-sos-toplumsal-tabakalasma-ve-sapma",
-          "name": "Sociology: Social Stratification & Deviance — Social Classes, Social Mobility (Horizontal/Vertical), Deviance, Anomie & Social Control Mechanisms",
+          "name": "Toplumsal Tabakalaşma ve Sapma — Toplumsal Sınıflar, Toplumsal Hareketlilik (Yatay/Dikey), Sapma, Anomi ve Toplumsal Kontrol Mekanizmaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1972,7 +1972,7 @@
         },
         {
           "id": "ayt-man-klasik-mantik-kavramlar",
-          "name": "Logic: Classical Logic — Concept & Term, Extension and Intension (İçlem ve Kaplam), Five Predicables (Beş Tümel), Definition Rules",
+          "name": "Klasik Mantık: Kavram ve Terim — Kavram, Terim, İçlem ve Kaplam, Beş Tümel, Tanım Kuralları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1982,7 +1982,7 @@
         },
         {
           "id": "ayt-man-onermeler-ve-kiyas",
-          "name": "Logic: Propositions & Syllogism — Categorical Propositions, Square of Opposition (Karşı Olum Çıkarımları), Conversion, Valid Syllogistic Forms (Kıyas Kuralları)",
+          "name": "Klasik Mantık: Önermeler ve Kıyas — Kategorik Önermeler, Karşı Olum Çıkarımları, Döndürme, Kıyas Kuralları ve Çeşitleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -1992,7 +1992,7 @@
         },
         {
           "id": "ayt-man-mantik-ve-dil",
-          "name": "Logic: Logic and Language — Semantic Functions, Syntactic Analysis, Informal Fallacies (Safsatalar)",
+          "name": "Mantık ve Dil — Dilin Görevleri, Anlamsal Çözümleme, Mantıksal Safsatalar (Kusurlu Akıl Yürütmeler)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2002,7 +2002,7 @@
         },
         {
           "id": "ayt-man-sembolik-onermeler-mantigi",
-          "name": "Logic: Modern Propositional Logic — Propositional Connectives, Truth Tables, Tautology, Contradiction, Equivalence, Logical Implication & Validity Proofs",
+          "name": "Modern Önermeler Mantığı — Önerme Eklemleri, Doğruluk Tabloları, Totoloji, Çelişki, Eşdeğerlik, Mantıksal Geçerlilik Kanıtlamaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2012,7 +2012,7 @@
         },
         {
           "id": "ayt-man-sembolik-yuklemler-mantigi",
-          "name": "Logic: Modern Predicate Logic — Quantifiers (Universal, Existential), Free & Bound Variables, Universe of Discourse, Quantified Validities",
+          "name": "Modern Yüklemler Mantığı — Niceleyiciler (Evrensel, Tikel), Açık Önerme, Değişkenler, Evren ve Geçerlilik Denetlemeleri",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2024,13 +2024,13 @@
     },
     {
       "id": "din",
-      "name": "Religious Culture & Ethics",
+      "name": "Din Kültürü ve Ahlak Bilgisi",
       "group": "sosyal2",
       "question_count": 6,
       "topics": [
         {
           "id": "ayt-din-inanc-ve-esaslari",
-          "name": "Faith and Islamic Creeds — Tawhid, Attributes of Allah, Angels, Divine Books, Prophethood, Destiny (Kader ve Kaza) & The Afterlife (Ahiret)",
+          "name": "İslam ve İnanç Esasları — Tevhid, Allah'ın Sıfatları, Melekler, İlahi Kitaplar, Peygamberlik, Kader ve Kaza, Ahiret İnancı",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2040,7 +2040,7 @@
         },
         {
           "id": "ayt-din-ibadet-ve-manevi-hayat",
-          "name": "Worship & Spiritual Practice — Prayer (Namaz), Fasting (Oruç), Almsgiving (Zekât), Pilgrimage (Hac), Sacrifice, Supplication (Dua) & Worship Purpose",
+          "name": "İslam'da İbadet ve Manevi Hayat — Namaz, Oruç, Zekât, Hac, Kurban, Dua ve İbadetlerin Bireysel/Toplumsal Faydaları",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2050,7 +2050,7 @@
         },
         {
           "id": "ayt-din-hz-muhammed-ve-ornek-sahasi",
-          "name": "Prophet Muhammad as Moral Exemplar & Spiritual Guide — Uswatun Hasanah, The Prophetic Mission, Preservation of the Sunnah",
+          "name": "Hz. Muhammed'in Örnekliği ve Sünnetin Önemi — Üsve-i Hasene, Peygamberlik Görevi, Sünnetin Korunması ve Anlaşılması",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2060,7 +2060,7 @@
         },
         {
           "id": "ayt-din-kuran-ve-insan",
-          "name": "Human Nature and Purpose in the Quran — Divine Purpose of Creation, Reason, Free Will, Conscience, Accountability & Moral Responsibility",
+          "name": "Kur'an'da İnsan ve Hayat — Yaratılış Gayesi, Akıl, İrade, Vicdan, Sorumluluk ve Ahlaki Bilinç",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2070,7 +2070,7 @@
         },
         {
           "id": "ayt-din-islam-ve-bilim-dusuncesi",
-          "name": "Islam, Reason and Scientific Inquiries — Encouragement of Knowledge, Historical Contributions of Muslim Scientists, Rational Sciences and Philosophy",
+          "name": "İslam Düşüncesinde Bilim ve Düşünce — Bilginin Önemi, Müslüman Bilim İnsanlarının Katkıları, Akli İlimler ve Felsefe",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2080,7 +2080,7 @@
         },
         {
           "id": "ayt-din-islamda-ahlak-ve-tasavvuf",
-          "name": "Islamic Ethics & Sufi Tradition (Tasavvuf) — Key Ethical Concepts (Ihsan, Taqwa, Adalah), Sufi Thought & Figures (Yunus Emre, Mevlana, Hacı Bektaş-ı Veli, Ahmet Yesevi)",
+          "name": "İslam Ahlakı ve Tasavvuf Kültürü — Temel Ahlaki Kavramlar (İhsan, Takva, Adalet), Tasavvuf Düşüncesi ve Öncüleri (Yunus Emre, Mevlânâ, Hacı Bektâş-ı Velî, Ahmed Yesevî)",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2090,7 +2090,7 @@
         },
         {
           "id": "ayt-din-mezhepler-ve-dini-yorumlar",
-          "name": "Schools of Thought & Denominations in Islam — Theological / Creedal (İtikadi: Maturidilik, Eş'arilik, Mutezile) & Jurisprudential (Ameli/Fıkhi: Hanefi, Şafii, Maliki, Hanbeli, Caferi)",
+          "name": "İslam Düşüncesinde Mezhepler ve Dini Yorumlar — İtikadi/Kelami (Maturidilik, Eş'arilik, Mutezile) ve Ameli/Fıkhi (Hanefi, Şafii, Maliki, Hanbeli, Caferi) Yorumlar",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
@@ -2100,7 +2100,7 @@
         },
         {
           "id": "ayt-din-yasayan-dunya-dinleri",
-          "name": "Living World Religions — Judaism, Christianity, Hinduism, Buddhism, Confucianism, Taoism; Sacred Texts, Beliefs & Comparative Perspectives",
+          "name": "Yaşayan Dünya Dinleri — Yahudilik, Hristiyanlık, Hinduizm, Budizm, Konfüçyanizm, Taoizm; Kutsal Metinler, İnanç Esasları ve Karşılaştırmalı Bakış",
           "last_tested": null,
           "last_result": null,
           "wrong_total": 0,
