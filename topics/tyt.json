@@ -1,0 +1,1238 @@
+{
+  "schema_version": 1,
+  "exam": "TYT",
+  "subjects": [
+    {
+      "id": "turkce",
+      "name": "Turkish",
+      "group": "turkce",
+      "question_count": 40,
+      "topics": [
+        {
+          "id": "turkce-sozcuk-anlam",
+          "name": "Word Meaning (Real / Figurative / Connotative / Technical; Synonyms, Antonyms, Homonyms; Idioms & Proverbs)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-cumlede-anlam",
+          "name": "Sentence Meaning (Subjective / Objective; Cause–Result; Comparison; Completing Blanks; Equivalent Sentences)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-paragraf-anlatim",
+          "name": "Paragraph — Narration Techniques & Development of Thought (Description, Narration, Explanation, Argumentation; Exemplification, Definition, Comparison)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-paragraf-yapi",
+          "name": "Paragraph — Structure, Topic & Main Idea (Subject, Main Idea, Supporting Ideas; Sentence that Breaks Flow; Splitting / Placing Sentences)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-paragraf-yorum",
+          "name": "Paragraph — Interpretation & Inference (Multi-question Texts, Drawing Conclusions, Completing Paragraphs)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-ses-bilgisi",
+          "name": "Phonetics (Vowel Harmony; Vowel & Consonant Reduction / Insertion; Consonant Mutation; Liaison)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-sozcuk-turleri",
+          "name": "Word Classes — Nouns, Adjectives, Pronouns, Adverbs (Cases, Noun Phrases, Adjective Phrases)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-edat-baglac-unlem",
+          "name": "Word Classes — Postpositions, Conjunctions & Interjections",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-fiiller",
+          "name": "Verbs — Tense, Mood, Person Suffixes; Auxiliary Verb (Ek Fiil); Verb Voice (Active, Passive, Reflexive, Reciprocal, Causative)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-fiilimsiler",
+          "name": "Verbals — Infinitives (Mastar), Participles (Sıfat-Fiil), Converbs (Zarf-Fiil / Ulaç)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-cumle-ogeleri",
+          "name": "Sentence Elements — Predicate, Subject, Object (Definite / Indefinite), Adverbial, Indirect Object",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-cumle-turleri",
+          "name": "Sentence Types — by Predicate, Word Order, Meaning & Structure (Simple, Compound, Coordinate, Subordinate)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-yazim",
+          "name": "Spelling Rules (Capital Letters; Numbers; Abbreviations; Conjunctions da/de, ki; Question Particle mı/mi; Compound Words)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-noktalama",
+          "name": "Punctuation Marks (Period, Comma, Colon, Ellipsis, Question Mark, Exclamation Mark, Semicolon, Dash, Quotation Marks, Apostrophe)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "turkce-anlatim-bozukluklari",
+          "name": "Expression Errors — Meaning-Based (Redundancy, Contradiction, Wrong Word) & Grammar-Based (Subject–Predicate Mismatch, Missing Element, Wrong Suffix)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "matematik",
+      "name": "Basic Mathematics",
+      "group": "matematik",
+      "question_count": 40,
+      "topics": [
+        {
+          "id": "matematik-temel-kavramlar",
+          "name": "Fundamental Concepts — Number Sets, Consecutive / Odd / Even Numbers, Factorials, Prime Numbers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-sayi-basamaklari",
+          "name": "Digit Values & Numeral Systems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-bolme-bolunebilme",
+          "name": "Divisibility Rules & Division",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-ebob-ekok",
+          "name": "GCD (EBOB) & LCM (EKOK)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-rasyonel-sayilar",
+          "name": "Rational Numbers & Fractions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-ondalik-sayilar",
+          "name": "Decimal Numbers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-uslu-sayilar",
+          "name": "Exponents & Powers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-koklu-sayilar",
+          "name": "Radicals & Square / Cube Roots",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-carpanlara-ayirma",
+          "name": "Factoring & Algebraic Identities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-oran-oranti",
+          "name": "Ratio & Proportion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-basit-esitsizlikler",
+          "name": "Inequalities & Intervals (First-Degree)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-mutlak-deger",
+          "name": "Absolute Value",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-birinci-derece-denklemler",
+          "name": "First-Degree Equations & Systems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-sayisal-mantik",
+          "name": "Logic & Propositions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-kumeler",
+          "name": "Sets & Venn Diagrams",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-fonksiyonlar",
+          "name": "Functions (Domain, Range, Composite, Inverse)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-permutasyon-kombinasyon",
+          "name": "Permutation & Combination (Counting Principles)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-olasilik",
+          "name": "Probability",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-veri-grafik-tablo",
+          "name": "Data Analysis — Mean, Median, Mode, Range, Standard Deviation; Graphs & Tables",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-yas",
+          "name": "Word Problems — Age",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-isci-havuz",
+          "name": "Word Problems — Work & Pool (Rate Problems)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-hareket",
+          "name": "Word Problems — Speed & Distance",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-karisim",
+          "name": "Word Problems — Mixtures & Alloys",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-yuzde-kar-zarar",
+          "name": "Word Problems — Percentages, Profit & Loss, Simple Interest",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "matematik-problem-sayi-kesir",
+          "name": "Word Problems — Numbers, Fractions & Non-Routine",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-temel-kavramlar-acilar",
+          "name": "Geometry — Angles on Lines & in Triangles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-dik-ucgen-oklid",
+          "name": "Geometry — Right Triangle, Pythagorean & Euclid Theorems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-eskenar-ikizkenar",
+          "name": "Geometry — Equilateral & Isosceles Triangles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-ucgende-aci-uzunluk",
+          "name": "Geometry — Auxiliary Elements: Angle Bisector, Median, Altitude; Quadrilaterals (Trapezoid, Parallelogram, Rhombus, Rectangle, Square, Deltoid)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-benzerlik-eslik",
+          "name": "Geometry — Similarity & Congruence of Triangles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-ucgende-alan",
+          "name": "Geometry — Area of Triangle & Polygons",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-cember-daire",
+          "name": "Geometry — Circle & Disk (Angles, Tangents, Arc Length, Area)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-analitik",
+          "name": "Geometry — Analytic Geometry (Coordinate Plane, Slope, Line Equations)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-kati-cisimler",
+          "name": "Geometry — Solid Geometry (Prism, Pyramid, Cylinder, Cone, Sphere — Surface Area & Volume)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "geometri-donusum",
+          "name": "Geometry — Transformations (Translation, Reflection, Rotation)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "fizik",
+      "name": "Physics",
+      "group": "fen",
+      "question_count": 7,
+      "topics": [
+        {
+          "id": "fizik-bilimine-giris",
+          "name": "Introduction to Physics — Physical Quantities, Units, Measurement, Scientific Method",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-madde-ozellikleri",
+          "name": "Properties of Matter — Density, Elasticity, Tensile Strength",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-hareket",
+          "name": "Motion — Position, Velocity, Acceleration, Uniform & Uniformly Accelerated Linear Motion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-is-guc-enerji",
+          "name": "Work, Power & Energy (Kinetic, Potential, Conservation of Energy)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-basinc",
+          "name": "Pressure — Solid, Liquid (Pascal's Principle, Hydraulic Press) & Gas Pressure",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-kaldirma-kuvveti",
+          "name": "Buoyancy — Archimedes' Principle, Floating & Sinking",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-isi-sicaklik-genlesme",
+          "name": "Heat, Temperature & Thermal Expansion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-elektrostatik",
+          "name": "Electrostatics — Electric Charge, Coulomb's Law, Electric Field",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-dalgalar",
+          "name": "Waves — Wave Properties, Sound Waves, Resonance, Doppler Effect",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-kuvvet-newton",
+          "name": "Forces & Newton's Laws — Types of Forces, Free-Body Diagrams, Newton's 1st–3rd Laws",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-elektrik-akimi-devreler",
+          "name": "Electric Current & Circuits — Ohm's Law, Resistors in Series/Parallel, Power, Kirchhoff's Laws",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-isik-optik",
+          "name": "Light & Optics — Reflection, Refraction, Mirrors, Lenses, Colour",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "fizik-manyetizma",
+          "name": "Magnetism — Magnetic Fields, Forces on Conductors, Electromagnetic Induction (Intro)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "kimya",
+      "name": "Chemistry",
+      "group": "fen",
+      "question_count": 7,
+      "topics": [
+        {
+          "id": "kimya-atom-periyodik-sistem",
+          "name": "Atom & Periodic Table — Atomic Structure, Isotopes, Periodic Properties",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-maddenin-halleri",
+          "name": "States of Matter — Solids, Liquids, Gases, Plasma; Viscosity & Surface Tension",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-karisimlar",
+          "name": "Mixtures — Types of Mixtures, Solutions, Concentration, Separation Methods",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-her-yerde",
+          "name": "Chemistry Everywhere — Polymers, Cosmetics, Pharmaceuticals, Cleaning Products",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-bilimi-laboratuvar",
+          "name": "Chemistry as a Science — Laboratory Safety, Measurement, Separation Techniques",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-kimyasal-etkilesimler",
+          "name": "Chemical Bonding & Interactions — Ionic, Covalent, Metallic; Intermolecular Forces",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-kimyasal-tepkimeler",
+          "name": "Chemical Reactions — Types (Synthesis, Decomposition, Displacement, Combustion), Balancing",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "kimya-asit-baz-tuz",
+          "name": "Acids, Bases & Salts — Arrhenius & Brønsted–Lowry Definitions, pH, Neutralisation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "biyoloji",
+      "name": "Biology",
+      "group": "fen",
+      "question_count": 6,
+      "topics": [
+        {
+          "id": "biyoloji-hucre-bolunmeleri",
+          "name": "Cell Division — Mitosis, Meiosis; Asexual & Sexual Reproduction",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-kalitim",
+          "name": "Heredity — Mendelian Genetics, Pedigree Analysis, Sex-Linked Traits",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-ekosistem-ekolojisi",
+          "name": "Ecosystem Ecology — Food Chains, Matter Cycles, Biodiversity, Environmental Issues",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-hucre-organeller",
+          "name": "Cell Organelles — Detailed Structure & Function of Each Organelle",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-temel-bilesikler",
+          "name": "Chemical Compounds of Life — Water, Mineral Salts, Carbohydrates, Lipids, Proteins, Nucleic Acids",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-siniflandirma",
+          "name": "Classification of Living Things — Taxonomy, Five Kingdoms, Bacteria, Protists, Fungi, Plants, Animals",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "biyoloji-hucre-zari-madde-gecisi",
+          "name": "Cell Membrane & Substance Transport — Osmosis, Diffusion, Active/Passive Transport, Endocytosis, Exocytosis",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "tarih",
+      "name": "History",
+      "group": "sosyal",
+      "question_count": 5,
+      "topics": [
+        {
+          "id": "tarih-bilimi",
+          "name": "Introduction to History — Historical Method, Time, Calendar, Sources",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-ilk-cag-uygarliklari",
+          "name": "Ancient Civilisations — Mesopotamia, Egypt, Aegean, Anatolia, Greco-Roman World",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-islamiyet-oncesi-turk-tarihi",
+          "name": "Pre-Islamic Turkic History — Central Asian Tribes, First Turkic Khaganates, Hun Empire",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-islam-tarihi-ilk-turk-islam-devletleri",
+          "name": "Rise of Islam & Early Turco-Islamic States — Islamic Civilisation, Great Seljuks, Anatolian Seljuks",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-osmanli-kurulus",
+          "name": "Ottoman Foundation Period (13th–14th c.) — Osman Bey to Murad I",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-osmanli-yukselme",
+          "name": "Ottoman Classical Rise (14th–15th c.) — Yıldırım Bayezid, Fatih Sultan Mehmed, Conquest of Constantinople",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-osmanli-duraklama-gerileme",
+          "name": "Ottoman Stagnation & Decline (17th–18th c.) — Internal Crises, Military Setbacks, Reforms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-osmanli-dagilma",
+          "name": "Ottoman Disintegration (19th–early 20th c.) — Balkan Wars, Nationalist Movements, Tanzimat",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-turkiye-selcuklulari-beylikler",
+          "name": "Anatolian Seljuks & Beyliks — Post-Manzikert, Sultanate of Rum, Decline",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "tarih-kurtulus-savasi",
+          "name": "Turkish War of Independence — National Struggle, Battles, Treaties",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "cografya",
+      "name": "Geography",
+      "group": "sosyal",
+      "question_count": 5,
+      "topics": [
+        {
+          "id": "cografya-harita-bilgisi",
+          "name": "Map Literacy — Coordinates, Scale, Projections, Geographic Location",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-ic-kuvvetler",
+          "name": "Endogenic Forces — Tectonics, Volcanoes, Earthquakes, Folding & Faulting",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-dis-kuvvetler",
+          "name": "Exogenic Forces — Weathering, Erosion, Rivers, Glaciers, Wind, Karst, Coasts",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-nufus",
+          "name": "Population — Distribution, Density, Growth, Pyramids, Migration",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-yerlesme",
+          "name": "Settlement — Urban / Rural Settlement, Land Use",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-turkiye-cografi-ozellikleri",
+          "name": "Turkey's Physical & Human Geography — Regions, Climate, Rivers, Soils, Land Use",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-dogal-afetler-cevre",
+          "name": "Natural Disasters & Environment — Earthquakes, Floods, Drought; Environmental Problems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-doga-insan",
+          "name": "Geography: Nature & Humans — Field, Sub-disciplines, Research Methods",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-dunya-sekli-hareketleri",
+          "name": "Earth's Shape, Movements & Consequences (Seasons, Day/Night, Time Zones)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-koordinat-sistemi",
+          "name": "Coordinate System & Geographic Location — Latitude, Longitude, Absolute/Relative Location",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "cografya-iklim-hava-durumu",
+          "name": "Weather vs. Climate — Atmospheric Factors, Climate Elements, Climate Zones of Turkey",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "felsefe",
+      "name": "Philosophy",
+      "group": "sosyal",
+      "question_count": 5,
+      "topics": [
+        {
+          "id": "felsefe-felsefenin-konusu",
+          "name": "Introduction to Philosophy — Meaning, Scope, Relationship to Science & Religion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-bilgi-felsefesi",
+          "name": "Epistemology — Knowledge, Belief, Truth; Rationalism, Empiricism, Scepticism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-varlik-felsefesi",
+          "name": "Ontology — Being, Existence; Idealism, Materialism, Dualism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-ahlak-felsefesi",
+          "name": "Ethics — Moral Philosophy; Virtue Ethics, Deontology, Utilitarianism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-sanat-felsefesi",
+          "name": "Aesthetics — Art Philosophy, Beauty, Artistic Expression",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-din-felsefesi",
+          "name": "Philosophy of Religion — Existence of God, Faith and Reason",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-siyaset-felsefesi",
+          "name": "Political Philosophy — State, Justice, Democracy, Liberty",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-bilim-felsefesi",
+          "name": "Philosophy of Science — Scientific Method, Verification, Falsificationism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-ilk-cag",
+          "name": "Ancient Philosophy — Pre-Socratics, Socrates, Plato, Aristotle",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-orta-cag-ronesans",
+          "name": "Medieval & Renaissance Philosophy — Scholasticism, Humanism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-17-19-yuzyil",
+          "name": "17th–19th Century Philosophy — Descartes, Locke, Hume, Kant, Hegel",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "felsefe-20-yuzyil",
+          "name": "20th Century Philosophy — Existentialism, Positivism, Analytic Philosophy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "din",
+      "name": "Religious Culture & Moral Knowledge",
+      "group": "sosyal",
+      "question_count": 5,
+      "topics": [
+        {
+          "id": "din-islam-inanc-esaslari",
+          "name": "Principles of Faith in Islam — Pillars of Belief (Allah, Angels, Books, Prophets, Afterlife, Divine Decree)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "din-islam-ibadetler",
+          "name": "Worship in Islam — Pillars of Islam; Prayer, Fasting, Zakat, Hajj",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "din-islam-ahlak",
+          "name": "Islamic Morality & Values",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "din-hz-muhammed-hayati",
+          "name": "Life of Prophet Muhammad (PBUH) — Mecca, Medina, Legacy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "din-ve-islam",
+          "name": "Religion & World Religions — Concept of Religion; Judaism, Christianity, Hinduism, Buddhism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    }
+  ]
+}

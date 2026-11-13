@@ -1,0 +1,2114 @@
+{
+  "schema_version": 1,
+  "exam": "AYT",
+  "subjects": [
+    {
+      "id": "matematik",
+      "name": "Mathematics",
+      "group": "sayisal",
+      "question_count": 40,
+      "topics": [
+        {
+          "id": "ayt-mat-temel-kavramlar",
+          "name": "Fundamental Concepts — Number Sets, Divisibility, GCD/LCM, Primes",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-mantik",
+          "name": "Logic & Propositions — Connectives, Truth Tables, Quantifiers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-kumeler",
+          "name": "Sets & Cartesian Product — Set Operations, Venn Diagrams",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-fonksiyonlar",
+          "name": "Functions — Domain & Range, Composite, Inverse, Piecewise, Graphing",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-polinomlar",
+          "name": "Polynomials — Operations, Division, Remainder Theorem, Roots",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-ikinci-derece-denklemler",
+          "name": "Quadratic Equations — Discriminant, Vieta's Formulas, Roots",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-karmasik-sayilar",
+          "name": "Complex Numbers — Operations, Modulus, Conjugate, Powers of i",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-ikinci-derece-esitsizlikler",
+          "name": "Quadratic Inequalities & Systems of Inequalities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-parabol",
+          "name": "Parabola — Vertex, Axis of Symmetry, Graphing Quadratic Functions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-permutasyon-kombinasyon",
+          "name": "Permutation, Combination & Counting Principles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-binom",
+          "name": "Binomial Theorem & Pascal's Triangle",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-olasilik",
+          "name": "Probability — Classical, Conditional, Independent Events",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-istatistik",
+          "name": "Statistics & Data Analysis — Mean, Median, Mode, Variance, Standard Deviation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-trigonometri",
+          "name": "Trigonometry — Unit Circle, Trig Functions, Sum/Difference Formulas, Half-Angle, Equations",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-logaritma",
+          "name": "Logarithms & Exponential Functions — Laws of Logarithms, Exponential/Logarithmic Equations & Inequalities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-diziler",
+          "name": "Sequences & Series — Arithmetic, Geometric; Partial Sums",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-limit",
+          "name": "Limits & Continuity — Limit Laws, Indeterminate Forms, Continuity of Functions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-turev",
+          "name": "Derivatives & Applications — Rules, Chain Rule; Tangent/Normal Lines, Monotonicity, Extrema, Curve Sketching",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-integral",
+          "name": "Integration & Applications — Indefinite/Definite Integrals, Techniques, Area between Curves",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-temel-kavramlar",
+          "name": "Geometry — Angles on Lines & in Triangles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-ucgen-aci-uzunluk",
+          "name": "Geometry — Triangle Angle & Side Relations; Angle Bisector, Median, Altitude",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-benzerlik-eslik",
+          "name": "Geometry — Similarity & Congruence (Similarity Theorems, Scale Factor)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-ucgende-alan",
+          "name": "Geometry — Area of Triangle & Polygons",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-cokgen-dortgen",
+          "name": "Geometry — Quadrilaterals & Polygons (Trapezoid, Parallelogram, Rhombus, Rectangle, Square, Deltoid)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-cember-daire",
+          "name": "Geometry — Circle & Disk (Inscribed Angles, Tangents, Arc Length, Sector Area)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-analitik",
+          "name": "Geometry — Analytic Geometry (Points, Lines, Distance, Circle Equations)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-donusum-vektor",
+          "name": "Geometry — Transformations (Translation, Reflection, Rotation) & Vectors",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-geo-kati-cisimler",
+          "name": "Geometry — Solid Geometry (Prism, Pyramid, Cylinder, Cone, Sphere — Surface Area & Volume)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-carpanlara-ayirma",
+          "name": "Factoring & Algebraic Identities — Higher-degree Polynomials, Special Products, Partial Fractions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-sayi-basamaklari",
+          "name": "Digit Values & Numeral Systems (AYT review)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-bolme-bolunebilme",
+          "name": "Divisibility Rules & Division (AYT review)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-ebob-ekok",
+          "name": "GCD (EBOB) & LCM (EKOK) (AYT review)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-rasyonel-ondalik",
+          "name": "Rational & Decimal Numbers (AYT review)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-uslu-koklu",
+          "name": "Exponents & Radicals (AYT level)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-esitsizlik-mutlak",
+          "name": "Absolute Value & Inequalities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-oran-oranti",
+          "name": "Ratio & Proportion (AYT applications)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-toplam-carpim",
+          "name": "Sum & Product Formulas; Telescoping Products",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-sureklilik",
+          "name": "Continuity of Functions — Definition, Discontinuities, IVT",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-mat-problemler",
+          "name": "Advanced Word Problems — Combinatorics, Number Theory, Inequalities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "fizik",
+      "name": "Physics",
+      "group": "sayisal",
+      "question_count": 14,
+      "topics": [
+        {
+          "id": "ayt-fizik-vektorler",
+          "name": "Vectors — Representation, Addition, Subtraction, Components, Dot & Cross Product",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-hareket",
+          "name": "Kinematics — 1D Constant Acceleration, Relative Motion, Free Fall, Projectile Motion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-newton",
+          "name": "Newton's Laws of Motion — Inertia, Net Force, Action–Reaction; Applications",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-kuvvet-denge",
+          "name": "Force & Equilibrium — Friction, Inclined Plane, Pulley Systems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-is-guc-enerji",
+          "name": "Work, Power & Energy — Work–Energy Theorem, Kinetic & Potential Energy, Conservation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-itme-momentum",
+          "name": "Impulse & Momentum — Conservation of Momentum, Collisions (Elastic / Inelastic)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-tork-kutle-merkezi",
+          "name": "Torque, Equilibrium & Centre of Mass — Rotational Equilibrium, Static Balance",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-basit-makineler",
+          "name": "Simple Machines — Lever, Pulley, Inclined Plane, Wedge, Screw; Mechanical Advantage",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-cembersel-hareket",
+          "name": "Circular Motion — Centripetal Acceleration & Force, Angular Velocity, Gravity & Satellites",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-basit-harmonik-hareket",
+          "name": "Simple Harmonic Motion — Spring-Mass System, Pendulum, Energy in SHM",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-elektrostatik",
+          "name": "Electrostatics — Coulomb's Law, Electric Field, Electric Potential, Capacitors",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-elektrik-akimi-devreler",
+          "name": "Electric Current & Circuits — Ohm's Law, Kirchhoff's Laws, Series/Parallel Circuits, RC Circuits",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-manyetizma",
+          "name": "Magnetism — Magnetic Force on Charges & Currents, Magnetic Field, Solenoid",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-elektromanyetik-induksiyon",
+          "name": "Electromagnetic Induction — Faraday's Law, Lenz's Law, Transformers, AC Current",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-dalgalar",
+          "name": "Waves — Wave Properties, Interference, Diffraction, Sound Waves, Doppler Effect",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-isik-optik",
+          "name": "Light & Optics — Reflection, Refraction, Mirrors, Lenses, Double-Slit Interference",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-modern-fizik",
+          "name": "Modern Physics — Photoelectric Effect, Compton Scattering, Bohr Model, Wave-Particle Duality, Special Relativity",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-modern-teknoloji",
+          "name": "Nuclear Physics & Modern Technology — Radioactivity, Fission/Fusion, Semiconductors, Lasers, Nanotechnology",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-alternatif-akim",
+          "name": "Alternating Current — AC Generators, RMS Values, LC Circuits, Transformers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fizik-ozel-gorelilik",
+          "name": "Special Relativity — Time Dilation, Length Contraction, Mass-Energy Equivalence",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "kimya",
+      "name": "Chemistry",
+      "group": "sayisal",
+      "question_count": 13,
+      "topics": [
+        {
+          "id": "ayt-kimya-kuantum-modeli",
+          "name": "Modern Atomic Theory — Quantum Model, Electron Configuration, Periodic Properties",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-gazlar",
+          "name": "Gases — Gas Laws (Boyle, Charles, Gay-Lussac), Ideal Gas Law, Kinetic Theory, Partial Pressures, Real Gases",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-cozeltiler",
+          "name": "Liquid Solutions — Concentration Units, Colligative Properties (Boiling Point Elevation, Freezing Point Depression, Osmosis), Solubility Factors",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-termokimya",
+          "name": "Thermochemistry — Enthalpy, Bond Energies, Hess's Law, Calorimetry",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-hiz",
+          "name": "Chemical Kinetics — Reaction Rate, Rate Law, Activation Energy, Factors Affecting Rate, Catalysis",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-denge",
+          "name": "Chemical Equilibrium — Equilibrium Constants (Kc, Kp), Le Chatelier's Principle, Factors Affecting Equilibrium",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-asit-baz-denge",
+          "name": "Acid–Base Equilibrium — Water Autoionisation, pH/pOH, Weak Acids & Bases (Ka, Kb), Buffer Solutions, Hydrolysis, Titration",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-cozunurluk-dengesi",
+          "name": "Solubility Equilibrium — Solubility Product Constant (Ksp), Common Ion Effect",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-elektrokimya",
+          "name": "Electrochemistry — Redox Reactions, Galvanic Cells, Standard Electrode Potentials, Electrolysis, Corrosion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-karbon-kimyasi",
+          "name": "Introduction to Carbon Chemistry — Hybridisation (sp, sp², sp³), Molecular Geometry, Structural Isomerism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-hidrokarbonlar",
+          "name": "Hydrocarbons — Alkanes, Alkenes, Alkynes, Aromatic Compounds (Benzene); Nomenclature & Reactions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-fonksiyonel-gruplar",
+          "name": "Functional Groups — Alcohols, Ethers, Aldehydes, Ketones, Carboxylic Acids, Esters, Amines; Reactions & Properties",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-yasam-kimyasi",
+          "name": "Life Chemistry & Energy Sources — Polymers, Biomolecules, Fossil Fuels, Renewable Energy, Nanotechnology",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-periyodik-sistem",
+          "name": "Periodic Table & Periodic Properties — Atomic Radius, Ionisation Energy, Electronegativity",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-etkilesimler",
+          "name": "Chemical Bonding & Molecular Geometry — VSEPR, Hybridisation, Intermolecular Forces",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-hesaplamalar",
+          "name": "Stoichiometry & Chemical Calculations — Mole, Limiting Reagent, Yield",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-tepkimeler",
+          "name": "Chemical Reactions — Reaction Types, Balancing, Reaction Enthalpy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-aromatik",
+          "name": "Aromatic Compounds — Benzene, Nomenclature, Substitution Reactions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-organik-tepkimeler",
+          "name": "Organic Reactions — Addition, Substitution, Elimination, Condensation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-kimya-polimerler",
+          "name": "Polymers & Biomolecules — Natural & Synthetic Polymers, Proteins, Carbohydrates, Lipids",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "biyoloji",
+      "name": "Biology",
+      "group": "sayisal",
+      "question_count": 13,
+      "topics": [
+        {
+          "id": "ayt-biyo-sinir",
+          "name": "Nervous System — Neuron Structure, CNS & PNS, Spinal Cord, Reflex Arc, Brain Regions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-endokrin",
+          "name": "Endocrine System — Hormones, Glands (Hypothalamus, Pituitary, Thyroid, Adrenal, Pancreas), Feedback Mechanisms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-duyu-organlari",
+          "name": "Sense Organs — Eye (Vision), Ear (Hearing & Balance), Nose, Tongue, Skin",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-destek-hareket",
+          "name": "Support & Locomotion System — Skeletal Structure, Bone Types, Joints; Muscle Types (Smooth, Cardiac, Skeletal), Muscle Contraction",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-sindirim",
+          "name": "Digestive System — Organs, Mechanical & Chemical Digestion, Absorption, Liver & Pancreas Functions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-dolasim",
+          "name": "Circulatory System — Heart Structure, Blood Vessels, Blood Types, Lymphatic System; Blood Clotting",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-bagisiklik",
+          "name": "Immune System — Innate & Adaptive Immunity, Antibodies, Vaccines, Active/Passive Immunity",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-solunum",
+          "name": "Respiratory System — Breathing Mechanics, Gas Exchange, External & Internal Respiration",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-bosaltim",
+          "name": "Excretory System — Kidney Structure, Nephron, Urine Formation; Kidney's Non-Excretory Roles",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-ureme",
+          "name": "Reproductive System & Embryology — Human Reproductive Organs, Menstrual Cycle, Fertilisation, Embryonic Development",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-ekosistem",
+          "name": "Community & Population Ecology — Interspecies Relations (Predation, Competition, Symbiosis), Population Dynamics & Growth Curves",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-molekuler-kalitim",
+          "name": "Nucleic Acids & Molecular Genetics — DNA/RNA Structure, Replication, Transcription, Translation, Genetic Code",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-fotosentez-solunum",
+          "name": "Cellular Energy Transformations — Photosynthesis (Light & Dark Reactions), Cellular Respiration (Glycolysis, Krebs, ETC), Fermentation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-bitki-tasima-ureme",
+          "name": "Plant Biology — Tissues, Root/Stem/Leaf Structure, Water & Mineral Transport, Growth Hormones, Photoperiodism, Tropisms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-biyoteknoloji",
+          "name": "Biotechnology & Genetics — Genetic Engineering, GMOs, Cloning, DNA Fingerprinting, Gene Therapy; Evolution",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-temel-bilesenler",
+          "name": "Fundamental Components of Life — Inorganic & Organic Molecules (Water, Carbohydrates, Lipids, Proteins, Nucleic Acids)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-hucre-organeller",
+          "name": "Cell Organelles — Detailed Structure & Function",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-hucre-zari",
+          "name": "Cell Membrane & Substance Transport — Osmosis, Diffusion, Active/Passive Transport",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-hucre-bolunmeleri",
+          "name": "Cell Division — Mitosis, Meiosis, Cell Cycle; Asexual & Sexual Reproduction",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-kalitim",
+          "name": "Heredity & Genetics — Mendelian Laws, Pedigrees, Non-Mendelian Inheritance, Sex Determination",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-protein-sentezi",
+          "name": "Gene Expression — Transcription, Translation, Codon Table, Mutations",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-siniflandirma",
+          "name": "Classification of Living Things — Taxonomy, Phylogeny, Five/Six Kingdoms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-bitki-dokular",
+          "name": "Plant Tissues — Meristem, Dermal, Vascular, Ground Tissues; Root, Stem, Leaf Structure",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-biyo-cevre",
+          "name": "Environment & Conservation — Pollution, Habitat Loss, Biodiversity, Sustainability",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "edebiyat",
+      "name": "Turkish Language & Literature",
+      "group": "edebiyat_sosyal1",
+      "question_count": 24,
+      "topics": [
+        {
+          "id": "ayt-edebiyat-anlam-bilgisi",
+          "name": "Meaning in Context — Words, Idioms, Proverbs, Sentence & Paragraph Interpretation",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-siir-bilgisi",
+          "name": "Poetry Analysis — Meter (Aruz & Hece), Rhyme, Redif, Stanza Structure & Verse Types",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-edebi-sanatlar",
+          "name": "Figures of Speech & Literary Devices — Teşbih, İstiare, Mecaz-ı Mürsel, Tezat, Tenasüp, Hüsn-i Talil, Tecahül-i Arif, Kinaye, Tariz, Tevriye",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-metin-turleri",
+          "name": "Literary Genres & Forms — Poetry, Epic, Folk Story, Drama, Novel, Short Story, Essay, Memoir, Criticism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-islamiyet-oncesi-ve-gecis",
+          "name": "Pre-Islamic Turkish Literature & Transition Period — Sagu, Koşuk, Sav, Destan; Kutadgu Bilig, Atabetü'l-Hakayık, Divanü Lugati't-Türk, Divan-ı Hikmet, Dede Korkut",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-halk-edebiyati",
+          "name": "Turkish Folk Literature — Anonymous, Âşık (Minstrel), and Sufi/Tekke Traditions & Poets (Yunus Emre, Karacaoğlan, Dadaloğlu, Köroğlu, Pir Sultan Abdal, Âşık Veysel)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-divan-nazim",
+          "name": "Divan Literature — Poetics, Verse Forms (Gazel, Kaside, Mesnevi, Rubai, Şarkı, Murabba, Tuyuğ) & Mazmunlar",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-divan-nesir-ve-sairler",
+          "name": "Divan Literature — Prose, Chronology & Key Authors (Fuzûlî, Bâkî, Nâbî, Nedim, Şeyh Gâlib, Nef'î, Kâtip Çelebi, Evliyâ Çelebi)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-tanzimat-donemi",
+          "name": "Tanzimat Literature — 1st & 2nd Periods, Westernization, Genres & Figures (Şinasi, Namık Kemal, Ziya Paşa, Recaizade Mahmut Ekrem, Abdülhak Hâmit, Samipaşazade Sezai, Nabizade Nâzım)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-servetifunun-ve-fecriati",
+          "name": "Servet-i Fünun (Edebiyat-ı Cedide) & Fecr-i Âti — Themes, Symbolism/Parnassianism & Authors (Tevfik Fikret, Cenap Şahabettin, Halit Ziya, Mehmet Rauf, Ahmet Hâşim)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-milli-edebiyat",
+          "name": "National Literature (Millî Edebiyat) — Genç Kalemler, Plain Turkish, National Consciousness & Authors (Ömer Seyfettin, Ziya Gökalp, Mehmet Âkif, Yahya Kemal, Halide Edib, Yakup Kadri, Reşat Nuri, Refik Halit)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-saf",
+          "name": "Republic Period Poetry — Pure Poetry (Saf / Öz Şiir: Ahmet Hamdi Tanpınar, Cahit Sıtkı, Necip Fazıl, Asaf Hâlet Çelebi, Ahmet Muhip Dıranas, Yedi Meşaleciler)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-toplumcu",
+          "name": "Republic Period Poetry — Socialist Realist Poetry (Nâzım Hikmet, Rıfat Ilgaz, Ahmed Arif, Hasan Hüseyin, Ceyhun Atuf Kansu)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-milli",
+          "name": "Republic Period Poetry — National-Romantic & Folk Tradition (Arif Nihat Asya, Kemalettin Kamu, Orhan Şaik Gökyay, Zeki Ömer Defne, Behçet Kemal)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-garip",
+          "name": "Republic Period Poetry — Garip Movement (First New: Orhan Veli, Oktay Rifat, Melih Cevdet) & Garip Outside Poets",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-ikinci-yeni",
+          "name": "Republic Period Poetry — Second New (İkinci Yeni: Cemal Süreya, İlhan Berk, Edip Cansever, Turgut Uyar, Ece Ayhan, Ülkü Tamer, Sezai Karakoç)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-1960-sonrasi",
+          "name": "Republic Period Poetry — 1960-1980 Social Realist Poetry, Religious-Mystical Poets (İsmet Özel, Ataol Behramoğlu, Hilmi Yavuz, Erdem Bayazıt, Cahit Zarifoğlu)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-siir-1980-sonrasi",
+          "name": "Republic Period Poetry — Post-1980 Poetry & Contemporary Trends (Haydar Ergülen, Hüseyin Atlansoy, Metin Celal, Tuğrul Tanyol)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-roman-milli-gercekci",
+          "name": "Republic Period Prose — National-Romantic & Traditional Realist Novels (Yakup Kadri, Halide Edib, Reşat Nuri, Mithat Cemal Kuntay, Refik Halit Karay)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-roman-toplumcu",
+          "name": "Republic Period Prose — Socialist Realist & Village Literature (Yaşar Kemal, Orhan Kemal, Kemal Tahir, Fakir Baykurt, Sabahattin Ali, Mahmut Makal, Sadri Ertem)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-roman-bireyin-ic-dunyasi",
+          "name": "Republic Period Prose — Psychological Novels & Inner World of Individual (Peyami Safa, Ahmet Hamdi Tanpınar, Tarık Buğra, Samiha Ayverdi, Mustafa Kutlu)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-roman-modernist",
+          "name": "Republic Period Prose — Modernist & Postmodernist Literature (Oğuz Atay, Yusuf Atılgan, Adalet Ağaoğlu, Ferit Edgü, Bilge Karasu, Latife Tekin, Orhan Pamuk, İhsan Oktay Anar)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-cumhuriyet-tiyatro",
+          "name": "Republic Period Drama & Theater — Haldun Taner, Turgut Özakman, Güngör Dilmen, Recep Bilginer, Refik Erduran, Turan Oflazoğlu, Necati Cumalı",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-ogretici-metinler",
+          "name": "Instructive Texts & Non-Fiction — Essay, Memoir, Criticism, Travelogue (Nurullah Ataç, Suut Kemal Yetkin, Cemil Meriç, Falih Rıfkı Atay, Şevket Süreyya Aydemir)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-edebiyat-edebiyat-akimlari-dunya",
+          "name": "Literary Movements & World Literature — Classicism, Romanticism, Realism, Naturalism, Parnassianism, Symbolism, Surrealism, Existentialism; Major World Authors",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "tarih1",
+      "name": "History-1",
+      "group": "edebiyat_sosyal1",
+      "question_count": 10,
+      "topics": [
+        {
+          "id": "ayt-tar1-tarih-ve-zaman",
+          "name": "History & Time — Historical Methodology, Chronology, Sources & Historiography",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-insanligin-ilk-donemleri",
+          "name": "First Ages of Humanity — Paleolithic to Iron Age, Mesopotamia, Anatolia, Egypt, Greece, Rome, Iran & Central Asian Civilizations",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-orta-cagda-dunya",
+          "name": "Medieval World — Feudalism, Crusades, Byzantine Empire, Sassanids, Mongol Empire, Law Systems (Justinian, 12 Tables)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-ilk-ve-orta-cagda-turk-dunyasi",
+          "name": "Turks in Antiquity and Middle Ages — Central Asian Steppe States (Hun, Göktürk, Uygur), Culture, Religion, Military Tradition & Statecraft",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-islam-medeniyetinin-dogusu",
+          "name": "Birth and Expansion of Islamic Civilization — Life of Prophet Muhammad, Four Caliphs, Umayyad and Abbasid Caliphates, Islamic Golden Age & Institutions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-turklerin-islamiyeti-kabulu",
+          "name": "Turks' Acceptance of Islam & First Muslim Turkish States — Battle of Talas, Karahanids, Ghaznavids, Great Seljuk Empire",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-yerlesme-ve-devletlesme-turkiye-selcuklulari",
+          "name": "Settlement and Statehood in Anatolia — Anatolian Seljuks, Battle of Malazgirt, Miryokefalon, First and Second Anatolian Beyliks, Kösedağ War",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-beylikten-devlete-osmanli",
+          "name": "From Beylik to Statehood (Ottoman 1300–1453) — Establishment, Expansion in Balkans, Administrative Structures, Battle of Ankara & Interregnum",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-dunya-gucu-osmanli",
+          "name": "World Power Ottoman Empire (1453–1595) — Conquest of Constantinople, Mehmed II, Bayezid II, Selim I, Suleiman the Magnificent, Centralized Bureaucracy & Naval Expansion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-degisen-dunya-dengeleri",
+          "name": "Shifting World Balances (1595–1700) — Celali & Janissary Revolts, Long Wars with Habsburgs & Safavids, Treaties of Zsitvatorok & Karlowitz",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-degisim-caginda-avrupa-ve-osmanli",
+          "name": "Europe & Ottoman in the Age of Change (1700–1774) — Renaissance, Scientific Revolution, Enlightenment, Tulip Era, Westernization Reforms, Treaty of Küçük Kaynarca",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-uluslararasi-iliskilerde-denge-stratejisi",
+          "name": "Balance Strategy in International Relations (1774–1914) — French Revolution & Industrial Revolution Impacts, Tanzimat, Islahat, 1st & 2nd Meşrutiyet, Balkan Wars",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-20-yy-baslarinda-osmanli-ve-dunya",
+          "name": "Ottoman Empire & World in the Early 20th Century — Trablusgarp & Balkan Wars, World War I Causes & Fronts, Mudros Armistice, Secret Agreements",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-milli-mucadele-hazirlik",
+          "name": "National Struggle: Preparation Period — Occupation, Societies (Yararlı/Zararlı), Amasya Circular, Erzurum & Sivas Congresses, Misak-ı Millî, Opening of Grand National Assembly (TBMM)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-milli-mucadele-muharebeler",
+          "name": "National Struggle: Military Fronts & Treaties — Eastern Front (Gümrü), Southern Front (Ankara Treaty), Western Front (İnönü, Sakarya, Great Offensive), Mudanya Armistice & Lausanne Peace Treaty",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-ataturkculuk-ve-turk-inkilabi",
+          "name": "Kemalism & The Turkish Revolution — Six Principles (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık); Political, Legal, Educational, Social and Economic Reforms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar1-ataturk-donemi-dis-politika",
+          "name": "Atatürk Era Foreign Policy (1923–1938) — Foreign Schools, Population Exchange, Mosul Question, Montreux Straits Convention, Balkan Entente, Sadabat Pact, Hatay Issue",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "cografya1",
+      "name": "Geography-1",
+      "group": "edebiyat_sosyal1",
+      "question_count": 6,
+      "topics": [
+        {
+          "id": "ayt-cog1-biyo-ekosistem",
+          "name": "Ecosystems & Biodiversity — Factors Affecting Biodiversity, Aquatic and Terrestrial Biomes, Matter Cycles (Carbon, Nitrogen, Water) & Energy Flow",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-nufus-politikasi-sehirler",
+          "name": "Population Policies & Urban Development — World Population Policies, Functional Types and Influence Areas of Cities, Rural & Urban Settlement Types",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-turkiye-dogal-kaynaklar-ekonomi",
+          "name": "Turkey's Natural Resources & Economic Foundations — Land Use, Water Assets, Agricultural & Pastoral Economy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-turkiye-maden-enerji-sanayi",
+          "name": "Turkey's Mineral Wealth, Energy Generation & Industrial Geography — Sectoral Breakdown & Distribution",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-turkiye-bolgesel-projeler",
+          "name": "Regional Development Projects in Turkey — GAP, DAP, DOKAP, KOP, ZBK, Yeşilırmak Basin Project",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-kuresel-ticaret-ve-ulasim",
+          "name": "Global Trade, Transport Routes & Tourism — Sea Straits, Canals, Railway/Highway Networks & Economic Impact of Tourism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog1-cevre-afetler-surdurulebilirlik",
+          "name": "Environment, Natural Disasters & Environmental Protection — Human Footprint, Pollution, Global Climate Change & Sustainable Resource Management",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "tarih2",
+      "name": "History-2",
+      "group": "sosyal2",
+      "question_count": 11,
+      "topics": [
+        {
+          "id": "ayt-tar2-tarih-metodolojisi",
+          "name": "Historical Methodology, Philosophy of History, Epistemology & Primary Source Analysis",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-eski-cag-ve-turk-devlet-teskilati",
+          "name": "Antiquity Civilizations & Steppe State Traditions — Kut Belief, Töre, Boy Union, Kurultay, Military Dual System",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-orta-cag-avrupa-ve-islam",
+          "name": "Medieval World & Islamic Civilization — Scholasticism, Feudal Hierarchy, Islamic Philosophy, Science and Legal Thought",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-osmanli-siyaset-ve-teskilat",
+          "name": "Ottoman Political Organization & Statecraft — Central Administration (Divan-ı Hümayun, Bab-ı Âli), Provincial Administration (Eyalet, Sancak), Tımar & Iltizam Systems",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-osmanli-toplum-hukuk-ekonomi",
+          "name": "Ottoman Society, Law & Economy — Millet System, Guilds (Ahilik/Lonca), Sharia and Customary Law, Foundation (Vakıf) System, Classic Monetary Policy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-avrupada-donusum-ve-aydinlanma",
+          "name": "Transformations in Europe — Renaissance, Reformation, Scientific Revolution, Enlightenment Thinkers, French Revolution, Industrial Revolution & Rise of Capitalism",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-osmanli-modernlesme-kurumlari",
+          "name": "Ottoman Institutional Modernization — Sened-i İttifak, Tanzimat and Islahat Charters, Military/Civilian Modern Schools, 1st & 2nd Meşrutiyet Constitutions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-milli-mucadele-diplomasi",
+          "name": "Turkish National Movement Diplomacy — London Conference, Moscow Treaty, Ankara Treaty, Lausanne Conference Negotiations",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-iki-savas-arasi-dunya",
+          "name": "The World Between Two Wars (1918–1939) — League of Nations, Paris Peace Treaties, 1929 Great Depression, Totalitarian Regimes (Fascism, Nazism, Stalinism, Militarism), Middle East Mandates",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-ikinci-dunya-savasi",
+          "name": "World War II (1939–1945) — Causes, Axis vs. Allies, Major Fronts, Holocaust, Wartime Conferences (Tehran, Yalta, Potsdam), Turkey's Diplomatic Neutrality and Domestic Conditions",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-soguk-savas-donemi",
+          "name": "The Cold War Era (1945–1963) — Bipolar World, Truman Doctrine, Marshall Plan, NATO, Warsaw Pact, Berlin Crisis, Korean War, Turkey's Entrance to NATO, Non-Aligned Movement",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-yumusama-donemi-ve-krizler",
+          "name": "Détente Era (Yumuşama) & Global Crises (1963–1990) — SALT Accords, Cuban Missile Crisis, Vietnam War, Arab-Israeli Conflicts, 1973 Oil Crisis, Cyprus Peace Operation, Iran-Iraq War",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-tar2-kuresellesen-dunya-ve-turkiye",
+          "name": "The Globalizing World & Modern Turkey (1990–Present) — Dissolution of the USSR, Gulf Wars, Balkan Wars (Bosnia, Kosovo), Turkic Republics, European Union Relations, Modern Middle East Dynamics",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "cografya2",
+      "name": "Geography-2",
+      "group": "sosyal2",
+      "question_count": 11,
+      "topics": [
+        {
+          "id": "ayt-cog2-ekosistem-ve-madde-dongusu",
+          "name": "Ecosystem Dynamics & Biogeochemical Cycles — Carbon, Nitrogen, Water, Oxygen Cycles; Energy Trophic Pyramids, Ecological Niches",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-ilk-medeniyet-ve-sehirler",
+          "name": "First Civilizations & Early Urbanization — Cultural Hearths (Nile, Tigris-Euphrates, Indus, Ganges, Yellow River, Andes, Mesoamerica), Evolution of Urban Centers",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-turkiye-tarim-ve-hayvancilik",
+          "name": "Agriculture, Livestock Breeding & Forestry in Turkey — Crop Distribution, Farming Techniques, Irrigation, Pastures & Modern Animal Husbandry",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-turkiye-maden-ve-enerji",
+          "name": "Turkey's Minerals & Energy Assets — Boron, Coal, Lignite, Petroleum, Natural Gas, Hydroelectric, Geothermal, Solar, Wind Energy & Nuclear Programs",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-turkiye-sanayi-ve-ulasim",
+          "name": "Turkey's Industrial Zones, Domestic/Foreign Trade & Transportation Infrastructure (Highways, Railways, Maritime, Aviation)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-bolgesel-kalkinma-projeleri",
+          "name": "Regional Development Strategies — GAP, DAP, DOKAP, KOP, ZBK, Regional Disparities, Social & Economic Objectives",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-jeopolitik-ve-turk-dunyasi",
+          "name": "Geopolitics & Turkey's Geostrategic Importance — Straits, Energy Hubs, Cultural Geography & Relations with Central Asian Turkic Republics",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-kuresel-ve-bolgesel-orgutler",
+          "name": "International & Regional Organizations — UN, NATO, EU, OECD, OPEC, OIC, BSEC, D-8, Economic Cooperation Organization, Organization of Turkic States",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-uluslararasi-catisma-alanlari",
+          "name": "Global Hotspots & Conflict Areas — Middle East, Caucasus, Eastern Mediterranean, South China Sea, Transboundary Water Resources",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-cevre-sorunlari-ve-atiklar",
+          "name": "Environmental Degradation & Pollution Types — Soil, Water, Air, Noise and Radioactive Pollution; Waste Management, Recycling, Deforestation, Desertification",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-cog2-iklim-ve-surdurulebilirlik",
+          "name": "Global Climate Action & Environmental Sustainability — Greenhouse Gases, Kyoto Protocol, Paris Agreement, Ecological Footprint, Renewable Future",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "felsefe_grubu",
+      "name": "Philosophy Group",
+      "group": "sosyal2",
+      "question_count": 12,
+      "topics": [
+        {
+          "id": "ayt-fel-felsefeye-giris-ve-temel-alanlar",
+          "name": "Philosophy: Nature of Philosophy & Major Disciplines — Ontology (Varlık), Epistemology (Bilgi), Ethics (Ahlak), Aesthetics (Sanat), Politics, Philosophy of Religion",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fel-ilk-cag-ve-orta-cag",
+          "name": "Philosophy: Ancient & Medieval Eras — Presocratics, Socrates, Plato, Aristotle; Hellenistic Schools; Patristic & Scholastic Christian Philosophy; Islamic Philosophy (Farabi, Ibn Sina, Gazali, Ibn Rüşd)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-fel-modern-ve-cagdas-felsefe",
+          "name": "Philosophy: Modern & Contemporary Eras — 17th Century Rationalism/Empiricism (Descartes, Spinoza, Locke), 18th Century Enlightenment (Kant, Rousseau), 19th-20th Century Currents (Hegel, Marx, Nietzsche, Positivism, Existentialism, Hermeneutics)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-psi-psikolojiye-giris-ve-yaklasimlar",
+          "name": "Psychology: Nature of Psychology, Subfields & Research Methods — Structuralism, Functionalism, Behaviorism, Psychoanalysis, Gestalt, Humanistic, Cognitive & Biological Approaches",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-psi-bilissel-surecler-ve-algilama",
+          "name": "Psychology: Cognitive Processes — Sensation, Thresholds, Perception, Perceptual Organization (Gestalt Laws), Attention, Memory, Consciousness & Altered States",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-psi-ogrenme-bellek-dusunme",
+          "name": "Psychology: Learning, Memory & Thought — Classical & Operant Conditioning, Cognitive Learning, Social Learning, Memory Stages & Retrieval, Problem Solving",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-psi-gelisim-ve-kisilik",
+          "name": "Psychology: Developmental Stages & Personality — Physical, Cognitive, Moral Development across Lifespan; Trait, Psychodynamic, Humanistic Personality Theories",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-psi-sosyal-davranis-ve-ruh-sagligi",
+          "name": "Psychology: Social Behavior & Mental Health — Social Perception, Attitudes, Conformity; Stress, Defense Mechanisms, Psychological Disorders, Psychotherapy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-sos-sosyolojiye-giris-ve-yontem",
+          "name": "Sociology: Nature of Sociology, Sociological Approaches & Research Methods (Survey, Fieldwork, Monography)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-sos-toplumsal-yapi-ve-etkilesim",
+          "name": "Sociology: Social Structure & Social Interaction — Status (Ascribed/Achieved), Roles, Role Conflict, Social Groups, Institutions, Values & Norms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-sos-toplumsal-degisme-ve-kuresellesme",
+          "name": "Sociology: Social Change, Modernization, Urbanization, Social Movements & Globalization",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-sos-toplumsal-kurumlar",
+          "name": "Sociology: Social Institutions — Family & Marriage, Education, Economy, Political Order, Religion, Mass Media",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-sos-toplumsal-tabakalasma-ve-sapma",
+          "name": "Sociology: Social Stratification & Deviance — Social Classes, Social Mobility (Horizontal/Vertical), Deviance, Anomie & Social Control Mechanisms",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-man-klasik-mantik-kavramlar",
+          "name": "Logic: Classical Logic — Concept & Term, Extension and Intension (İçlem ve Kaplam), Five Predicables (Beş Tümel), Definition Rules",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-man-onermeler-ve-kiyas",
+          "name": "Logic: Propositions & Syllogism — Categorical Propositions, Square of Opposition (Karşı Olum Çıkarımları), Conversion, Valid Syllogistic Forms (Kıyas Kuralları)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-man-mantik-ve-dil",
+          "name": "Logic: Logic and Language — Semantic Functions, Syntactic Analysis, Informal Fallacies (Safsatalar)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-man-sembolik-onermeler-mantigi",
+          "name": "Logic: Modern Propositional Logic — Propositional Connectives, Truth Tables, Tautology, Contradiction, Equivalence, Logical Implication & Validity Proofs",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-man-sembolik-yuklemler-mantigi",
+          "name": "Logic: Modern Predicate Logic — Quantifiers (Universal, Existential), Free & Bound Variables, Universe of Discourse, Quantified Validities",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    },
+    {
+      "id": "din",
+      "name": "Religious Culture & Ethics",
+      "group": "sosyal2",
+      "question_count": 6,
+      "topics": [
+        {
+          "id": "ayt-din-inanc-ve-esaslari",
+          "name": "Faith and Islamic Creeds — Tawhid, Attributes of Allah, Angels, Divine Books, Prophethood, Destiny (Kader ve Kaza) & The Afterlife (Ahiret)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-ibadet-ve-manevi-hayat",
+          "name": "Worship & Spiritual Practice — Prayer (Namaz), Fasting (Oruç), Almsgiving (Zekât), Pilgrimage (Hac), Sacrifice, Supplication (Dua) & Worship Purpose",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-hz-muhammed-ve-ornek-sahasi",
+          "name": "Prophet Muhammad as Moral Exemplar & Spiritual Guide — Uswatun Hasanah, The Prophetic Mission, Preservation of the Sunnah",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-kuran-ve-insan",
+          "name": "Human Nature and Purpose in the Quran — Divine Purpose of Creation, Reason, Free Will, Conscience, Accountability & Moral Responsibility",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-islam-ve-bilim-dusuncesi",
+          "name": "Islam, Reason and Scientific Inquiries — Encouragement of Knowledge, Historical Contributions of Muslim Scientists, Rational Sciences and Philosophy",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-islamda-ahlak-ve-tasavvuf",
+          "name": "Islamic Ethics & Sufi Tradition (Tasavvuf) — Key Ethical Concepts (Ihsan, Taqwa, Adalah), Sufi Thought & Figures (Yunus Emre, Mevlana, Hacı Bektaş-ı Veli, Ahmet Yesevi)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-mezhepler-ve-dini-yorumlar",
+          "name": "Schools of Thought & Denominations in Islam — Theological / Creedal (İtikadi: Maturidilik, Eş'arilik, Mutezile) & Jurisprudential (Ameli/Fıkhi: Hanefi, Şafii, Maliki, Hanbeli, Caferi)",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        },
+        {
+          "id": "ayt-din-yasayan-dunya-dinleri",
+          "name": "Living World Religions — Judaism, Christianity, Hinduism, Buddhism, Confucianism, Taoism; Sacred Texts, Beliefs & Comparative Perspectives",
+          "last_tested": null,
+          "last_result": null,
+          "wrong_total": 0,
+          "blank_total": 0,
+          "correct_total": 0,
+          "question_total": 0
+        }
+      ]
+    }
+  ]
+}
