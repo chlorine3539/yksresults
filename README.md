@@ -55,11 +55,6 @@ It contains:
 - `tyt-topic-tracker/` — TYT topics, results, and analyses
 - `ayt-topic-tracker/` — AYT topics, results, and analyses
 
-On first launch after the rename, an existing `yks-tracker/` directory is moved to
-`yksresults/` automatically, so study history is preserved.
-
-Back up this directory to preserve your study history.
-
 ## Topic inventory
 
 The topic lists in `topics/tyt.json` and `topics/ayt.json` were compiled from
