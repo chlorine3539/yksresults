@@ -6,6 +6,10 @@ It imports Okulizyon HTML exports and shows, per topic, the question total and t
 correct, wrong and blank counts with the calculated success rate, plus a summary across
 all subjects. The two exams keep separate inventories and histories.
 
+<p align="center">
+  <img src="assets/tyt-statistics.png" alt="YKSResults TYT Statistics" width="70%">
+</p>
+
 ## Requirements
 
 - Rust 1.88 or newer and Cargo (edition 2024)
@@ -61,27 +65,27 @@ Back up this directory to preserve your study history.
 The topic lists in `topics/tyt.json` and `topics/ayt.json` were compiled from
 the following sources:
 
-| Source | URL |
-|---|---|
-| MEB Türk Dili ve Edebiyatı Öğretim Programı | meb.gov.tr |
-| ÖSYM YKS Kılavuzu | osym.gov.tr |
-| ailevegitim.com — TYT/AYT konu listeleri | ailevegitim.com |
-| derslig.com — TYT Matematik, Geometri, AYT Geometri konu listeleri | derslig.com |
-| erinakademi.com — AYT Sayısal tam konu listesi | erinakademi.com |
+| Source                                                                 | URL              |
+| ---------------------------------------------------------------------- | ---------------- |
+| MEB Türk Dili ve Edebiyatı Öğretim Programı                            | meb.gov.tr       |
+| ÖSYM YKS Kılavuzu                                                      | osym.gov.tr      |
+| ailevegitim.com — TYT/AYT konu listeleri                               | ailevegitim.com  |
+| derslig.com — TYT Matematik, Geometri, AYT Geometri konu listeleri     | derslig.com      |
+| erinakademi.com — AYT Sayısal tam konu listesi                         | erinakademi.com  |
 | dopinghafiza.com — TYT Geometri & AYT Analitik Geometri konu listeleri | dopinghafiza.com |
-| kitapsec.com — TYT Geometri soru dağılımı | kitapsec.com |
-| tahtaapp.com — TYT Türkçe, Sosyal Bilimler konu listeleri | tahtaapp.com |
-| superprof.com.tr — TYT Fen & Sosyal konu listeleri | superprof.com.tr |
-| miletakademi.net — AYT Matematik konu listesi | miletakademi.net |
+| kitapsec.com — TYT Geometri soru dağılımı                              | kitapsec.com     |
+| tahtaapp.com — TYT Türkçe, Sosyal Bilimler konu listeleri              | tahtaapp.com     |
+| superprof.com.tr — TYT Fen & Sosyal konu listeleri                     | superprof.com.tr |
+| miletakademi.net — AYT Matematik konu listesi                          | miletakademi.net |
 
 - **TYT** covers 9 subjects: Türkçe (40q), Temel Matematik & Geometri (40q),
   Fizik (7q), Kimya (7q), Biyoloji (6q), Tarih (5q), Coğrafya (5q),
   Felsefe (5q), and Din Kültürü ve Ahlak Bilgisi (5q).
 - **AYT** covers all 11 subjects across all tracks:
-  - *Türk Dili ve Edebiyatı - Sosyal Bilimler-1 (40q):* Türk Dili ve Edebiyatı (24q), Tarih-1 (10q), Coğrafya-1 (6q)
-  - *Matematik (40q):* Matematik & Geometri (40q)
-  - *Fen Bilimleri (40q):* Fizik (14q), Kimya (13q), Biyoloji (13q)
-  - *Sosyal Bilimler-2 (40q):* Tarih-2 (11q), Coğrafya-2 (11q), Felsefe Grubu (12q), Din Kültürü ve Ahlak Bilgisi (6q)
+  - _Türk Dili ve Edebiyatı - Sosyal Bilimler-1 (40q):_ Türk Dili ve Edebiyatı (24q), Tarih-1 (10q), Coğrafya-1 (6q)
+  - _Matematik (40q):_ Matematik & Geometri (40q)
+  - _Fen Bilimleri (40q):_ Fizik (14q), Kimya (13q), Biyoloji (13q)
+  - _Sosyal Bilimler-2 (40q):_ Tarih-2 (11q), Coğrafya-2 (11q), Felsefe Grubu (12q), Din Kültürü ve Ahlak Bilgisi (6q)
 
 ## Okulizyon HTML import
 
