@@ -9,14 +9,15 @@ all subjects. The two exams keep separate inventories and histories.
 ## Requirements
 
 - Rust 1.88 or newer and Cargo (edition 2024)
-- Linux or macOS (Unix only; Windows is not supported)
+- Linux, macOS, or Windows 10+
 - A terminal emulator
 
 ## Usage
 
 Keys: arrows or `j`/`k` move through topics, `PageUp`/`PageDown` jump by 10,
 `/` searches, `e` switches exams, `r` reloads data, and `q` quits. Build an optimized
-executable with `cargo build --release`.
+executable with `cargo build --release` (binary at `target/release/yksresults`, or
+`target\release\yksresults.exe` on Windows).
 
 CLI commands:
 
@@ -40,8 +41,12 @@ removed from existing data files if they hold no results.
 
 ## Application data
 
-Runtime data is stored outside the repository at
-`${XDG_DATA_HOME:-~/.local/share}/yksresults/`:
+Runtime data is stored outside the repository:
+
+- Linux and macOS: `${XDG_DATA_HOME:-~/.local/share}/yksresults/`
+- Windows: `%LOCALAPPDATA%\yksresults\`
+
+It contains:
 
 - `tyt-topic-tracker/` — TYT topics, results, and analyses
 - `ayt-topic-tracker/` — AYT topics, results, and analyses

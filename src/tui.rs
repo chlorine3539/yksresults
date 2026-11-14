@@ -1,5 +1,5 @@
 use crate::data::{Exam, Tracker};
-use crossterm::event::{self, Event, KeyCode, KeyEvent, KeyModifiers};
+use crossterm::event::{self, Event, KeyCode, KeyEvent, KeyEventKind, KeyModifiers};
 use crossterm::execute;
 use crossterm::terminal::{
     EnterAlternateScreen, LeaveAlternateScreen, disable_raw_mode, enable_raw_mode,
@@ -80,6 +80,9 @@ fn run_loop(
         let Event::Key(key) = event::read()? else {
             continue;
         };
+        if key.kind != KeyEventKind::Press {
+            continue;
+        }
         app.message.clear();
         if app.search_input.is_some() {
             handle_search(&mut app, key);

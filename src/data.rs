@@ -3,7 +3,6 @@ use std::env;
 use std::error::Error;
 use std::fs::{self, OpenOptions};
 use std::io::Write;
-use std::os::unix::fs::{OpenOptionsExt, PermissionsExt};
 use std::path::{Path, PathBuf};
 use std::time::{SystemTime, UNIX_EPOCH};
 
@@ -191,21 +190,52 @@ pub fn data_home() -> Result<PathBuf, Box<dyn Error>> {
             }
             Ok(path)
         }
-        _ => {
-            let home = env::var_os("HOME").ok_or("HOME is not set")?;
-            Ok(PathBuf::from(home).join(".local/share"))
-        }
+        _ => platform_data_home(),
     }
+}
+
+#[cfg(windows)]
+fn platform_data_home() -> Result<PathBuf, Box<dyn Error>> {
+    let base = env::var_os("LOCALAPPDATA")
+        .or_else(|| env::var_os("APPDATA"))
+        .ok_or("LOCALAPPDATA is not set")?;
+    let path = PathBuf::from(base);
+    if !path.is_absolute() {
+        return Err("LOCALAPPDATA must be an absolute path".into());
+    }
+    Ok(path)
+}
+
+#[cfg(not(windows))]
+fn platform_data_home() -> Result<PathBuf, Box<dyn Error>> {
+    let home = env::var_os("HOME").ok_or("HOME is not set")?;
+    Ok(PathBuf::from(home).join(".local/share"))
 }
 
 pub fn ensure_private_dir(path: &Path) -> Result<(), Box<dyn Error>> {
     fs::create_dir_all(path)?;
-    fs::set_permissions(path, fs::Permissions::from_mode(0o700))?;
+    #[cfg(unix)]
+    {
+        use std::os::unix::fs::PermissionsExt;
+        fs::set_permissions(path, fs::Permissions::from_mode(0o700))?;
+    }
     Ok(())
 }
 
 pub fn read_json(path: &Path) -> Result<Value, Box<dyn Error>> {
     Ok(serde_json::from_slice(&fs::read(path)?)?)
+}
+
+/// Options for creating a new private file: owner-only on Unix, inherited ACLs elsewhere.
+fn private_open_options() -> OpenOptions {
+    let mut options = OpenOptions::new();
+    options.write(true).create_new(true);
+    #[cfg(unix)]
+    {
+        use std::os::unix::fs::OpenOptionsExt;
+        options.mode(0o600);
+    }
+    options
 }
 
 /// Writes `contents` to a fresh private temporary file next to `path` and returns its path.
@@ -222,11 +252,7 @@ fn write_temporary(path: &Path, contents: &[u8]) -> Result<PathBuf, Box<dyn Erro
         timestamp
     ));
     let result = (|| -> Result<(), Box<dyn Error>> {
-        let mut file = OpenOptions::new()
-            .write(true)
-            .create_new(true)
-            .mode(0o600)
-            .open(&temporary)?;
+        let mut file = private_open_options().open(&temporary)?;
         file.write_all(contents)?;
         file.sync_all()?;
         Ok(())
@@ -257,10 +283,22 @@ fn initialize_file(path: &Path, contents: &[u8]) -> Result<(), Box<dyn Error>> {
     let result = match fs::hard_link(&temporary, path) {
         Ok(()) => Ok(()),
         Err(_error) if path.exists() => Ok(()),
-        Err(error) => Err(error.into()),
+        // FAT/exFAT and some network shares do not support hard links.
+        Err(_error) => create_new_file(path, contents).map_err(Into::into),
     };
     let _ = fs::remove_file(&temporary);
     result
+}
+
+fn create_new_file(path: &Path, contents: &[u8]) -> std::io::Result<()> {
+    match private_open_options().open(path) {
+        Ok(mut file) => {
+            file.write_all(contents)?;
+            file.sync_all()
+        }
+        Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => Ok(()),
+        Err(error) => Err(error),
+    }
 }
 
 #[cfg(test)]

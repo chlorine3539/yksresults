@@ -69,7 +69,7 @@ fn run_import(args: &[String], exam: Exam) -> Result<(), Box<dyn std::error::Err
 
 fn print_help() {
     println!(
-        "yksresults - Linux terminal YKS results tracker\n\n\
+        "yksresults - Terminal YKS results tracker\n\n\
          Usage:\n  yksresults [tui]\n  yksresults report <tyt|ayt> [--write]\n  yksresults import-tyt [--file PATH] [--date YYYY-MM-DD]\n  yksresults import-ayt [--file PATH] [--date YYYY-MM-DD]\n\n\
          Commands:\n  tui          Open the interactive topic tracker (default)\n  report       Print a topic progress report\n  import-tyt   Import a TYT Okulizyon HTML export\n  import-ayt   Import an AYT Okulizyon HTML export\n\n\
          Options:\n  --file PATH  Import and archive one HTML file instead of scanning the results folder\n  --date DATE  Set the rehearsal date when the filename has none\n"
