@@ -19,10 +19,13 @@ fn includes_any(text: &str, needles: &[&str]) -> bool {
 }
 
 fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
-    let text = outcome.to_lowercase();
+    let text = fold(outcome);
     let result = match subject_id {
         "turkce" => {
-            if includes_any(
+            // Must come before the broad "sözcük" rule below, which would otherwise swallow it.
+            if text.contains("sözcük tür") {
+                "turkce-sozcuk-turleri"
+            } else if includes_any(
                 &text,
                 &["sözcükte anlam", "sözcük", "kelime", "deyim", "atasöz"],
             ) {
@@ -202,7 +205,7 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 &[
                     "veri",
                     "grafik",
-                    "merkezî eğilim",
+                    "merkezi eğilim",
                     "medyan",
                     "mod",
                     "açıklık",
@@ -407,7 +410,7 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             } else if includes_any(
                 &text,
                 &[
-                    "millî mücadele",
+                    "milli mücadele",
                     "meclis",
                     "büyük millet",
                     "sevr",
@@ -632,7 +635,7 @@ pub fn is_retired_tyt_topic(id: &str) -> bool {
 }
 
 fn canonical_topic_id(legacy_id: &str, outcome: &str) -> Option<String> {
-    let text = outcome.to_lowercase();
+    let text = fold(outcome);
     if let Some((_, _, target)) = LEGACY_REMAP_IF
         .iter()
         .find(|(id, needles, _)| *id == legacy_id && includes_any(&text, needles))
@@ -652,9 +655,7 @@ fn map_outcome(subject_id: &str, outcome: &str) -> Option<String> {
 }
 
 fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
-    // Turkish uppercase İ lowercases to "i" plus a combining dot, which would
-    // break substring matches such as "İntegral" -> "integral".
-    let text = outcome.to_lowercase().replace('\u{307}', "");
+    let text = fold(outcome);
     let topic = match subject_id {
         "matematik" => {
             if includes_any(&text, &["binom", "pascal"]) {
@@ -1088,6 +1089,8 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "durak",
                     "koşma",
                     "aruz",
+                    "şiirde tema",
+                    "şiirde ahenk",
                 ],
             ) {
                 "ayt-edebiyat-siir-bilgisi"
@@ -1143,6 +1146,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 &text,
                 &[
                     "divan nazım",
+                    "divan edebiyatında nazım",
                     "gazel",
                     "kaside",
                     "mesnevi",
@@ -1197,7 +1201,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 &text,
                 &[
                     "milli edebiyat",
-                    "millî edebiyat",
+                    "milli edebiyat",
                     "genç kalemler",
                     "ömer seyfettin",
                     "ziya gökalp",
@@ -1386,7 +1390,15 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 "ayt-tar1-beylikten-devlete-osmanli"
             } else if includes_any(
                 &text,
-                &["dünya gücü", "yükselme", "fatih", "kanuni", "yavuz"],
+                &[
+                    "dünya gücü",
+                    "yükselme",
+                    "fatih",
+                    "kanuni",
+                    "yavuz",
+                    "kara ve deniz politika",
+                    "1453-1520",
+                ],
             ) {
                 "ayt-tar1-dunya-gucu-osmanli"
             } else if includes_any(
@@ -1417,6 +1429,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "balkan savaşı",
                     "birinci dünya",
                     "mondros",
+                    "1914-1918",
                 ],
             ) {
                 "ayt-tar1-20-yy-baslarinda-osmanli-ve-dunya"
@@ -1501,15 +1514,41 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             }
         }
         "tarih2" => {
-            if includes_any(&text, &["tarih metodolojisi", "felsefesi", "kaynak"]) {
+            if includes_any(
+                &text,
+                &[
+                    "tarih metodolojisi",
+                    "felsefesi",
+                    "kaynak",
+                    "tarihsel bilgi",
+                ],
+            ) {
                 "ayt-tar2-tarih-metodolojisi"
-            } else if includes_any(&text, &["eski çağ", "töre", "kut", "kurultay"]) {
+            } else if includes_any(
+                &text,
+                &[
+                    "eski çağ",
+                    "töre",
+                    "kut",
+                    "kurultay",
+                    "ilk türk devletlerinde",
+                ],
+            ) {
                 "ayt-tar2-eski-cag-ve-turk-devlet-teskilati"
             } else if includes_any(&text, &["orta çağ", "skolastik", "feodal"]) {
                 "ayt-tar2-orta-cag-avrupa-ve-islam"
             } else if includes_any(&text, &["divan-ı hümayun", "tımar", "iltizam", "eyalet"]) {
                 "ayt-tar2-osmanli-siyaset-ve-teskilat"
-            } else if includes_any(&text, &["millet sistemi", "lonca", "ahilik", "vakıf"]) {
+            } else if includes_any(
+                &text,
+                &[
+                    "millet sistemi",
+                    "lonca",
+                    "ahilik",
+                    "vakıf",
+                    "klasik dönemindeki ekonomik",
+                ],
+            ) {
                 "ayt-tar2-osmanli-toplum-hukuk-ekonomi"
             } else if includes_any(
                 &text,
@@ -1518,7 +1557,12 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 "ayt-tar2-avrupada-donusum-ve-aydinlanma"
             } else if includes_any(
                 &text,
-                &["sened-i ittifak", "tanzimat fermanı", "kanun-i esasi"],
+                &[
+                    "sened-i ittifak",
+                    "tanzimat fermanı",
+                    "kanun-i esasi",
+                    "idari, askeri ve ekonomik",
+                ],
             ) {
                 "ayt-tar2-osmanli-modernlesme-kurumlari"
             } else if includes_any(
@@ -1594,7 +1638,16 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 ],
             ) {
                 "ayt-cog2-ekosistem-ve-madde-dongusu"
-            } else if includes_any(&text, &["ilk medeniyetler", "nüfus", "şehirleşme"]) {
+            } else if includes_any(
+                &text,
+                &[
+                    "ilk medeniyetler",
+                    "nüfus",
+                    "şehirleşme",
+                    "yerleşme",
+                    "şehir",
+                ],
+            ) {
                 "ayt-cog2-ilk-medeniyet-ve-sehirler"
             } else if includes_any(&text, &["tarım", "hayvancılık", "sulama"]) {
                 "ayt-cog2-turkiye-tarim-ve-hayvancilik"
@@ -1613,8 +1666,16 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 "ayt-cog2-kuresel-ve-bolgesel-orgutler"
             } else if includes_any(&text, &["çatışma", "orta doğu", "su sorunu", "hazar"]) {
                 "ayt-cog2-uluslararasi-catisma-alanlari"
-            } else if includes_any(&text, &["çevre kirliliği", "atık", "erozyon", "çölleşme"])
-            {
+            } else if includes_any(
+                &text,
+                &[
+                    "çevre kirliliği",
+                    "atık",
+                    "erozyon",
+                    "çölleşme",
+                    "geri dönüşüm",
+                ],
+            ) {
                 "ayt-cog2-cevre-sorunlari-ve-atiklar"
             } else if includes_any(
                 &text,
@@ -1634,6 +1695,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "ahlak felsefesi",
                     "sanat felsefesi",
                     "siyaset felsefesi",
+                    "felsefi soru",
                 ],
             ) {
                 "ayt-fel-felsefeye-giris-ve-temel-alanlar"
@@ -1667,6 +1729,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "davranışçılık",
                     "psikanaliz",
                     "bilişsel yaklaşım",
+                    "psikoloji araştırma",
                 ],
             ) {
                 "ayt-psi-psikolojiye-giris-ve-yaklasimlar"
@@ -1719,7 +1782,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                 &[
                     "tabakalaşma",
                     "toplumsal sınıf",
-                    "hareketlilik",
+                    "hareketlili",
                     "sapma",
                     "kontrol",
                 ],
@@ -1754,7 +1817,7 @@ fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             if includes_any(
                 &text,
                 &[
-                    "inanç", "iman", "allah", "melek", "kitap", "kader", "ahiret",
+                    "inanç", "iman", "allah", "melek", "kitap", "kader", "ahiret", "tevhit",
                 ],
             ) {
                 "ayt-din-inanc-ve-esaslari"
@@ -1814,8 +1877,36 @@ fn is_html(path: &Path) -> bool {
         })
 }
 
-fn parse_number(value: &str) -> f64 {
-    value.trim().replace(',', ".").parse().unwrap_or(0.0)
+fn parse_net(value: &str, label: &str) -> Result<f64, Box<dyn Error>> {
+    value
+        .trim()
+        .replace(',', ".")
+        .parse::<f64>()
+        .map_err(|_| format!("could not read net for '{label}': '{}'", value.trim()).into())
+}
+
+fn parse_count(value: &str, label: &str, what: &str) -> Result<i64, Box<dyn Error>> {
+    let number = value.trim().replace(',', ".").parse::<f64>().ok();
+    match number {
+        Some(number) if number >= 0.0 && number.fract() == 0.0 => Ok(number as i64),
+        _ => Err(format!("could not read {what} for '{label}': '{}'", value.trim()).into()),
+    }
+}
+
+/// Lowercases Turkish text so substring rules behave: `İ` -> `i` and `I` -> `ı`
+/// (Rust's `to_lowercase` would turn `İ` into `i` plus a combining dot and `I` into `i`),
+/// `î`/`û` lose their circumflex ("Edebî" -> "edebi") and curly apostrophes become `'`.
+/// `â` is kept on purpose so that "kâr" (profit) stays distinct from "kar".
+/// Rule needles must be written in this folded form.
+fn fold(text: &str) -> String {
+    text.replace("I\u{307}", "i")
+        .replace('İ', "i")
+        .replace('I', "ı")
+        .to_lowercase()
+        .replace('\u{307}', "")
+        .replace('î', "i")
+        .replace('û', "u")
+        .replace(['’', '‘'], "'")
 }
 
 fn element_text(element: ElementRef<'_>) -> String {
@@ -1913,7 +2004,12 @@ fn copy_to_results(
     Ok(())
 }
 
-fn write_analysis(analysis_dir: &Path, analysis: &Value) -> Result<(), Box<dyn Error>> {
+/// Returns the analysis file name and path, failing if it already belongs to a different
+/// result file. Called before anything is copied so a refused import leaves no trace.
+fn analysis_target(
+    analysis_dir: &Path,
+    analysis: &Value,
+) -> Result<(String, PathBuf), Box<dyn Error>> {
     let filename = format!(
         "{}-{}.json",
         analysis["date"].as_str().unwrap_or_default(),
@@ -1925,8 +2021,10 @@ fn write_analysis(analysis_dir: &Path, analysis: &Value) -> Result<(), Box<dyn E
         if existing.get("source_file") != analysis.get("source_file") {
             return Err(format!(
                 "Analysis {filename} already exists for a different result file ({}). \
-                 Two exams with the same date and name would overwrite each other; \
-                 rename one of the HTML files or move the old analysis away.",
+                 Analyses are named after the rehearsal date and the exam name inside the HTML, \
+                 so two different results with the same date and exam name would overwrite \
+                 each other. Pass a different --date, or move the old analysis and its results/ \
+                 file away.",
                 existing
                     .get("source_file")
                     .and_then(Value::as_str)
@@ -1935,11 +2033,62 @@ fn write_analysis(analysis_dir: &Path, analysis: &Value) -> Result<(), Box<dyn E
             .into());
         }
     }
+    Ok((filename, target))
+}
+
+fn write_analysis(analysis_dir: &Path, analysis: &Value) -> Result<(), Box<dyn Error>> {
+    let (filename, target) = analysis_target(analysis_dir, analysis)?;
     let mut contents = serde_json::to_vec_pretty(analysis)?;
     contents.push(b'\n');
     atomic_write(&target, &contents)?;
     println!("Created analysis file: {filename}");
     Ok(())
+}
+
+const ELECTIVE_PHILOSOPHY: &str = "Felsefe (Seçmeli)";
+
+/// Summary-table row label -> subject id, for TYT exports. Several rows may feed one subject.
+const TYT_SUMMARY_LABELS: &[(&str, &str)] = &[
+    ("TYT Türkçe", "turkce"),
+    ("Tarih-1", "tarih"),
+    ("Coğrafya-1", "cografya"),
+    ("Felsefe", "felsefe"),
+    ("Din Kül. ve Ahl. Bil.", "din"),
+    (ELECTIVE_PHILOSOPHY, "felsefe"),
+    ("Matematik-1", "matematik"),
+    ("Geometri", "matematik"),
+    ("Fizik", "fizik"),
+    ("Kimya", "kimya"),
+    ("Biyoloji", "biyoloji"),
+];
+
+/// Same for AYT exports. Türkçe + Edebiyat together make up the 24 Türk Dili ve Edebiyatı
+/// questions; Felsefe, Felsefe Grubu and the elective together make up Felsefe Grubu.
+const AYT_SUMMARY_LABELS: &[(&str, &str)] = &[
+    ("Türk Dili ve Edebiyatı", "edebiyat"),
+    ("Türkçe", "edebiyat"),
+    ("Edebiyat", "edebiyat"),
+    ("Tarih-1", "tarih1"),
+    ("Coğrafya-1", "cografya1"),
+    ("Tarih-2", "tarih2"),
+    ("Coğrafya-2", "cografya2"),
+    ("Felsefe", "felsefe_grubu"),
+    ("Felsefe Grubu", "felsefe_grubu"),
+    (ELECTIVE_PHILOSOPHY, "felsefe_grubu"),
+    ("Din Kül. ve Ahl. Bil.", "din"),
+    ("Matematik-2", "matematik"),
+    ("Geometri", "matematik"),
+    ("Fizik", "fizik"),
+    ("Kimya", "kimya"),
+    ("Biyoloji", "biyoloji"),
+];
+
+struct SummaryRow {
+    label: String,
+    subject: &'static str,
+    questions: i64,
+    counts: Counts,
+    skipped: bool,
 }
 
 fn parse_html_exam(
@@ -2004,6 +2153,10 @@ fn parse_html_exam(
     }
     exam_name = exam_name.trim().to_owned();
 
+    let labels: &[(&str, &str)] = match exam {
+        Exam::Tyt => TYT_SUMMARY_LABELS,
+        Exam::Ayt => AYT_SUMMARY_LABELS,
+    };
     let subject_names: &[&str] = match exam {
         Exam::Tyt => &[
             "turkce",
@@ -2030,158 +2183,162 @@ fn parse_html_exam(
             "din",
         ],
     };
-    let mut sections = Map::new();
-    for subject in subject_names {
-        sections.insert(
-            (*subject).to_owned(),
-            json!({"correct":0,"wrong":0,"blank":0,"net":0.0}),
-        );
-    }
-    let section_map: &[(&str, &str)] = match exam {
-        Exam::Tyt => &[
-            ("TYT Türkçe", "turkce"),
-            ("Tarih-1", "tarih"),
-            ("Coğrafya-1", "cografya"),
-            ("Felsefe", "felsefe"),
-            ("Din Kül. ve Ahl. Bil.", "din"),
-            ("Matematik-1", "mat_raw"),
-            ("Geometri", "geo_raw"),
-            ("Fizik", "fizik"),
-            ("Kimya", "kimya"),
-            ("Biyoloji", "biyoloji"),
-        ],
-        Exam::Ayt => &[
-            ("Türk Dili ve Edebiyatı", "edebiyat"),
-            ("Tarih-1", "tarih1"),
-            ("Coğrafya-1", "cografya1"),
-            ("Matematik-2", "mat_raw"),
-            ("Geometri", "geo_raw"),
-            ("Fizik", "fizik"),
-            ("Kimya", "kimya"),
-            ("Biyoloji", "biyoloji"),
-            ("Tarih-2", "tarih2"),
-            ("Coğrafya-2", "cografya2"),
-            ("Felsefe Grubu", "felsefe_grubu"),
-            ("Din Kül. ve Ahl. Bil.", "din"),
-        ],
-    };
-    let mut math = Counts::default();
-    let mut geometry = Counts::default();
-    let mut total_net = 0.0;
+
+    // Summary table: one row per subject (in page order), plus subtotal rows that are ignored.
+    let mut subject_rows: Vec<SummaryRow> = Vec::new();
+    let mut page_total_net: Option<f64> = None;
     for row in first_table {
-        if row.len() < 6 {
-            continue;
-        }
-        let label = row[0].as_str();
-        let correct = parse_number(&row[2]) as i64;
-        let wrong = parse_number(&row[3]) as i64;
-        let blank = parse_number(&row[4]) as i64;
-        let net = parse_number(&row[5]);
-        if let Some((_, target)) = section_map.iter().find(|(name, _)| *name == label) {
-            match *target {
-                "mat_raw" => {
-                    math = Counts {
-                        correct,
-                        wrong,
-                        blank,
-                    }
-                }
-                "geo_raw" => {
-                    geometry = Counts {
-                        correct,
-                        wrong,
-                        blank,
-                    }
-                }
-                subject => {
-                    sections.insert(
-                        subject.to_owned(),
-                        json!({
-                            "correct":correct,
-                            "wrong":wrong,
-                            "blank":blank,
-                            "net":((correct as f64 - wrong as f64 / 4.0) * 100.0).round() / 100.0
-                        }),
-                    );
-                }
-            }
-        } else if label.contains("Toplam:") {
-            total_net = net;
-        }
-    }
-    let math_correct = math.correct + geometry.correct;
-    let math_wrong = math.wrong + geometry.wrong;
-    sections.insert(
-        "matematik".into(),
-        json!({
-            "correct": math_correct,
-            "wrong": math_wrong,
-            "blank": math.blank + geometry.blank,
-            "net": ((math_correct as f64 - math_wrong as f64 / 4.0) * 100.0).round() / 100.0
-        }),
-    );
-
-    if exam == Exam::Ayt {
-        total_net = [
-            "matematik",
-            "fizik",
-            "kimya",
-            "biyoloji",
-            "edebiyat",
-            "tarih1",
-            "cografya1",
-            "tarih2",
-            "cografya2",
-            "felsefe_grubu",
-            "din",
-        ]
-        .iter()
-        .filter_map(|subject| sections.get(*subject))
-        .filter_map(|section| section.get("net"))
-        .filter_map(Value::as_f64)
-        .sum::<f64>();
-        total_net = (total_net * 100.0).round() / 100.0;
-    }
-
-    let table_subjects: &[(usize, &str, i64)] = match exam {
-        Exam::Tyt => &[
-            (1usize, "turkce", 1i64),
-            (2, "tarih", 1),
-            (3, "cografya", 6),
-            (4, "felsefe", 11),
-            (5, "din", 16),
-            (7, "matematik", 1),
-            (8, "matematik", 31),
-            (9, "fizik", 1),
-            (10, "kimya", 8),
-            (11, "biyoloji", 15),
-        ],
-        Exam::Ayt => &[
-            (1usize, "matematik", 1i64),
-            (2, "matematik", 31),
-            (3, "fizik", 1),
-            (4, "kimya", 15),
-            (5, "biyoloji", 28),
-        ],
-    };
-    let mut question_map = Vec::new();
-    for &(table_index, subject_id, question_offset) in table_subjects {
-        let Some(rows) = detail_tables.get(table_index) else {
+        let Some(label) = row.first().map(|cell| cell.trim()) else {
             continue;
         };
-        let mut question_number = question_offset;
-        for row in rows.iter().skip(1) {
-            let cells: Vec<String> = row.iter().map(|cell| cell.trim().to_owned()).collect();
-            if cells.len() < 4 {
-                continue;
+        if label.is_empty() || label == "Ders" || label.ends_with("Toplamı:") {
+            continue;
+        }
+        if label.contains("Toplam:") {
+            if row.len() >= 6 {
+                page_total_net = Some(parse_net(&row[5], label)?);
             }
+            continue;
+        }
+        let Some((_, subject)) = labels.iter().find(|(name, _)| *name == label) else {
+            if row.len() >= 6 {
+                eprintln!(
+                    "Warning: unrecognized row '{label}' in the summary table of {source_file}; its results are not counted."
+                );
+            }
+            continue;
+        };
+        if row.len() < 6 {
+            return Err(format!(
+                "summary row '{label}' has {} cells, expected 6 (Ders, Soru, Doğru, Yanlış, Boş, Net)",
+                row.len()
+            )
+            .into());
+        }
+        let counts = Counts {
+            correct: parse_count(&row[2], label, "correct")?,
+            wrong: parse_count(&row[3], label, "wrong")?,
+            blank: parse_count(&row[4], label, "blank")?,
+        };
+        // An elective philosophy block that was left entirely blank was simply not taken.
+        let skipped = label == ELECTIVE_PHILOSOPHY && counts.correct + counts.wrong == 0;
+        subject_rows.push(SummaryRow {
+            label: label.to_owned(),
+            subject,
+            questions: parse_count(&row[1], label, "question count")?,
+            counts,
+            skipped,
+        });
+    }
+    if subject_rows.is_empty() {
+        return Err(format!(
+            "no known subject rows found in the first table of {source_file}; the export layout is not recognised"
+        )
+        .into());
+    }
+
+    let mut totals: HashMap<&str, Counts> = HashMap::new();
+    for row in subject_rows.iter().filter(|row| !row.skipped) {
+        let entry = totals.entry(row.subject).or_default();
+        entry.correct += row.counts.correct;
+        entry.wrong += row.counts.wrong;
+        entry.blank += row.counts.blank;
+    }
+    let net_of = |counts: &Counts| {
+        ((counts.correct as f64 - counts.wrong as f64 / 4.0) * 100.0).round() / 100.0
+    };
+    let mut sections = Map::new();
+    let mut computed_net = 0.0;
+    for subject in subject_names {
+        let counts = totals.get(subject).copied().unwrap_or_default();
+        computed_net += net_of(&counts);
+        sections.insert(
+            (*subject).to_owned(),
+            json!({
+                "correct": counts.correct,
+                "wrong": counts.wrong,
+                "blank": counts.blank,
+                "net": net_of(&counts)
+            }),
+        );
+    }
+    computed_net = (computed_net * 100.0).round() / 100.0;
+    let total_net = match (exam, page_total_net) {
+        // The AYT "Toplam:" row also counts sections that are not part of the student's track,
+        // so the AYT total is always the sum of the imported sections.
+        (Exam::Ayt, _) => computed_net,
+        (Exam::Tyt, Some(page)) => {
+            if (page - computed_net).abs() > 0.01 {
+                eprintln!(
+                    "Warning: {source_file}: page total net {page} differs from the sum of imported sections {computed_net}."
+                );
+            }
+            page
+        }
+        (Exam::Tyt, None) => {
+            eprintln!("Warning: {source_file}: no 'Toplam:' row found; using the sum of sections.");
+            computed_net
+        }
+    };
+
+    // Per-question tables follow the summary table in the same order as its subject rows.
+    let detail: Vec<&Vec<Vec<String>>> = tables
+        .iter()
+        .zip(&detail_tables)
+        .skip(1)
+        .filter(|(rows, _)| {
+            rows.first().is_some_and(|header| {
+                header
+                    .iter()
+                    .any(|cell| cell == "Kazanım" || cell == "D.C.")
+            })
+        })
+        .map(|(_, details)| details)
+        .collect();
+    let expected: Vec<&SummaryRow> = subject_rows
+        .iter()
+        .filter(|row| row.questions > 0)
+        .collect();
+    if detail.is_empty() {
+        return Err(format!(
+            "no per-question tables (Soru / D.C. / Ö.C. / Kazanım) found in {source_file}"
+        )
+        .into());
+    }
+    if detail.len() != expected.len() {
+        return Err(format!(
+            "{source_file}: found {} per-question tables but {} subject rows with questions; the export layout is not recognised",
+            detail.len(),
+            expected.len()
+        )
+        .into());
+    }
+
+    let mut question_map = Vec::new();
+    for (row, rows) in expected.iter().zip(detail) {
+        let data_rows: Vec<Vec<String>> = rows
+            .iter()
+            .filter(|cells| cells.len() >= 4)
+            .map(|cells| cells.iter().map(|cell| cell.trim().to_owned()).collect())
+            .collect();
+        if data_rows.len() as i64 != row.questions {
+            return Err(format!(
+                "{source_file}: '{}' has {} questions in the summary table but {} in its per-question table",
+                row.label,
+                row.questions,
+                data_rows.len()
+            )
+            .into());
+        }
+        let mut seen = Counts::default();
+        let mut mapped_rows = Vec::new();
+        for (index, cells) in data_rows.iter().enumerate() {
             let (question, correct_answer, student_answer, outcome) = if cells.len() == 4 {
-                (question_number, &cells[1], &cells[2], &cells[3])
+                (index as i64 + 1, &cells[1], &cells[2], &cells[3])
             } else {
-                let question = cells[0].parse::<i64>().unwrap_or(question_number);
+                let question = cells[0].parse::<i64>().unwrap_or(index as i64 + 1);
                 (question, &cells[2], &cells[3], &cells[4])
             };
-            question_number += 1;
             let outcome = outcome.trim();
             let outcome = if outcome.starts_with('[') {
                 outcome
@@ -2199,20 +2356,43 @@ fn parse_html_exam(
             } else {
                 "wrong"
             };
+            match result {
+                "correct" => seen.correct += 1,
+                "wrong" => seen.wrong += 1,
+                _ => seen.blank += 1,
+            }
             let mapped = match exam {
-                Exam::Tyt => map_outcome(subject_id, &outcome),
-                Exam::Ayt => map_ayt_outcome(subject_id, &outcome).map(str::to_owned),
+                Exam::Tyt => map_outcome(row.subject, &outcome),
+                Exam::Ayt => map_ayt_outcome(row.subject, &outcome).map(str::to_owned),
             };
             let topic_id = mapped.filter(|id| canonical_topics.contains(id));
-            question_map.push(json!({
+            mapped_rows.push(json!({
                 "question":question,
-                "subject_id":subject_id,
+                "subject_id":row.subject,
                 "topic_id":topic_id,
                 "kazanim":outcome,
                 "correct_answer":correct_answer,
                 "student_answer":student_answer,
                 "result":result
             }));
+        }
+        if seen.correct != row.counts.correct
+            || seen.wrong != row.counts.wrong
+            || seen.blank != row.counts.blank
+        {
+            eprintln!(
+                "Warning: {source_file}: '{}' answers give {}/{}/{} (correct/wrong/blank) but the summary row says {}/{}/{}.",
+                row.label,
+                seen.correct,
+                seen.wrong,
+                seen.blank,
+                row.counts.correct,
+                row.counts.wrong,
+                row.counts.blank
+            );
+        }
+        if !row.skipped {
+            question_map.extend(mapped_rows);
         }
     }
 
@@ -2226,6 +2406,40 @@ fn parse_html_exam(
         "assumptions":[],
         "raw_notes":format!("Auto-imported from Okulizyon HTML export on {date}.")
     }))
+}
+
+/// Questions without a topic are left out of the topic statistics, so say so.
+fn report_unmapped(analysis: &Value) {
+    let questions = analysis
+        .get("question_map")
+        .and_then(Value::as_array)
+        .map(Vec::as_slice)
+        .unwrap_or_default();
+    let unmapped: Vec<&Value> = questions
+        .iter()
+        .filter(|question| question.get("topic_id").is_none_or(Value::is_null))
+        .collect();
+    if unmapped.is_empty() {
+        return;
+    }
+    let mut examples: Vec<String> = Vec::new();
+    for question in &unmapped {
+        let example = format!(
+            "{}: '{}'",
+            question["subject_id"].as_str().unwrap_or("?"),
+            question["kazanim"].as_str().unwrap_or("?")
+        );
+        if !examples.contains(&example) && examples.len() < 6 {
+            examples.push(example);
+        }
+    }
+    eprintln!(
+        "Warning: {} of {} questions in {} have no topic mapping and are left out of the topic statistics, e.g. {}",
+        unmapped.len(),
+        questions.len(),
+        analysis["source_file"].as_str().unwrap_or("?"),
+        examples.join("; ")
+    );
 }
 
 fn topic_ids(data: &Value) -> HashSet<String> {
@@ -2358,8 +2572,10 @@ pub fn import(
             let filename = archived_filename(path, &date)?;
             let source_file = format!("results/{filename}");
             let analysis = parse_html_exam(path, tracker.exam, &valid_ids, &date, &source_file)?;
+            analysis_target(&analysis_dir, &analysis)?;
             copy_to_results(path, &results_dir, &filename)?;
             write_analysis(&analysis_dir, &analysis)?;
+            report_unmapped(&analysis);
             analyses.push(analysis);
         }
         None => {
@@ -2386,6 +2602,7 @@ pub fn import(
                 let analysis =
                     parse_html_exam(&path, tracker.exam, &valid_ids, &date, &source_file)?;
                 write_analysis(&analysis_dir, &analysis)?;
+                report_unmapped(&analysis);
                 analyses.push(analysis);
             }
         }
@@ -2942,5 +3159,357 @@ mod tests {
             archived_filename(Path::new("/tmp/result_03.11.2026.html"), "2026-11-10").unwrap(),
             "result_03.11.2026.html"
         );
+    }
+
+    // ---- Tests against anonymized tables from real Okulizyon exports (tests/fixtures) ----
+
+    fn fixture(name: &str) -> PathBuf {
+        Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("tests/fixtures")
+            .join(name)
+    }
+
+    fn canonical_topics(exam: Exam) -> HashSet<String> {
+        let json = match exam {
+            Exam::Tyt => include_str!("../topics/tyt.json"),
+            Exam::Ayt => include_str!("../topics/ayt.json"),
+        };
+        topic_ids(&serde_json::from_str(json).unwrap())
+    }
+
+    fn parse_fixture(name: &str, exam: Exam) -> Value {
+        parse_html_exam(
+            &fixture(name),
+            exam,
+            &canonical_topics(exam),
+            "2026-11-09",
+            "results/fixture.html",
+        )
+        .unwrap()
+    }
+
+    fn section(analysis: &Value, subject: &str) -> (i64, i64, i64, f64) {
+        let section = &analysis["sections"][subject];
+        (
+            section["correct"].as_i64().unwrap(),
+            section["wrong"].as_i64().unwrap(),
+            section["blank"].as_i64().unwrap(),
+            section["net"].as_f64().unwrap(),
+        )
+    }
+
+    fn unmapped(analysis: &Value) -> usize {
+        analysis["question_map"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .filter(|question| question["topic_id"].is_null())
+            .count()
+    }
+
+    fn topic_of(analysis: &Value, outcome: &str) -> String {
+        analysis["question_map"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .find(|question| question["kazanim"] == outcome)
+            .unwrap_or_else(|| panic!("no question with outcome {outcome}"))["topic_id"]
+            .as_str()
+            .unwrap_or("<unmapped>")
+            .to_owned()
+    }
+
+    /// Every section's counts must equal what the per-question answers say.
+    fn assert_sections_match_questions(analysis: &Value) {
+        let mut seen: HashMap<(String, String), i64> = HashMap::new();
+        for question in analysis["question_map"].as_array().unwrap() {
+            *seen
+                .entry((
+                    question["subject_id"].as_str().unwrap().to_owned(),
+                    question["result"].as_str().unwrap().to_owned(),
+                ))
+                .or_default() += 1;
+        }
+        for (subject, section) in analysis["sections"].as_object().unwrap() {
+            let has_questions = analysis["question_map"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .any(|question| question["subject_id"] == subject.as_str());
+            if !has_questions {
+                continue;
+            }
+            for result in ["correct", "wrong", "blank"] {
+                assert_eq!(
+                    seen.get(&(subject.clone(), result.to_owned()))
+                        .copied()
+                        .unwrap_or(0),
+                    section[result].as_i64().unwrap(),
+                    "{subject} {result}"
+                );
+            }
+        }
+    }
+
+    #[test]
+    fn imports_tyt_export_completely() {
+        let analysis = parse_fixture("tyt-genel-deneme.html", Exam::Tyt);
+        assert_eq!(
+            analysis["exam_name"],
+            "2026-27 PLE - YKS -TYT - Genel Deneme 01"
+        );
+        assert_eq!(analysis["question_map"].as_array().unwrap().len(), 120);
+        assert_eq!(unmapped(&analysis), 0);
+        assert_eq!(analysis["total_net"].as_f64().unwrap(), 79.5);
+        assert_eq!(section(&analysis, "turkce"), (34, 4, 2, 33.0));
+        assert_eq!(section(&analysis, "matematik"), (22, 1, 17, 21.75));
+        assert_sections_match_questions(&analysis);
+    }
+
+    #[test]
+    fn untaken_elective_philosophy_is_not_counted() {
+        // "Felsefe (Seçmeli)" was left entirely blank: no extra felsefe questions or blanks.
+        let analysis = parse_fixture("tyt-genel-deneme.html", Exam::Tyt);
+        let felsefe = analysis["question_map"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .filter(|question| question["subject_id"] == "felsefe")
+            .count();
+        assert_eq!(felsefe, 5);
+        assert_eq!(section(&analysis, "felsefe"), (5, 0, 0, 5.0));
+    }
+
+    #[test]
+    fn imports_tyt_export_with_uppercase_outcomes() {
+        let analysis = parse_fixture("tyt-tg.html", Exam::Tyt);
+        assert_eq!(analysis["question_map"].as_array().unwrap().len(), 120);
+        assert_eq!(unmapped(&analysis), 0);
+        assert_eq!(analysis["total_net"].as_f64().unwrap(), 44.75);
+        assert_sections_match_questions(&analysis);
+        // ALL-CAPS outcomes used to fall through to catch-all topics.
+        assert_eq!(
+            topic_of(&analysis, "ISI VE SICAKLIK"),
+            "fizik-isi-sicaklik-genlesme"
+        );
+        assert_eq!(topic_of(&analysis, "OLASILIK"), "matematik-olasilik");
+        assert_eq!(
+            topic_of(&analysis, "PARAGRAFIN YAPISI"),
+            "turkce-paragraf-yapi"
+        );
+    }
+
+    #[test]
+    fn imports_sayisal_ayt_export() {
+        let analysis = parse_fixture("ayt-sayisal.html", Exam::Ayt);
+        assert_eq!(analysis["question_map"].as_array().unwrap().len(), 80);
+        assert_eq!(unmapped(&analysis), 0);
+        assert_eq!(section(&analysis, "matematik"), (7, 7, 26, 5.25));
+        // Matematik 5.25 + Fen Bilimleri 19.50; the page's own "Toplam:" row is not usable.
+        assert_eq!(analysis["total_net"].as_f64().unwrap(), 24.75);
+        assert_sections_match_questions(&analysis);
+    }
+
+    #[test]
+    fn imports_ayt_export_with_social_sections_by_table_order() {
+        // 16 tables: Türkçe, Edebiyat, Tarih, ... come before Matematik. Tables must be paired
+        // with summary rows by order, not by fixed index.
+        let analysis = parse_fixture("ayt-full.html", Exam::Ayt);
+        // 166 questions minus the untaken elective philosophy block.
+        assert_eq!(analysis["question_map"].as_array().unwrap().len(), 160);
+        assert_sections_match_questions(&analysis);
+        // Türkçe (5/1) + Edebiyat (2/16) feed one Türk Dili ve Edebiyatı section.
+        assert_eq!(section(&analysis, "edebiyat"), (7, 17, 0, 2.75));
+        // Felsefe (1/5) + Felsefe Grubu (0/6) feed one Felsefe Grubu section.
+        assert_eq!(section(&analysis, "felsefe_grubu"), (1, 11, 0, -1.75));
+        let net = |subjects: &[&str]| -> f64 {
+            subjects
+                .iter()
+                .map(|s| section(&analysis, s).3)
+                .sum::<f64>()
+        };
+        // Subtotals printed on the page: Edebiyat-Sosyal-1 = 12.50, Sosyal-2 = -5.00.
+        assert_eq!(net(&["edebiyat", "tarih1", "cografya1"]), 12.5);
+        assert_eq!(net(&["tarih2", "cografya2", "felsefe_grubu", "din"]), -5.0);
+        assert_eq!(analysis["total_net"].as_f64().unwrap(), 15.25);
+        assert!(
+            unmapped(&analysis) <= 17,
+            "unmapped: {}",
+            unmapped(&analysis)
+        );
+        assert_eq!(
+            topic_of(&analysis, "Edebî Sanatlar"),
+            "ayt-edebiyat-edebi-sanatlar"
+        );
+        assert_eq!(
+            topic_of(&analysis, "Divan Edebiyatında Nazım Şekilleri"),
+            "ayt-edebiyat-divan-nazim"
+        );
+    }
+
+    fn write_temp(name: &str, contents: &str) -> PathBuf {
+        let dir = std::env::temp_dir().join(format!("yksresults-test-{}", std::process::id()));
+        fs::create_dir_all(&dir).unwrap();
+        let path = dir.join(name);
+        fs::write(&path, contents).unwrap();
+        path
+    }
+
+    fn parse_str(name: &str, html: &str, exam: Exam) -> Result<Value, Box<dyn Error>> {
+        let path = write_temp(name, html);
+        parse_html_exam(
+            &path,
+            exam,
+            &canonical_topics(exam),
+            "2026-11-09",
+            "results/x.html",
+        )
+    }
+
+    #[test]
+    fn rejects_exports_without_question_tables() {
+        let html = "<table><tr><th>Ders</th></tr>\
+                    <tr><td>TYT Türkçe</td><td>40</td><td>30</td><td>5</td><td>5</td><td>28,75</td></tr></table>";
+        let error = parse_str("no-details.html", html, Exam::Tyt).unwrap_err();
+        assert!(
+            error.to_string().contains("no per-question tables"),
+            "{error}"
+        );
+    }
+
+    #[test]
+    fn rejects_unreadable_numbers_instead_of_importing_zeros() {
+        let html = "<table><tr><td>TYT Türkçe</td><td>40</td><td>abc</td><td>5</td><td>5</td><td>1</td></tr></table>";
+        let error = parse_str("bad-number.html", html, Exam::Tyt).unwrap_err();
+        assert!(error.to_string().contains("could not read"), "{error}");
+    }
+
+    #[test]
+    fn rejects_unrecognised_layouts() {
+        let html = "<table><tr><td>Something else</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>";
+        let error = parse_str("unknown.html", html, Exam::Ayt).unwrap_err();
+        assert!(error.to_string().contains("not recognised"), "{error}");
+    }
+
+    #[test]
+    fn rejects_misaligned_question_tables() {
+        // Drop the last per-question table: 4 tables for 5 subject rows.
+        let html = fs::read_to_string(fixture("ayt-sayisal.html")).unwrap();
+        let last = html.rfind("<table>").unwrap();
+        let end = html.rfind("</table>").unwrap() + "</table>".len();
+        let broken = format!("{}{}", &html[..last], &html[end..]);
+        let error = parse_str("misaligned.html", &broken, Exam::Ayt).unwrap_err();
+        assert!(error.to_string().contains("per-question tables"), "{error}");
+    }
+
+    #[test]
+    fn fold_handles_turkish_case_rules() {
+        assert_eq!(fold("İSİM"), "isim");
+        assert_eq!(fold("SAYILAR"), "sayılar");
+        assert_eq!(fold("Işık"), "ışık");
+        assert_eq!(fold("Edebî Sanatlar"), "edebi sanatlar");
+        assert_eq!(fold("Osmanlı Devleti’nin"), "osmanlı devleti'nin");
+        assert_eq!(fold("Kâr"), "kâr");
+        assert_eq!(fold("i\u{307}"), "i".to_owned() + "");
+    }
+
+    #[test]
+    fn tyt_rules_see_through_dotted_capital_i() {
+        assert_eq!(
+            map_legacy_outcome("turkce", "İsim tamlaması"),
+            map_legacy_outcome("turkce", "isim tamlaması")
+        );
+        assert_eq!(
+            map_legacy_outcome("turkce", "İsim tamlaması"),
+            Some("turkce-sozcuk-turleri")
+        );
+    }
+
+    #[test]
+    fn word_class_outcomes_are_not_swallowed_by_word_meaning() {
+        assert_eq!(
+            map_legacy_outcome("turkce", "Sözcük türleri: isim, sıfat"),
+            Some("turkce-sozcuk-turleri")
+        );
+        assert_eq!(
+            map_legacy_outcome("turkce", "Sözcükte anlam"),
+            Some("turkce-sozcuk-anlam")
+        );
+    }
+
+    fn temp_tracker(name: &str, exam: Exam) -> Tracker {
+        let directory =
+            std::env::temp_dir().join(format!("yksresults-test-{}-{name}", std::process::id()));
+        let _ = fs::remove_dir_all(&directory);
+        fs::create_dir_all(directory.join("results")).unwrap();
+        fs::create_dir_all(directory.join("analysis")).unwrap();
+        let json = match exam {
+            Exam::Tyt => include_str!("../topics/tyt.json"),
+            Exam::Ayt => include_str!("../topics/ayt.json"),
+        };
+        let topics: Value = serde_json::from_str(json).unwrap();
+        fs::write(
+            directory.join("topics.json"),
+            serde_json::to_vec(&topics).unwrap(),
+        )
+        .unwrap();
+        Tracker {
+            exam,
+            directory,
+            topics,
+        }
+    }
+
+    fn total_questions(tracker: &Tracker) -> i64 {
+        let topics = read_json(&tracker.directory.join("topics.json")).unwrap();
+        topics["subjects"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .flat_map(|subject| subject["topics"].as_array().unwrap())
+            .map(|topic| topic["question_total"].as_i64().unwrap())
+            .sum()
+    }
+
+    fn dir_len(path: &Path) -> usize {
+        fs::read_dir(path).unwrap().count()
+    }
+
+    #[test]
+    fn import_is_idempotent() {
+        let tracker = temp_tracker("idempotent", Exam::Tyt);
+        let file = write_temp(
+            "tyt-genel-deneme_03.11.2026.html",
+            &fs::read_to_string(fixture("tyt-genel-deneme.html")).unwrap(),
+        );
+        assert_eq!(import(&tracker, None, Some(&file)).unwrap(), 1);
+        assert_eq!(total_questions(&tracker), 120);
+        // Importing the same file again, and rescanning, never double-counts.
+        assert_eq!(import(&tracker, None, Some(&file)).unwrap(), 1);
+        assert_eq!(import(&tracker, None, None).unwrap(), 1);
+        assert_eq!(total_questions(&tracker), 120);
+        assert_eq!(dir_len(&tracker.directory.join("results")), 1);
+        assert_eq!(dir_len(&tracker.directory.join("analysis")), 1);
+    }
+
+    #[test]
+    fn refused_import_leaves_results_directory_clean() {
+        // Same exam name and date, different files: the second import must be refused
+        // before its HTML is copied, otherwise every later rescan would fail too.
+        let tracker = temp_tracker("collision", Exam::Ayt);
+        let first = write_temp(
+            "ayt-a_09.11.2026.html",
+            &fs::read_to_string(fixture("ayt-sayisal.html")).unwrap(),
+        );
+        let second = write_temp(
+            "ayt-b_09.11.2026.html",
+            &fs::read_to_string(fixture("ayt-full.html")).unwrap(),
+        );
+        import(&tracker, None, Some(&first)).unwrap();
+        let error = import(&tracker, None, Some(&second)).unwrap_err();
+        assert!(error.to_string().contains("already exists"), "{error}");
+        assert_eq!(dir_len(&tracker.directory.join("results")), 1);
+        assert_eq!(dir_len(&tracker.directory.join("analysis")), 1);
+        assert_eq!(import(&tracker, None, None).unwrap(), 1);
     }
 }
