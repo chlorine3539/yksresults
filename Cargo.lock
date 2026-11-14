@@ -1298,7 +1298,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "yks-tracker"
+name = "yksresults"
 version = "0.1.0"
 dependencies = [
  "chrono",

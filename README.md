@@ -1,6 +1,6 @@
-# YKS Tracker
+# yksresults
 
-YKS Tracker is a native Rust terminal application for viewing TYT and AYT
+yksresults is a native Rust terminal application for viewing TYT and AYT
 rehearsal statistics across all subjects and tracks (Sayısal, Eşit Ağırlık, Sözel).
 It imports Okulizyon HTML exports and shows, per topic, the question total and the
 correct, wrong and blank counts with the calculated success rate, plus a summary across
@@ -21,13 +21,13 @@ executable with `cargo build --release`.
 CLI commands:
 
 ```bash
-yks-tracker                 # Launch interactive TUI (same as `yks-tracker tui`)
-yks-tracker report tyt      # Print TYT statistics report
-yks-tracker report ayt      # Print AYT statistics report
-yks-tracker report tyt --write   # Also write dashboard.md to the TYT data directory
-yks-tracker import-tyt --file ~/Downloads/tyt-result_10.11.2026.html
-yks-tracker import-ayt --file ~/Downloads/ayt-result_10.11.2026.html
-yks-tracker --help          # Usage; --version prints the version
+yksresults                 # Launch interactive TUI (same as `yksresults tui`)
+yksresults report tyt      # Print TYT statistics report
+yksresults report ayt      # Print AYT statistics report
+yksresults report tyt --write   # Also write dashboard.md to the TYT data directory
+yksresults import-tyt --file ~/Downloads/tyt-result_10.11.2026.html
+yksresults import-ayt --file ~/Downloads/ayt-result_10.11.2026.html
+yksresults --help          # Usage; --version prints the version
 ```
 
 Without `--file`, `import-tyt` / `import-ayt` re-scan the exam's `results/` directory
@@ -41,10 +41,13 @@ removed from existing data files if they hold no results.
 ## Application data
 
 Runtime data is stored outside the repository at
-`${XDG_DATA_HOME:-~/.local/share}/yks-tracker/`:
+`${XDG_DATA_HOME:-~/.local/share}/yksresults/`:
 
 - `tyt-topic-tracker/` — TYT topics, results, and analyses
 - `ayt-topic-tracker/` — AYT topics, results, and analyses
+
+On first launch after the rename, an existing `yks-tracker/` directory is moved to
+`yksresults/` automatically, so study history is preserved.
 
 Back up this directory to preserve your study history.
 
@@ -86,7 +89,7 @@ The rehearsal date is automatically extracted from `DD.MM.YYYY` in the filename
 fails unless you pass `--date YYYY-MM-DD`; the archived copy then gets the date appended:
 
 ```bash
-yks-tracker import-ayt --file ~/Downloads/ayt-result.html --date 2026-11-10
+yksresults import-ayt --file ~/Downloads/ayt-result.html --date 2026-11-10
 ```
 
 Two exams with the same date and the same name (first 25 characters, slugified) share one

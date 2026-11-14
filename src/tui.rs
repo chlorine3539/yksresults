@@ -197,7 +197,7 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
         ])
         .split(area);
     frame.render_widget(
-        Paragraph::new(format!("YKS Tracker | {exam} | {} topics", stats.total)),
+        Paragraph::new(format!("yksresults | {exam} | {} topics", stats.total)),
         vertical[0],
     );
     let total_q = stats.correct + stats.wrong + stats.blank;

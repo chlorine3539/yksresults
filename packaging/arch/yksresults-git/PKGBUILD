@@ -1,15 +1,15 @@
 # Maintainer: chlorine3539 <undecided2448@proton.me>
-pkgname=yks-tracker-git
+pkgname=yksresults-git
 pkgver=0.1.0.r2.gafff0f2
 pkgrel=1
-pkgdesc="Native Unix (Linux/macOS) TUI for tracking YKS TYT and AYT study topics"
+pkgdesc="Native Unix (Linux/macOS) TUI for tracking YKS TYT and AYT exam results"
 arch=(x86_64 aarch64)
-url="https://github.com/chlorine3539/yks-tracker"
+url="https://github.com/chlorine3539/yksresults"
 license=(MIT)
 depends=(gcc-libs)
 makedepends=(cargo)
-provides=("yks-tracker=$pkgver")
-conflicts=(yks-tracker)
+provides=("yksresults=$pkgver")
+conflicts=(yksresults)
 source=("$pkgname::git+$url.git")
 sha256sums=('SKIP')
 
@@ -41,7 +41,7 @@ check() {
 
 package() {
   cd "$pkgname"
-  install -Dm755 "target/release/yks-tracker" "$pkgdir/usr/bin/yks-tracker"
+  install -Dm755 "target/release/yksresults" "$pkgdir/usr/bin/yksresults"
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
   install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
 }

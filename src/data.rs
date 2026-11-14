@@ -52,7 +52,7 @@ pub struct Tracker {
 
 impl Tracker {
     pub fn load(exam: Exam) -> Result<Self, Box<dyn Error>> {
-        let application_directory = data_home()?.join("yks-tracker");
+        let application_directory = migrate_application_directory(&data_home()?)?;
         ensure_private_dir(&application_directory)?;
         let directory = application_directory.join(exam.directory_name());
         if exam == Exam::Ayt && !directory.exists() {
@@ -87,6 +87,18 @@ impl Tracker {
             directory,
         })
     }
+}
+
+/// Returns the application data directory, moving the pre-rename `yks-tracker/`
+/// directory into place on first launch. If the move fails, the legacy directory keeps
+/// being used so existing history is never silently orphaned.
+fn migrate_application_directory(data_home: &Path) -> Result<PathBuf, Box<dyn Error>> {
+    let current = data_home.join("yksresults");
+    let legacy = data_home.join("yks-tracker");
+    if !current.exists() && legacy.exists() && fs::rename(&legacy, &current).is_err() {
+        return Ok(legacy);
+    }
+    Ok(current)
 }
 
 /// Adds subjects and topics that exist in `defaults` but not in `data` (matched by `id`),
@@ -293,6 +305,30 @@ mod tests {
         assert_eq!(data["subjects"][0]["topics"][0]["name"], "Sözcükte Anlam");
         assert_eq!(data["subjects"][0]["topics"][0]["correct_total"], 42);
         assert!(!merge_defaults(&mut data, &defaults));
+    }
+
+    #[test]
+    fn migrates_legacy_application_directory() {
+        let timestamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap()
+            .as_nanos();
+        let data_home =
+            std::env::temp_dir().join(format!("yksresults-{}-{timestamp}", std::process::id()));
+        let legacy = data_home.join("yks-tracker");
+        fs::create_dir_all(&legacy).unwrap();
+        fs::write(legacy.join("marker"), b"history").unwrap();
+
+        let migrated = migrate_application_directory(&data_home).unwrap();
+        assert_eq!(migrated, data_home.join("yksresults"));
+        assert!(!legacy.exists());
+        assert_eq!(fs::read(migrated.join("marker")).unwrap(), b"history");
+
+        // An existing current directory wins over a stray legacy one.
+        fs::create_dir_all(&legacy).unwrap();
+        assert_eq!(migrate_application_directory(&data_home).unwrap(), migrated);
+
+        let _ = fs::remove_dir_all(&data_home);
     }
 
     #[test]
