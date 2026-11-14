@@ -1,6 +1,6 @@
 # yksresults
 
-yksresults is a native Rust terminal application for viewing TYT and AYT
+yksresults is a Rust terminal application for viewing TYT and AYT
 rehearsal statistics across all subjects and tracks (Sayısal, Eşit Ağırlık, Sözel).
 It imports Okulizyon HTML exports and shows, per topic, the question total and the
 correct, wrong and blank counts with the calculated success rate, plus a summary across
