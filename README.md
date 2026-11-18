@@ -105,3 +105,20 @@ and compute the total net across all completed AYT sections.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Local deployment (PRIME A320M-R, Arch Linux)
+
+Installed from the AUR package `yksresults-git`; version `0.1.0` at
+`/usr/bin/yksresults`. The installed package `yksresults-git 0.1.0.r13.g7a8af9b-1`
+matched local `main` HEAD `7a8af9b` when checked on 2026-11-17; the published AUR
+version was older, `0.1.0.r5.g5769e09-1`.
+
+The source checkout is `~/programming/yksresults/`. Runtime data lives outside the
+repository in `~/.local/share/yksresults/tyt-topic-tracker/` and
+`ayt-topic-tracker/` (5 TYT and 1 AYT archived exports with analyses as of
+2026-11-17); preserve both directories across reinstalls. The files were
+owner-only (`0700`/`0600`) at the check.
+
+Open items: the documented `cargo test`, report, and HTML-import commands were not
+run locally; no automatic backup of the application data directory was verified;
+the published AUR version trails the local packaging files.
