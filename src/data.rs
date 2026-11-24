@@ -158,7 +158,7 @@ fn merge_defaults(data: &mut Value, defaults: &Value) -> bool {
     modified
 }
 
-/// Drops retired TYT topics (see `importer::is_retired_tyt_topic`) that never hold any data.
+/// Drops retired TYT topics (see `okulizyon_importer::is_retired_tyt_topic`) that never hold any data.
 fn prune_retired_topics(data: &mut Value) -> bool {
     let mut removed = false;
     let subjects = data.get_mut("subjects").and_then(Value::as_array_mut);
@@ -174,7 +174,7 @@ fn prune_retired_topics(data: &mut Value) -> bool {
                 .and_then(Value::as_i64)
                 .unwrap_or(0)
                 > 0;
-            has_data || !crate::importer::is_retired_tyt_topic(id)
+            has_data || !crate::okulizyon_importer::is_retired_tyt_topic(id)
         });
         removed |= topics.len() != before;
     }

@@ -1,5 +1,6 @@
 mod data;
-mod importer;
+#[path = "okulizyon-importer.rs"]
+mod okulizyon_importer;
 mod report;
 mod tui;
 
@@ -63,7 +64,7 @@ fn run_import(args: &[String], exam: Exam) -> Result<(), Box<dyn std::error::Err
     let date = flag_value(args, "--date")?;
     let file = flag_value(args, "--file")?.map(Path::new);
     let tracker = Tracker::load(exam)?;
-    importer::import(&tracker, date, file)?;
+    okulizyon_importer::import(&tracker, date, file)?;
     Ok(())
 }
 
