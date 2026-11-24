@@ -12,7 +12,7 @@ all subjects. The two exams keep separate inventories and histories.
 
 ## Requirements
 
-- Rust 1.88 or newer and Cargo (edition 2024)
+- Rust 1.95 or newer and Cargo (edition 2024)
 - Linux, macOS, or Windows 10+
 - A terminal emulator
 

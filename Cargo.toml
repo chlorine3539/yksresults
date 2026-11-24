@@ -2,7 +2,7 @@
 name = "yksresults"
 version = "0.1.0"
 edition = "2024"
-rust-version = "1.88"
+rust-version = "1.95"
 description = "An application to track the rehearsal results of TYT and AYT exams"
 license = "MIT"
 readme = "README.md"
