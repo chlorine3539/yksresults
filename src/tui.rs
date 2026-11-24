@@ -18,8 +18,134 @@ struct TopicRef {
     topic: usize,
 }
 
+#[derive(Clone, Copy, Eq, PartialEq)]
+enum Language {
+    English,
+    Turkish,
+}
+
+impl Language {
+    fn from_system() -> Self {
+        if is_turkish_locale(sys_locale::get_locale().as_deref()) {
+            Self::Turkish
+        } else {
+            Self::English
+        }
+    }
+
+    fn name(self, item: &Value) -> &str {
+        let keys: &[&str] = match self {
+            Self::English => &["name_en", "name"],
+            Self::Turkish => &["name", "name_en"],
+        };
+        keys.iter()
+            .find_map(|key| item.get(*key).and_then(Value::as_str))
+            .unwrap_or("")
+    }
+
+    fn title(self, exam: &str, total: usize) -> String {
+        match self {
+            Self::English => format!("yksresults | {exam} | {total} topics"),
+            Self::Turkish => format!("yksresults | {exam} | {total} konu"),
+        }
+    }
+
+    fn summary(self, total_q: i64, correct: i64, wrong: i64, blank: i64, success: &str) -> String {
+        match self {
+            Self::English => format!(
+                "Questions: {total_q}  Correct: {correct}  Wrong: {wrong}  Blank: {blank}  Success: {success}"
+            ),
+            Self::Turkish => format!(
+                "Sorular: {total_q}  Doğru: {correct}  Yanlış: {wrong}  Boş: {blank}  Başarı: {success}"
+            ),
+        }
+    }
+
+    fn search(self, search: &str) -> String {
+        let (label, off) = match self {
+            Self::English => ("Search", "off"),
+            Self::Turkish => ("Arama", "kapalı"),
+        };
+        format!("{label}: {}", if search.is_empty() { off } else { search })
+    }
+
+    fn loaded(self, exam: &str) -> String {
+        match self {
+            Self::English => format!("Loaded {exam}."),
+            Self::Turkish => format!("{exam} yüklendi."),
+        }
+    }
+
+    fn reload_message(self) -> &'static str {
+        match self {
+            Self::English => "Data reloaded.",
+            Self::Turkish => "Veriler yeniden yüklendi.",
+        }
+    }
+
+    fn headers(self) -> [&'static str; 9] {
+        match self {
+            Self::English => [
+                "SUBJECT",
+                "TOPIC",
+                "Q",
+                "C",
+                "W",
+                "B",
+                "SUCCESS",
+                "LAST TESTED",
+                "LAST RESULT",
+            ],
+            Self::Turkish => [
+                "DERS",
+                "KONU",
+                "S",
+                "D",
+                "Y",
+                "B",
+                "BAŞARI",
+                "SON TEST",
+                "SON SONUÇ",
+            ],
+        }
+    }
+
+    fn help(self) -> &'static str {
+        match self {
+            Self::English => "↑/↓ move  / search  e exam  r reload  q quit",
+            Self::Turkish => "↑/↓ gezin  / ara  e sınav  r yenile  q çık",
+        }
+    }
+
+    fn search_title(self) -> &'static str {
+        match self {
+            Self::English => "Search",
+            Self::Turkish => "Arama",
+        }
+    }
+
+    fn search_prompt(self, search: &str) -> String {
+        match self {
+            Self::English => {
+                format!("Search (Enter applies, Esc cancels):\n{search}")
+            }
+            Self::Turkish => {
+                format!("Arama (Enter uygular, Esc iptal eder):\n{search}")
+            }
+        }
+    }
+}
+
+fn is_turkish_locale(locale: Option<&str>) -> bool {
+    locale.is_some_and(|locale| {
+        let locale = locale.to_ascii_lowercase().replace('_', "-");
+        locale == "tr" || locale.starts_with("tr-")
+    })
+}
+
 struct App {
     tracker: Tracker,
+    language: Language,
     query: String,
     search_input: Option<String>,
     selected: usize,
@@ -62,6 +188,7 @@ fn run_loop(
 ) -> Result<(), Box<dyn std::error::Error>> {
     let mut app = App {
         tracker: Tracker::load(Exam::Tyt)?,
+        language: Language::from_system(),
         query: String::new(),
         search_input: None,
         selected: 0,
@@ -118,13 +245,13 @@ fn handle_key(
             };
             app.tracker = Tracker::load(exam)?;
             app.selected = 0;
-            app.message = format!("Loaded {}.", app.tracker.exam.label());
+            app.message = app.language.loaded(app.tracker.exam.label());
         }
         KeyCode::Char('/') => app.search_input = Some(app.query.clone()),
         KeyCode::Char('r') | KeyCode::Char('R') => {
             app.tracker = Tracker::load(app.tracker.exam)?;
             app.selected = 0;
-            app.message = "Data reloaded.".into();
+            app.message = app.language.reload_message().into();
         }
         _ => {}
     }
@@ -155,6 +282,13 @@ fn handle_search(app: &mut App, key: KeyEvent) {
 
 fn filtered_topics(app: &App) -> Vec<TopicRef> {
     let query = app.query.to_lowercase();
+    let matches = |item: &Value| {
+        ["name", "name_en"].iter().any(|key| {
+            item.get(*key)
+                .and_then(Value::as_str)
+                .is_some_and(|name| name.to_lowercase().contains(&query))
+        })
+    };
     let mut entries = Vec::new();
     for (subject_index, subject) in app.tracker.topics["subjects"]
         .as_array()
@@ -162,18 +296,13 @@ fn filtered_topics(app: &App) -> Vec<TopicRef> {
         .flatten()
         .enumerate()
     {
-        let subject_name = subject.get("name").and_then(Value::as_str).unwrap_or("");
         for (topic_index, topic) in subject["topics"]
             .as_array()
             .into_iter()
             .flatten()
             .enumerate()
         {
-            let topic_name = topic.get("name").and_then(Value::as_str).unwrap_or("");
-            if query.is_empty()
-                || subject_name.to_lowercase().contains(&query)
-                || topic_name.to_lowercase().contains(&query)
-            {
+            if query.is_empty() || matches(subject) || matches(topic) {
                 entries.push(TopicRef {
                     subject: subject_index,
                     topic: topic_index,
@@ -200,7 +329,7 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
         ])
         .split(area);
     frame.render_widget(
-        Paragraph::new(format!("yksresults | {exam} | {} topics", stats.total)),
+        Paragraph::new(app.language.title(exam, stats.total)),
         vertical[0],
     );
     let total_q = stats.correct + stats.wrong + stats.blank;
@@ -210,20 +339,17 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
         "—".to_string()
     };
     frame.render_widget(
-        Paragraph::new(format!(
-            "Questions: {}  Correct: {}  Wrong: {}  Blank: {}  Success: {}",
-            total_q, stats.correct, stats.wrong, stats.blank, success_str
+        Paragraph::new(app.language.summary(
+            total_q,
+            stats.correct,
+            stats.wrong,
+            stats.blank,
+            &success_str,
         )),
         vertical[1],
     );
     let search = app.search_input.as_deref().unwrap_or(&app.query);
-    frame.render_widget(
-        Paragraph::new(format!(
-            "Search: {}",
-            if search.is_empty() { "off" } else { search }
-        )),
-        vertical[2],
-    );
+    frame.render_widget(Paragraph::new(app.language.search(search)), vertical[2]);
     if !app.message.is_empty() {
         frame.render_widget(Paragraph::new(app.message.as_str()), vertical[3]);
     }
@@ -253,8 +379,8 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
                 _ => "—".to_string(),
             };
             Row::new(vec![
-                Cell::from(subject["name"].as_str().unwrap_or("").to_owned()),
-                Cell::from(topic["name"].as_str().unwrap_or("").to_owned()),
+                Cell::from(app.language.name(subject).to_owned()),
+                Cell::from(app.language.name(topic).to_owned()),
                 Cell::from(total_q.to_string()),
                 Cell::from(correct.to_string()),
                 Cell::from(wrong.to_string()),
@@ -281,29 +407,22 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
         table_state.select(Some(app.selected));
     }
     let table = Table::new(rows, widths)
-        .header(Row::new([
-            "SUBJECT",
-            "TOPIC",
-            "Q",
-            "C",
-            "W",
-            "B",
-            "SUCCESS",
-            "LAST TESTED",
-            "LAST RESULT",
-        ]))
+        .header(Row::new(app.language.headers()))
         .block(Block::default().borders(Borders::ALL))
         .row_highlight_style(Style::default().add_modifier(Modifier::REVERSED));
     frame.render_stateful_widget(table, vertical[4], &mut table_state);
 
-    let help = "↑/↓ move  / search  e exam  r reload  q quit";
-    frame.render_widget(Paragraph::new(help), vertical[5]);
+    frame.render_widget(Paragraph::new(app.language.help()), vertical[5]);
     if app.search_input.is_some() {
         let popup = centered_rect(60, 20, area);
         frame.render_widget(Clear, popup);
         frame.render_widget(
-            Paragraph::new(format!("Search (Enter applies, Esc cancels):\n{}", search))
-                .block(Block::default().title("Search").borders(Borders::ALL))
+            Paragraph::new(app.language.search_prompt(search))
+                .block(
+                    Block::default()
+                        .title(app.language.search_title())
+                        .borders(Borders::ALL),
+                )
                 .wrap(Wrap { trim: true }),
             popup,
         );
@@ -359,4 +478,51 @@ fn centered_rect(
             Constraint::Percentage((100 - percent_x) / 2),
         ])
         .split(vertical[1])[1]
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use serde_json::json;
+
+    #[test]
+    fn detects_turkish_locales() {
+        assert!(is_turkish_locale(Some("tr")));
+        assert!(is_turkish_locale(Some("tr-TR")));
+        assert!(is_turkish_locale(Some("tr_TR.UTF-8")));
+        assert!(!is_turkish_locale(Some("en-US")));
+        assert!(!is_turkish_locale(None));
+    }
+
+    #[test]
+    fn localizes_labels_and_names() {
+        let item = json!({"name": "Türkçe", "name_en": "Turkish"});
+        assert_eq!(Language::English.name(&item), "Turkish");
+        assert_eq!(Language::Turkish.name(&item), "Türkçe");
+        assert!(Language::English.title("TYT", 3).contains("topics"));
+        assert!(Language::Turkish.title("TYT", 3).contains("konu"));
+        assert!(
+            Language::English
+                .summary(1, 1, 0, 0, "100.0%")
+                .contains("Success")
+        );
+        assert!(
+            Language::Turkish
+                .summary(1, 1, 0, 0, "100.0%")
+                .contains("Başarı")
+        );
+        assert!(Language::English.help().contains("quit"));
+        assert!(Language::Turkish.help().contains("çık"));
+        assert!(
+            Language::Turkish
+                .search_prompt("a")
+                .contains("Enter uygular")
+        );
+    }
+
+    #[test]
+    fn falls_back_to_turkish_name_when_translation_is_missing() {
+        let item = json!({"name": "Türkçe"});
+        assert_eq!(Language::English.name(&item), "Türkçe");
+    }
 }
