@@ -6,10 +6,15 @@ use crossterm::terminal::{
 };
 use ratatui::backend::CrosstermBackend;
 use ratatui::layout::{Constraint, Direction, Layout};
-use ratatui::style::{Modifier, Style};
-use ratatui::widgets::{Block, Borders, Cell, Clear, Paragraph, Row, Table, TableState};
+use ratatui::style::{Color, Modifier, Style};
+use ratatui::symbols::Marker;
+use ratatui::text::{Line, Span};
+use ratatui::widgets::{
+    Axis, Block, Borders, Cell, Chart, Clear, Dataset, GraphType, Paragraph, Row, Table, TableState,
+};
 use ratatui::{Terminal, widgets::Wrap};
 use serde_json::Value;
+use std::fs;
 use std::io;
 
 #[derive(Clone, Copy)]
@@ -112,8 +117,8 @@ impl Language {
 
     fn help(self) -> &'static str {
         match self {
-            Self::English => "↑/↓ move  / search  e exam  r reload  q quit",
-            Self::Turkish => "↑/↓ gezin  / ara  e sınav  r yenile  q çık",
+            Self::English => "↑/↓ move  / search  Tab tab  e exam  r reload  q quit",
+            Self::Turkish => "↑/↓ gezin  / ara  Tab sekme  e sınav  r yenile  q çık",
         }
     }
 
@@ -134,6 +139,58 @@ impl Language {
             }
         }
     }
+
+    fn topic_tab(self) -> &'static str {
+        match self {
+            Self::English => "Topics",
+            Self::Turkish => "Konular",
+        }
+    }
+
+    fn graph_tab(self) -> &'static str {
+        match self {
+            Self::English => "Graph",
+            Self::Turkish => "Grafik",
+        }
+    }
+
+    fn graph_title(self, latest: Option<f64>) -> String {
+        match self {
+            Self::English => match latest {
+                Some(net) => format!("Net trend — latest {net:.2}"),
+                None => "Net trend — no data".to_owned(),
+            },
+            Self::Turkish => match latest {
+                Some(net) => format!("Net eğilimi — son {net:.2}"),
+                None => "Net eğilimi — veri yok".to_owned(),
+            },
+        }
+    }
+
+    fn graph_empty(self) -> &'static str {
+        match self {
+            Self::English => "No imported results yet. Use import-tyt or import-ayt.",
+            Self::Turkish => "Henüz içe aktarılmış sonuç yok. import-tyt veya import-ayt kullanın.",
+        }
+    }
+
+    fn date_axis(self) -> &'static str {
+        match self {
+            Self::English => "Date",
+            Self::Turkish => "Tarih",
+        }
+    }
+
+    fn net_axis(self) -> &'static str {
+        "Net"
+    }
+
+    fn net_dataset(self) -> &'static str {
+        match self {
+            Self::English => "Total net",
+            Self::Turkish => "Toplam net",
+        }
+    }
 }
 
 fn is_turkish_locale(locale: Option<&str>) -> bool {
@@ -143,9 +200,23 @@ fn is_turkish_locale(locale: Option<&str>) -> bool {
     })
 }
 
+#[derive(Clone, Copy, Eq, PartialEq)]
+enum Tab {
+    Topics,
+    Graph,
+}
+
+#[derive(Clone, Debug, PartialEq)]
+struct NetPoint {
+    date: String,
+    net: f64,
+}
+
 struct App {
     tracker: Tracker,
     language: Language,
+    tab: Tab,
+    net_points: Vec<NetPoint>,
     query: String,
     search_input: Option<String>,
     selected: usize,
@@ -186,9 +257,13 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
 fn run_loop(
     terminal: &mut Terminal<CrosstermBackend<io::Stdout>>,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    let tracker = Tracker::load(Exam::Tyt)?;
+    let net_points = load_net_points(&tracker);
     let mut app = App {
-        tracker: Tracker::load(Exam::Tyt)?,
+        tracker,
         language: Language::from_system(),
+        tab: Tab::Topics,
+        net_points,
         query: String::new(),
         search_input: None,
         selected: 0,
@@ -244,12 +319,20 @@ fn handle_key(
                 Exam::Tyt
             };
             app.tracker = Tracker::load(exam)?;
+            app.net_points = load_net_points(&app.tracker);
             app.selected = 0;
             app.message = app.language.loaded(app.tracker.exam.label());
         }
         KeyCode::Char('/') => app.search_input = Some(app.query.clone()),
+        KeyCode::Tab | KeyCode::BackTab => {
+            app.tab = match app.tab {
+                Tab::Topics => Tab::Graph,
+                Tab::Graph => Tab::Topics,
+            };
+        }
         KeyCode::Char('r') | KeyCode::Char('R') => {
             app.tracker = Tracker::load(app.tracker.exam)?;
+            app.net_points = load_net_points(&app.tracker);
             app.selected = 0;
             app.message = app.language.reload_message().into();
         }
@@ -278,6 +361,57 @@ fn handle_search(app: &mut App, key: KeyEvent) {
         }
         _ => app.search_input = Some(input),
     }
+}
+
+fn load_net_points(tracker: &Tracker) -> Vec<NetPoint> {
+    let Ok(entries) = fs::read_dir(tracker.directory.join("analysis")) else {
+        return Vec::new();
+    };
+    let mut paths: Vec<_> = entries
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().and_then(|ext| ext.to_str()) == Some("json"))
+        .collect();
+    paths.sort();
+    points_from_values(
+        paths
+            .iter()
+            .filter_map(|path| crate::data::read_json(path).ok()),
+    )
+}
+
+fn is_iso_date(value: &str) -> bool {
+    let bytes = value.as_bytes();
+    bytes.len() == 10
+        && bytes[4] == b'-'
+        && bytes[7] == b'-'
+        && bytes
+            .iter()
+            .enumerate()
+            .all(|(index, byte)| index == 4 || index == 7 || byte.is_ascii_digit())
+}
+
+fn points_from_values(values: impl IntoIterator<Item = Value>) -> Vec<NetPoint> {
+    let mut points: Vec<NetPoint> = values
+        .into_iter()
+        .filter_map(|value| {
+            let date = value.get("date")?.as_str()?;
+            if !is_iso_date(date) {
+                return None;
+            }
+            let net = value.get("total_net")?.as_f64()?;
+            Some(NetPoint {
+                date: date.to_owned(),
+                net,
+            })
+        })
+        .collect();
+    points.sort_by(|left, right| {
+        left.date
+            .cmp(&right.date)
+            .then_with(|| left.net.total_cmp(&right.net))
+    });
+    points
 }
 
 fn filtered_topics(app: &App) -> Vec<TopicRef> {
@@ -324,6 +458,7 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
             Constraint::Length(1),
             Constraint::Length(1),
             Constraint::Length(1),
+            Constraint::Length(1),
             Constraint::Min(3),
             Constraint::Length(2),
         ])
@@ -350,8 +485,32 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
     );
     let search = app.search_input.as_deref().unwrap_or(&app.query);
     frame.render_widget(Paragraph::new(app.language.search(search)), vertical[2]);
+    let active = Style::default().add_modifier(Modifier::REVERSED);
+    let inactive = Style::default().fg(Color::DarkGray);
+    frame.render_widget(
+        Paragraph::new(Line::from(vec![
+            Span::styled(
+                format!(" {} ", app.language.topic_tab()),
+                if app.tab == Tab::Topics {
+                    active
+                } else {
+                    inactive
+                },
+            ),
+            Span::raw(" | "),
+            Span::styled(
+                format!(" {} ", app.language.graph_tab()),
+                if app.tab == Tab::Graph {
+                    active
+                } else {
+                    inactive
+                },
+            ),
+        ])),
+        vertical[3],
+    );
     if !app.message.is_empty() {
-        frame.render_widget(Paragraph::new(app.message.as_str()), vertical[3]);
+        frame.render_widget(Paragraph::new(app.message.as_str()), vertical[4]);
     }
 
     let rows = entries
@@ -402,17 +561,21 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
         Constraint::Length(12),
         Constraint::Length(10),
     ];
-    let mut table_state = TableState::default();
-    if !entries.is_empty() {
-        table_state.select(Some(app.selected));
+    if app.tab == Tab::Topics {
+        let mut table_state = TableState::default();
+        if !entries.is_empty() {
+            table_state.select(Some(app.selected));
+        }
+        let table = Table::new(rows, widths)
+            .header(Row::new(app.language.headers()))
+            .block(Block::default().borders(Borders::ALL))
+            .row_highlight_style(Style::default().add_modifier(Modifier::REVERSED));
+        frame.render_stateful_widget(table, vertical[5], &mut table_state);
+    } else {
+        draw_graph(frame, app, vertical[5]);
     }
-    let table = Table::new(rows, widths)
-        .header(Row::new(app.language.headers()))
-        .block(Block::default().borders(Borders::ALL))
-        .row_highlight_style(Style::default().add_modifier(Modifier::REVERSED));
-    frame.render_stateful_widget(table, vertical[4], &mut table_state);
 
-    frame.render_widget(Paragraph::new(app.language.help()), vertical[5]);
+    frame.render_widget(Paragraph::new(app.language.help()), vertical[6]);
     if app.search_input.is_some() {
         let popup = centered_rect(60, 20, area);
         frame.render_widget(Clear, popup);
@@ -427,6 +590,80 @@ fn draw(frame: &mut ratatui::Frame<'_>, app: &App, entries: &[TopicRef]) {
             popup,
         );
     }
+}
+
+fn draw_graph(frame: &mut ratatui::Frame<'_>, app: &App, area: ratatui::layout::Rect) {
+    let title = app
+        .language
+        .graph_title(app.net_points.last().map(|point| point.net));
+    let block = || Block::default().borders(Borders::ALL).title(title.as_str());
+    if app.net_points.is_empty() {
+        frame.render_widget(
+            Paragraph::new(app.language.graph_empty())
+                .block(block())
+                .wrap(Wrap { trim: true }),
+            area,
+        );
+        return;
+    }
+
+    let len = app.net_points.len();
+    let series: Vec<(f64, f64)> = app
+        .net_points
+        .iter()
+        .enumerate()
+        .map(|(index, point)| {
+            let x = if len == 1 { 0.5 } else { index as f64 };
+            (x, point.net)
+        })
+        .collect();
+    let x_bounds = [0.0, if len == 1 { 1.0 } else { (len - 1) as f64 }];
+    let min = app
+        .net_points
+        .iter()
+        .map(|point| point.net)
+        .fold(0.0, f64::min)
+        .min(0.0);
+    let max = app
+        .net_points
+        .iter()
+        .map(|point| point.net)
+        .fold(0.0, f64::max)
+        .max(0.0);
+    let padding = ((max - min) * 0.1).max(1.0);
+    let y_lower = min - padding;
+    let y_upper = max + padding;
+    let x_labels = [
+        app.net_points.first().unwrap().date.clone(),
+        app.net_points[len / 2].date.clone(),
+        app.net_points.last().unwrap().date.clone(),
+    ];
+    let y_labels = [
+        format!("{y_lower:.1}"),
+        format!("{:.1}", (y_lower + y_upper) / 2.0),
+        format!("{y_upper:.1}"),
+    ];
+    let dataset = Dataset::default()
+        .name(app.language.net_dataset())
+        .data(&series)
+        .marker(Marker::Braille)
+        .graph_type(GraphType::Line)
+        .style(Style::default().fg(Color::Cyan));
+    let chart = Chart::new(vec![dataset])
+        .block(block())
+        .x_axis(
+            Axis::default()
+                .title(app.language.date_axis())
+                .bounds(x_bounds)
+                .labels(x_labels),
+        )
+        .y_axis(
+            Axis::default()
+                .title(app.language.net_axis())
+                .bounds([y_lower, y_upper])
+                .labels(y_labels),
+        );
+    frame.render_widget(chart, area);
 }
 
 struct Totals {
@@ -524,5 +761,40 @@ mod tests {
     fn falls_back_to_turkish_name_when_translation_is_missing() {
         let item = json!({"name": "Türkçe"});
         assert_eq!(Language::English.name(&item), "Türkçe");
+    }
+
+    #[test]
+    fn collects_and_sorts_net_points() {
+        let points = points_from_values([
+            json!({"date": "2026-11-20", "total_net": 30.5}),
+            json!({"date": "bad", "total_net": 99.0}),
+            json!({"date": "2026-11-10", "total_net": 12.25}),
+            json!({"date": "2026-11-15", "total_net": "invalid"}),
+        ]);
+        assert_eq!(
+            points,
+            vec![
+                NetPoint {
+                    date: "2026-11-10".into(),
+                    net: 12.25
+                },
+                NetPoint {
+                    date: "2026-11-20".into(),
+                    net: 30.5
+                },
+            ]
+        );
+    }
+
+    #[test]
+    fn localizes_graph_strings() {
+        assert!(Language::English.graph_title(Some(42.5)).contains("latest"));
+        assert!(Language::Turkish.graph_title(Some(42.5)).contains("son"));
+        assert!(Language::English.graph_title(None).contains("no data"));
+        assert!(Language::Turkish.graph_title(None).contains("veri yok"));
+        assert_eq!(Language::English.topic_tab(), "Topics");
+        assert_eq!(Language::Turkish.graph_tab(), "Grafik");
+        assert_eq!(Language::English.date_axis(), "Date");
+        assert_eq!(Language::Turkish.date_axis(), "Tarih");
     }
 }

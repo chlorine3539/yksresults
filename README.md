@@ -19,10 +19,12 @@ all subjects. The two exams keep separate inventories and histories.
 ## Usage
 
 Keys: arrows or `j`/`k` move through topics, `PageUp`/`PageDown` jump by 10,
-`/` searches, `e` switches exams, `r` reloads data, and `q` quits. The TUI follows the
-system locale: Turkish locales (`tr`, `tr-TR`) show Turkish labels and topic names,
-while other locales use English labels and English topic names. Search matches names
-in both languages. Build an optimized executable with `cargo build --release` (binary
+`/` searches, `Tab` toggles the topics table and the total-net trend graph
+(plotted from archived analyses), `e` switches exams, `r` reloads data, and `q` quits.
+The TUI follows the system
+locale: Turkish locales (`tr`, `tr-TR`) show Turkish labels and topic names, while
+other locales use English labels and English topic names. Search matches names in
+both languages. Build an optimized executable with `cargo build --release` (binary
 at `target/release/yksresults`, or `target\release\yksresults.exe` on Windows).
 
 CLI commands:
