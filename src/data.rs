@@ -51,15 +51,9 @@ pub struct Tracker {
 
 impl Tracker {
     pub fn load(exam: Exam) -> Result<Self, Box<dyn Error>> {
-        let application_directory = migrate_application_directory(&data_home()?)?;
+        let application_directory = data_home()?.join("yksresults");
         ensure_private_dir(&application_directory)?;
         let directory = application_directory.join(exam.directory_name());
-        if exam == Exam::Ayt && !directory.exists() {
-            let legacy = application_directory.join("ayt-quantitative-topic-tracker");
-            if legacy.exists() {
-                let _ = fs::rename(&legacy, &directory);
-            }
-        }
         ensure_private_dir(&directory)?;
         for child in ["results", "analysis"] {
             ensure_private_dir(&directory.join(child))?;
@@ -70,10 +64,7 @@ impl Tracker {
 
         let mut topics = read_json(&topics_path)?;
         let defaults: Value = serde_json::from_str(exam.default_topics())?;
-        let mut modified = merge_defaults(&mut topics, &defaults);
-        if exam == Exam::Tyt {
-            modified |= prune_retired_topics(&mut topics);
-        }
+        let modified = merge_defaults(&mut topics, &defaults);
         if modified {
             let mut bytes = serde_json::to_vec_pretty(&topics)?;
             bytes.push(b'\n');
@@ -86,18 +77,6 @@ impl Tracker {
             directory,
         })
     }
-}
-
-/// Returns the application data directory, moving the pre-rename `yks-tracker/`
-/// directory into place on first launch. If the move fails, the legacy directory keeps
-/// being used so existing history is never silently orphaned.
-fn migrate_application_directory(data_home: &Path) -> Result<PathBuf, Box<dyn Error>> {
-    let current = data_home.join("yksresults");
-    let legacy = data_home.join("yks-tracker");
-    if !current.exists() && legacy.exists() && fs::rename(&legacy, &current).is_err() {
-        return Ok(legacy);
-    }
-    Ok(current)
 }
 
 /// Adds subjects and topics that exist in `defaults` but not in `data` (matched by `id`),
@@ -156,29 +135,6 @@ fn merge_defaults(data: &mut Value, defaults: &Value) -> bool {
         }
     }
     modified
-}
-
-/// Drops retired TYT topics (see `okulizyon_importer::is_retired_tyt_topic`) that never hold any data.
-fn prune_retired_topics(data: &mut Value) -> bool {
-    let mut removed = false;
-    let subjects = data.get_mut("subjects").and_then(Value::as_array_mut);
-    for subject in subjects.into_iter().flatten() {
-        let Some(topics) = subject.get_mut("topics").and_then(Value::as_array_mut) else {
-            continue;
-        };
-        let before = topics.len();
-        topics.retain(|topic| {
-            let id = topic.get("id").and_then(Value::as_str).unwrap_or("");
-            let has_data = topic
-                .get("question_total")
-                .and_then(Value::as_i64)
-                .unwrap_or(0)
-                > 0;
-            has_data || !crate::okulizyon_importer::is_retired_tyt_topic(id)
-        });
-        removed |= topics.len() != before;
-    }
-    removed
 }
 
 pub fn data_home() -> Result<PathBuf, Box<dyn Error>> {
@@ -343,30 +299,6 @@ mod tests {
         assert_eq!(data["subjects"][0]["topics"][0]["name"], "Sözcükte Anlam");
         assert_eq!(data["subjects"][0]["topics"][0]["correct_total"], 42);
         assert!(!merge_defaults(&mut data, &defaults));
-    }
-
-    #[test]
-    fn migrates_legacy_application_directory() {
-        let timestamp = SystemTime::now()
-            .duration_since(UNIX_EPOCH)
-            .unwrap()
-            .as_nanos();
-        let data_home =
-            std::env::temp_dir().join(format!("yksresults-{}-{timestamp}", std::process::id()));
-        let legacy = data_home.join("yks-tracker");
-        fs::create_dir_all(&legacy).unwrap();
-        fs::write(legacy.join("marker"), b"history").unwrap();
-
-        let migrated = migrate_application_directory(&data_home).unwrap();
-        assert_eq!(migrated, data_home.join("yksresults"));
-        assert!(!legacy.exists());
-        assert_eq!(fs::read(migrated.join("marker")).unwrap(), b"history");
-
-        // An existing current directory wins over a stray legacy one.
-        fs::create_dir_all(&legacy).unwrap();
-        assert_eq!(migrate_application_directory(&data_home).unwrap(), migrated);
-
-        let _ = fs::remove_dir_all(&data_home);
     }
 
     #[test]

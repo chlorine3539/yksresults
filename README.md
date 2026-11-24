@@ -40,8 +40,7 @@ and rebuild all statistics from every archived HTML file and analysis.
 
 On first launch, the app initializes missing data files from `topics/`.
 It never overwrites existing statistics and automatically adds subjects and topics that
-were newly added to `topics/`. Topic IDs that were retired from the bundled lists are
-removed from existing data files if they hold no results.
+were newly added to `topics/`.
 
 ## Application data
 

@@ -18,7 +18,7 @@ fn includes_any(text: &str, needles: &[&str]) -> bool {
     needles.iter().any(|needle| text.contains(needle))
 }
 
-fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
+fn map_tyt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
     let text = outcome.to_lowercase();
     let result = match subject_id {
         "turkce" => {
@@ -242,7 +242,7 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             ) {
                 "fizik-hareket"
             } else if includes_any(&text, &["kuvvet", "newton", "dinamik", "sürtünme"]) {
-                "fizik-dinamik"
+                "fizik-kuvvet-newton"
             } else if includes_any(&text, &["iş", "güç", "enerji"]) {
                 "fizik-is-guc-enerji"
             } else if text.contains("elektrostatik") || text.contains("yük") {
@@ -259,7 +259,11 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "mıknatıs",
                 ],
             ) {
-                "fizik-elektrik-manyetizma"
+                if includes_any(&text, &["manyetizma", "mıknatıs"]) {
+                    "fizik-manyetizma"
+                } else {
+                    "fizik-elektrik-akimi-devreler"
+                }
             } else if includes_any(
                 &text,
                 &[
@@ -273,7 +277,7 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "renk",
                 ],
             ) {
-                "fizik-optik"
+                "fizik-isik-optik"
             } else if text.contains("dalga") {
                 "fizik-dalgalar"
             } else {
@@ -291,14 +295,14 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "kimya bilimi",
                 ],
             ) {
-                "kimya-kimya-bilimi"
+                "kimya-bilimi-laboratuvar"
             } else if includes_any(&text, &["atom", "periyodik sistem", "periyodik özellik"]) {
                 "kimya-atom-periyodik-sistem"
             } else if includes_any(
                 &text,
                 &["kimyasal tür", "etkileşim", "bağ", "kovalent", "iyonik"],
             ) {
-                "kimya-kimyasal-turler-etkilesim"
+                "kimya-kimyasal-etkilesimler"
             } else if includes_any(
                 &text,
                 &[
@@ -311,21 +315,21 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             ) {
                 "kimya-maddenin-halleri"
             } else if includes_any(&text, &["mol", "hesaplama", "kimyasal tepkime"]) {
-                "kimya-kimyasal-hesaplamalar"
+                "kimya-kimyasal-tepkimeler"
             } else if includes_any(
                 &text,
                 &["karışım", "çözelti", "ayırma", "saflaştırma", "çözünme"],
             ) {
                 "kimya-karisimlar"
             } else if includes_any(&text, &["asit", "baz", "tuz", "nötrleşme"]) {
-                "kimya-asitler-bazlar-tuzlar"
+                "kimya-asit-baz-tuz"
             } else if includes_any(
                 &text,
                 &["her yerde", "temizlik", "polimer", "kozmetik", "ilaç"],
             ) {
                 "kimya-her-yerde"
             } else {
-                "kimya-kimya-bilimi"
+                "kimya-bilimi-laboratuvar"
             }
         }
         "biyoloji" => {
@@ -343,9 +347,13 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "nükleik",
                 ],
             ) {
-                "biyoloji-temel-bilesenler"
+                "biyoloji-temel-bilesikler"
             } else if includes_any(&text, &["hücre", "organel", "hücresel", "zarından madde"]) {
-                "biyoloji-hucre"
+                if text.contains("zarından madde") {
+                    "biyoloji-hucre-zari-madde-gecisi"
+                } else {
+                    "biyoloji-hucre-organeller"
+                }
             } else if includes_any(
                 &text,
                 &[
@@ -357,7 +365,7 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "mantar",
                 ],
             ) {
-                "biyoloji-canlilar-dunyasi"
+                "biyoloji-siniflandirma"
             } else if includes_any(&text, &["mitoz", "eşeysiz", "mayoz", "eşeyli", "bölünme"]) {
                 "biyoloji-hucre-bolunmeleri"
             } else if includes_any(&text, &["kalıtım", "soyağacı", "mendel", "cinsiyete bağlı"])
@@ -366,31 +374,36 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             } else if includes_any(&text, &["ekosistem", "ekoloji", "besin", "madde döngü"]) {
                 "biyoloji-ekosistem-ekolojisi"
             } else {
-                "biyoloji-temel-bilesenler"
+                "biyoloji-temel-bilesikler"
             }
         }
         "tarih" => {
             if includes_any(&text, &["tarih ve zaman", "tarih öğrenme", "tarih bilimi"]) {
-                "tarih-tarih-ve-zaman"
+                "tarih-bilimi"
             } else if includes_any(&text, &["ilk çağ", "uygarlık"]) {
-                "tarih-ilk-ve-orta-caglar"
+                "tarih-ilk-cag-uygarliklari"
             } else if includes_any(&text, &["orta çağ", "avrupa", "dünya"]) {
-                "tarih-orta-cagda-dunya"
+                "tarih-turkiye-selcuklulari-beylikler"
             } else if includes_any(&text, &["türk dünyası", "ilk türk"]) {
-                "tarih-ilk-turk-devletleri"
-            } else if includes_any(&text, &["islam medeniyeti", "islam"]) {
-                "tarih-islam-medeniyetinin-dogusu"
+                "tarih-islamiyet-oncesi-turk-tarihi"
             } else if includes_any(
                 &text,
-                &["selçuklu", "eyyubi", "türk islam", "türklerin islam"],
+                &[
+                    "islam medeniyeti",
+                    "islam",
+                    "selçuklu",
+                    "eyyubi",
+                    "türk islam",
+                    "türklerin islam",
+                ],
             ) {
-                "tarih-turk-islam-devletleri"
+                "tarih-islam-tarihi-ilk-turk-islam-devletleri"
             } else if includes_any(&text, &["beylikten devlete", "kuruluş", "osmanlı devleti"]) {
-                "tarih-yerlesme-ve-devletlesme"
+                "tarih-osmanli-kurulus"
             } else if includes_any(&text, &["dünya gücü", "yükselme"]) {
-                "tarih-dunya-gucu-osmanli"
+                "tarih-osmanli-yukselme"
             } else if includes_any(&text, &["değişim", "17. yüzyıl", "18. yüzyıl"]) {
-                "tarih-degisen-dunya-dengeleri"
+                "tarih-osmanli-duraklama-gerileme"
             } else if includes_any(
                 &text,
                 &[
@@ -399,11 +412,12 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "kanun-ı esasi",
                     "meşrutiyet",
                     "ihtilal",
+                    "20. yüzyıl",
+                    "mustafa kemal",
+                    "birinci dünya",
                 ],
             ) {
-                "tarih-devrimler-caginda-degisen-devlet-toplum"
-            } else if includes_any(&text, &["20. yüzyıl", "mustafa kemal", "birinci dünya"]) {
-                "tarih-20-yuzyil-baslarinda-osmanli"
+                "tarih-osmanli-dagilma"
             } else if includes_any(
                 &text,
                 &[
@@ -415,37 +429,41 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "kurtuluş",
                 ],
             ) {
-                "tarih-milli-mucadele"
+                "tarih-kurtulus-savasi"
             } else {
-                "tarih-tarih-ve-zaman"
+                "tarih-bilimi"
             }
         }
         "cografya" => {
             if includes_any(&text, &["doğa", "insan", "bölümlenme", "coğrafyanın konu"]) {
-                "cografya-doga-ve-insan"
+                "cografya-doga-insan"
             } else if includes_any(&text, &["dünya'nın şekli", "dünyanın şekli", "hareket"]) {
-                "cografya-dunyanin-sekli-ve-hareketleri"
+                "cografya-dunya-sekli-hareketleri"
             } else if includes_any(&text, &["koordinat", "paralel", "meridyen", "yerel saat"]) {
-                "cografya-cografi-konum"
+                "cografya-koordinat-sistemi"
             } else if includes_any(&text, &["harita", "ölçek", "izohips"]) {
                 "cografya-harita-bilgisi"
             } else if includes_any(
                 &text,
                 &["iklim", "sıcaklık", "basınç", "rüzgar", "nem", "yağış"],
             ) {
-                "cografya-iklim-bilgisi"
+                "cografya-iklim-hava-durumu"
             } else if includes_any(&text, &["tektonik", "iç kuvvet", "deprem", "volkan"]) {
                 "cografya-ic-kuvvetler"
             } else if includes_any(&text, &["dış kuvvet", "akarsu", "rüzgar", "buzul"]) {
                 "cografya-dis-kuvvetler"
             } else if includes_any(&text, &["nüfus", "piramit"]) {
-                "cografya-nufus-ve-yerlesme"
+                if text.contains("yerleşme") {
+                    "cografya-yerlesme"
+                } else {
+                    "cografya-nufus"
+                }
             } else if text.contains("bölge") {
-                "cografya-bolge-kavrami"
+                "cografya-turkiye-cografi-ozellikleri"
             } else if includes_any(&text, &["afet", "deprem"]) {
-                "cografya-dogal-afetler"
+                "cografya-dogal-afetler-cevre"
             } else {
-                "cografya-doga-ve-insan"
+                "cografya-doga-insan"
             }
         }
         "felsefe" => {
@@ -456,11 +474,11 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "felsefi düşünce",
                     "felsefenin anlamı",
                     "rolü",
+                    "felsefe ile düşünme",
+                    "sorular oluşturur",
                 ],
             ) {
-                "felsefe-felsefeyi-tanima"
-            } else if includes_any(&text, &["felsefe ile düşünme", "sorular oluşturur"]) {
-                "felsefe-felsefe-ile-dusunme"
+                "felsefe-felsefenin-konusu"
             } else if text.contains("varlık") {
                 "felsefe-varlik-felsefesi"
             } else if text.contains("bilgi") {
@@ -476,9 +494,9 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
             } else if text.contains("sanat") {
                 "felsefe-sanat-felsefesi"
             } else if includes_any(&text, &["mö 6", "ms 2", "ilk çağ"]) {
-                "felsefe-mo6-ms2-felsefesi"
+                "felsefe-ilk-cag"
             } else if includes_any(&text, &["ms 2. yüzyıl-15", "orta çağ"]) {
-                "felsefe-ms2-ms15-felsefesi"
+                "felsefe-orta-cag-ronesans"
             } else if includes_any(
                 &text,
                 &[
@@ -489,166 +507,46 @@ fn map_legacy_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
                     "20. yüzyıl",
                 ],
             ) {
-                "felsefe-15-17-yuzyil-felsefesi"
+                if text.contains("20. yüzyıl") {
+                    "felsefe-20-yuzyil"
+                } else {
+                    "felsefe-17-19-yuzyil"
+                }
             } else {
-                "felsefe-felsefeyi-tanima"
+                "felsefe-felsefenin-konusu"
             }
         }
         "din" => {
             if includes_any(&text, &["bilgi", "inanç", "iman"]) {
-                "din-bilgi-ve-inanc"
+                "din-islam-inanc-esaslari"
             } else if includes_any(&text, &["din", "islam", "tanım"]) {
-                "din-din-ve-islam"
+                if text.contains("ibadet") {
+                    "din-islam-ibadetler"
+                } else {
+                    "din-ve-islam"
+                }
             } else if includes_any(&text, &["islam ve ibadet", "ibadet"]) {
-                "din-islam-ve-ibadet"
+                "din-islam-ibadetler"
             } else if includes_any(&text, &["gençlik", "ahlak", "değer"]) {
-                "din-genclik-ve-degerler"
+                "din-islam-ahlak"
             } else if includes_any(&text, &["allah", "insan"]) {
-                "din-allah-insan-iliskisi"
+                "din-islam-inanc-esaslari"
             } else if includes_any(&text, &["hz. muhammed", "peygamber"]) {
-                "din-hz-muhammed-ve-genclik"
+                "din-hz-muhammed-hayati"
             } else if includes_any(
                 &text,
                 &[
                     "itikadi", "siyasi", "fıkhi", "tasavvuf", "yorumlar", "güncel",
                 ],
             ) {
-                "din-islam-dusuncesinde-yorumlar"
+                "din-ve-islam"
             } else {
-                "din-bilgi-ve-inanc"
+                "din-islam-inanc-esaslari"
             }
         }
         _ => return None,
     };
     Some(result)
-}
-
-/// Conditional remaps: (legacy id, any-of needles in the lowercased outcome, canonical id).
-/// Checked before `LEGACY_REMAP`.
-const LEGACY_REMAP_IF: &[(&str, &[&str], &str)] = &[
-    (
-        "biyoloji-hucre",
-        &["zarından madde"],
-        "biyoloji-hucre-zari-madde-gecisi",
-    ),
-    (
-        "cografya-nufus-ve-yerlesme",
-        &["yerleşme"],
-        "cografya-yerlesme",
-    ),
-    ("din-din-ve-islam", &["ibadet"], "din-islam-ibadetler"),
-    (
-        "felsefe-15-17-yuzyil-felsefesi",
-        &["20. yüzyıl"],
-        "felsefe-20-yuzyil",
-    ),
-    (
-        "fizik-elektrik-manyetizma",
-        &["manyetizma", "mıknatıs"],
-        "fizik-manyetizma",
-    ),
-];
-
-/// Unconditional remaps from the ids produced by `map_legacy_outcome` to the ids in `topics/tyt.json`.
-const LEGACY_REMAP: &[(&str, &str)] = &[
-    ("biyoloji-temel-bilesenler", "biyoloji-temel-bilesikler"),
-    ("biyoloji-hucre", "biyoloji-hucre-organeller"),
-    ("biyoloji-canlilar-dunyasi", "biyoloji-siniflandirma"),
-    ("cografya-doga-ve-insan", "cografya-doga-insan"),
-    (
-        "cografya-dunyanin-sekli-ve-hareketleri",
-        "cografya-dunya-sekli-hareketleri",
-    ),
-    ("cografya-cografi-konum", "cografya-koordinat-sistemi"),
-    ("cografya-iklim-bilgisi", "cografya-iklim-hava-durumu"),
-    ("cografya-nufus-ve-yerlesme", "cografya-nufus"),
-    (
-        "cografya-bolge-kavrami",
-        "cografya-turkiye-cografi-ozellikleri",
-    ),
-    ("cografya-dogal-afetler", "cografya-dogal-afetler-cevre"),
-    ("din-allah-insan-iliskisi", "din-islam-inanc-esaslari"),
-    ("din-bilgi-ve-inanc", "din-islam-inanc-esaslari"),
-    ("din-din-ve-islam", "din-ve-islam"),
-    ("din-islam-dusuncesinde-yorumlar", "din-ve-islam"),
-    ("din-islam-ve-ibadet", "din-islam-ibadetler"),
-    ("din-genclik-ve-degerler", "din-islam-ahlak"),
-    ("din-hz-muhammed-ve-genclik", "din-hz-muhammed-hayati"),
-    ("felsefe-15-17-yuzyil-felsefesi", "felsefe-17-19-yuzyil"),
-    ("felsefe-felsefe-ile-dusunme", "felsefe-felsefenin-konusu"),
-    ("felsefe-felsefeyi-tanima", "felsefe-felsefenin-konusu"),
-    ("felsefe-mo6-ms2-felsefesi", "felsefe-ilk-cag"),
-    ("felsefe-ms2-ms15-felsefesi", "felsefe-orta-cag-ronesans"),
-    ("fizik-dinamik", "fizik-kuvvet-newton"),
-    ("fizik-elektrik-manyetizma", "fizik-elektrik-akimi-devreler"),
-    ("fizik-optik", "fizik-isik-optik"),
-    ("kimya-kimya-bilimi", "kimya-bilimi-laboratuvar"),
-    (
-        "kimya-kimyasal-turler-etkilesim",
-        "kimya-kimyasal-etkilesimler",
-    ),
-    ("kimya-kimyasal-hesaplamalar", "kimya-kimyasal-tepkimeler"),
-    ("kimya-asitler-bazlar-tuzlar", "kimya-asit-baz-tuz"),
-    ("tarih-tarih-ve-zaman", "tarih-bilimi"),
-    ("tarih-ilk-ve-orta-caglar", "tarih-ilk-cag-uygarliklari"),
-    (
-        "tarih-orta-cagda-dunya",
-        "tarih-turkiye-selcuklulari-beylikler",
-    ),
-    (
-        "tarih-ilk-turk-devletleri",
-        "tarih-islamiyet-oncesi-turk-tarihi",
-    ),
-    (
-        "tarih-islam-medeniyetinin-dogusu",
-        "tarih-islam-tarihi-ilk-turk-islam-devletleri",
-    ),
-    (
-        "tarih-turk-islam-devletleri",
-        "tarih-islam-tarihi-ilk-turk-islam-devletleri",
-    ),
-    ("tarih-yerlesme-ve-devletlesme", "tarih-osmanli-kurulus"),
-    ("tarih-dunya-gucu-osmanli", "tarih-osmanli-yukselme"),
-    (
-        "tarih-degisen-dunya-dengeleri",
-        "tarih-osmanli-duraklama-gerileme",
-    ),
-    (
-        "tarih-devrimler-caginda-degisen-devlet-toplum",
-        "tarih-osmanli-dagilma",
-    ),
-    (
-        "tarih-20-yuzyil-baslarinda-osmanli",
-        "tarih-osmanli-dagilma",
-    ),
-    ("tarih-milli-mucadele", "tarih-kurtulus-savasi"),
-];
-
-/// True for TYT topic ids that only existed in older `tyt.json` versions. The importer never
-/// assigns results to them, so they are removed from existing data files on load.
-pub fn is_retired_tyt_topic(id: &str) -> bool {
-    LEGACY_REMAP.iter().any(|(source, _)| *source == id)
-        || LEGACY_REMAP_IF.iter().any(|(source, _, _)| *source == id)
-}
-
-fn canonical_topic_id(legacy_id: &str, outcome: &str) -> Option<String> {
-    let text = outcome.to_lowercase();
-    if let Some((_, _, target)) = LEGACY_REMAP_IF
-        .iter()
-        .find(|(id, needles, _)| *id == legacy_id && includes_any(&text, needles))
-    {
-        return Some((*target).to_owned());
-    }
-    let canonical = LEGACY_REMAP
-        .iter()
-        .find(|(id, _)| *id == legacy_id)
-        .map_or(legacy_id, |(_, target)| *target);
-    Some(canonical.to_owned())
-}
-
-fn map_outcome(subject_id: &str, outcome: &str) -> Option<String> {
-    let legacy_id = map_legacy_outcome(subject_id, outcome)?;
-    canonical_topic_id(legacy_id, outcome)
 }
 
 fn map_ayt_outcome(subject_id: &str, outcome: &str) -> Option<&'static str> {
@@ -2200,7 +2098,7 @@ fn parse_html_exam(
                 "wrong"
             };
             let mapped = match exam {
-                Exam::Tyt => map_outcome(subject_id, &outcome),
+                Exam::Tyt => map_tyt_outcome(subject_id, &outcome).map(str::to_owned),
                 Exam::Ayt => map_ayt_outcome(subject_id, &outcome).map(str::to_owned),
             };
             let topic_id = mapped.filter(|id| canonical_topics.contains(id));
@@ -2428,19 +2326,35 @@ mod tests {
             ("tarih", "Tarih ve Zaman", "tarih-bilimi"),
             ("fizik", "Manyetizma", "fizik-manyetizma"),
             (
+                "fizik",
+                "Elektrik akımı ve devreler",
+                "fizik-elektrik-akimi-devreler",
+            ),
+            (
                 "biyoloji",
                 "Zarından madde geçişi",
                 "biyoloji-hucre-zari-madde-gecisi",
             ),
+            ("biyoloji", "Hücre organelleri", "biyoloji-hucre-organeller"),
+            (
+                "cografya",
+                "Nüfus ve yerleşme: Kır yerleşmeleri",
+                "cografya-yerlesme",
+            ),
+            ("cografya", "Nüfus piramitleri", "cografya-nufus"),
+            ("felsefe", "15. yüzyıl felsefesi", "felsefe-17-19-yuzyil"),
+            ("felsefe", "20. yüzyıl felsefesi", "felsefe-20-yuzyil"),
+            ("din", "Din ve İslam: ibadetler", "din-islam-ibadetler"),
+            ("din", "Din ve İslam", "din-ve-islam"),
         ] {
-            let mapped = map_outcome(subject, outcome).unwrap();
+            let mapped = map_tyt_outcome(subject, outcome).unwrap();
             assert_eq!(mapped, expected);
             assert!(
-                valid_ids.contains(&mapped),
+                valid_ids.contains(mapped),
                 "unknown canonical topic ID: {mapped}"
             );
         }
-        assert_eq!(map_outcome("unknown", "unknown"), None);
+        assert_eq!(map_tyt_outcome("unknown", "unknown"), None);
     }
 
     #[test]
@@ -2877,45 +2791,6 @@ mod tests {
         }
         assert_eq!(map_ayt_outcome("unknown", "unknown"), None);
         assert_eq!(map_ayt_outcome("biyoloji", "unrelated outcome"), None);
-    }
-
-    #[test]
-    fn every_remap_target_exists_in_tyt_topics() {
-        let canonical: Value = serde_json::from_str(include_str!("../topics/tyt.json")).unwrap();
-        let valid_ids = topic_ids(&canonical);
-        let targets = LEGACY_REMAP
-            .iter()
-            .map(|(_, target)| target)
-            .chain(LEGACY_REMAP_IF.iter().map(|(_, _, target)| target));
-        for target in targets {
-            assert!(valid_ids.contains(*target), "missing topic id: {target}");
-        }
-    }
-
-    #[test]
-    fn remap_sources_are_not_topic_ids() {
-        // A topic id that is also a remap source can never receive data.
-        let canonical: Value = serde_json::from_str(include_str!("../topics/tyt.json")).unwrap();
-        let valid_ids = topic_ids(&canonical);
-        let sources = LEGACY_REMAP
-            .iter()
-            .map(|(source, _)| source)
-            .chain(LEGACY_REMAP_IF.iter().map(|(source, _, _)| source));
-        for source in sources {
-            assert!(!valid_ids.contains(*source), "shadowed topic id: {source}");
-        }
-    }
-
-    #[test]
-    fn conditional_remap_wins_over_default() {
-        assert_eq!(
-            canonical_topic_id("cografya-nufus-ve-yerlesme", "Kır yerleşmeleri").unwrap(),
-            "cografya-yerlesme"
-        );
-        assert_eq!(
-            canonical_topic_id("cografya-nufus-ve-yerlesme", "Nüfus piramitleri").unwrap(),
-            "cografya-nufus"
-        );
     }
 
     #[test]
