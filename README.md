@@ -98,9 +98,6 @@ yksresults import-ayt --file ~/Downloads/ayt-result.html --date 2026-11-10
 Two exams with the same date and the same name (first 25 characters, slugified) share one
 analysis file; the importer refuses to overwrite it with a different HTML file.
 
-AYT analyses combine `Matematik-2` and `Geometri` into the Mathematics section
-and compute the total net across all completed AYT sections.
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
