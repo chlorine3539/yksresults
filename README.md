@@ -7,11 +7,15 @@ correct, wrong and blank counts with the calculated success rate, plus a summary
 all subjects. The two exams keep separate inventories and histories.
 
 <p align="center">
-  <img src="assets/tyt-statistics-120x35.png" alt="YKSResults TYT Statistics" width="70%">
+  <img src="assets/tyt-statistics-120x35.png" alt="YKSResults Topics tab showing TYT per-topic statistics" width="75%">
+  <br>
+  <em>Topics tab: per-topic TYT question and result statistics.</em>
 </p>
 
 <p align="center">
-  <img src="assets/tyt-graph-120x35.png" alt="YKSResults TYT total-net trend graph" width="70%">
+  <img src="assets/tyt-graph-120x35.png" alt="YKSResults Graph tab showing the TYT total-net trend" width="75%">
+  <br>
+  <em>Graph tab: total-net trend across archived TYT analyses.</em>
 </p>
 
 ## Requirements
