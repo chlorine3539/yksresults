@@ -7,7 +7,11 @@ correct, wrong and blank counts with the calculated success rate, plus a summary
 all subjects. The two exams keep separate inventories and histories.
 
 <p align="center">
-  <img src="assets/tyt-statistics.png" alt="YKSResults TYT Statistics" width="70%">
+  <img src="assets/tyt-statistics-120x35.png" alt="YKSResults TYT Statistics" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/tyt-graph-120x35.png" alt="YKSResults TYT total-net trend graph" width="70%">
 </p>
 
 ## Requirements
@@ -20,12 +24,12 @@ all subjects. The two exams keep separate inventories and histories.
 
 Keys: arrows or `j`/`k` move through topics, `PageUp`/`PageDown` jump by 10,
 `/` searches, `Tab` toggles the topics table and the total-net trend graph
-(plotted from archived analyses), `e` switches exams, `r` reloads data, and `q` quits.
-The TUI follows the system
-locale: Turkish locales (`tr`, `tr-TR`) show Turkish labels and topic names, while
-other locales use English labels and English topic names. Search matches names in
-both languages. Build an optimized executable with `cargo build --release` (binary
-at `target/release/yksresults`, or `target\release\yksresults.exe` on Windows).
+(plotted from archived analyses), `e` switches exams, `r` reloads data, and `q`
+quits. The TUI follows the system locale: Turkish locales (`tr`, `tr-TR`) show
+Turkish labels and topic names, while other locales use English labels and
+English topic names. Search matches names in both languages. Build an optimized
+executable with `cargo build --release` (binary at `target/release/yksresults`,
+or `target\release\yksresults.exe` on Windows).
 
 CLI commands:
 
